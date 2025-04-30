@@ -24,6 +24,10 @@
 		<data>
 		X6F2RlteFIiF8ZrtmHSEfo5kRv8=
 		</data>
+		<key>Project-version.xcconfig</key>
+		<data>
+		dHW9Djh9zFzyVieeX0luXE2Dn6Y=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -53,6 +57,13 @@
 			<key>hash2</key>
 			<data>
 			imssl+yApTNYoKVALLgyPCTg2QZVLFMAYW/SR/IG3SU=
+			</data>
+		</dict>
+		<key>Project-version.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Tc7RNwxnInDNOQk5gJ00+0wef2DXjz65AP/TcQXhbvU=
 			</data>
 		</dict>
 	</dict>

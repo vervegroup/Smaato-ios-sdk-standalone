@@ -535,7 +535,7 @@
 		</data>
 		<key>Headers/SmaatoSDK.h</key>
 		<data>
-		j2ctvSKV5lcNGZeKqKQsHIe5/Zo=
+		HC2HIrnIHXfth2P1vL+F4PUKHMw=
 		</data>
 		<key>Headers/SmaatoSDKCore.h</key>
 		<data>
@@ -547,11 +547,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kOV8XQx/Ko9tCiRj6WCXXLQy2fU=
+		9SQtSONtwGXxAIBX8mfJCLqleKc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		07L9w41HgBgD6aZ6r+UmtCTbIVQ=
+		</data>
+		<key>PrivateHeaders/SmaatoSDK+Private.h</key>
+		<data>
+		JA7c0HGkDpGiQc+TDD865qCbsoQ=
 		</data>
 		<key>omsdk.js</key>
 		<data>
@@ -1298,7 +1302,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WrCq/jmDLamfvBp9dG5bLABU3/IHRS3I8+m/zNR/Omk=
+			O4sUqziaNYm1g/02h91aS1P395OWabpZcN4HFGZg83M=
 			</data>
 		</dict>
 		<key>Headers/SmaatoSDKCore.h</key>
@@ -1320,6 +1324,13 @@
 			<key>hash2</key>
 			<data>
 			YAn1SkFe74N+c/kW0XOWKBseR9Sv1r9U3inpX0cVV/8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SmaatoSDK+Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JvJOdUUBexw+PcbR2x2FGtJx6V3+pOJBmghO5oXt0M0=
 			</data>
 		</dict>
 		<key>omsdk.js</key>

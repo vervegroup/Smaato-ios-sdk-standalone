@@ -50,8 +50,6 @@
 
 @property (nonatomic, weak) id<SmaatoSdkInitialisationDelegate> _Nullable delegate;
 
-/// Returns \c YES if only secure https connections are allowed, otherwise \c NO
-@property (class, atomic, getter=isInitialized) BOOL initialized;
 /**
  Initializes the SDK with the given configuration.
 
