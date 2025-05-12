@@ -284,6 +284,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
+@import StoreKit;
 @import UIKit;
 #endif
 
@@ -627,6 +628,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) HyBidInterstitialActionBehavio
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) HyBidSkipOffset * _Nonnull endCardCloseOffset;)
 + (HyBidSkipOffset * _Nonnull)endCardCloseOffset SWIFT_WARN_UNUSED_RESULT;
 + (void)setEndCardCloseOffset:(HyBidSkipOffset * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) HyBidSkipOffset * _Nonnull endCardCloseMaxOffset;)
++ (HyBidSkipOffset * _Nonnull)endCardCloseMaxOffset SWIFT_WARN_UNUSED_RESULT;
++ (void)setEndCardCloseMaxOffset:(HyBidSkipOffset * _Nonnull)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) HyBidSkipOffset * _Nonnull nativeCloseButtonOffset;)
 + (HyBidSkipOffset * _Nonnull)nativeCloseButtonOffset SWIFT_WARN_UNUSED_RESULT;
 + (void)setNativeCloseButtonOffset:(HyBidSkipOffset * _Nonnull)value;
@@ -691,13 +695,38 @@ SWIFT_CLASS("_TtC12Smaato_HyBid18HyBidCustomCTAView")
 
 
 
+SWIFT_PROTOCOL("_TtP12Smaato_HyBid25HyBidInterruptionDelegate_")
+@protocol HyBidInterruptionDelegate <NSObject>
+@optional
+- (void)adHasNoFocus;
+- (void)adHasFocus;
+- (void)vastEndCardWillShow;
+- (void)vastCustomEndCardWillShow;
+- (void)willEnterForeground;
+- (void)feedbackViewWillShow;
+- (void)feedbackViewDidDismiss;
+- (void)productViewControllerIsReadyToShow;
+- (void)productViewControllerWillShow;
+- (void)productViewControllerDidShow;
+- (void)productViewControllerDidFailWithError:(NSError * _Nonnull)error;
+- (void)productViewControllerDidFinish;
+- (void)internalWebBrowserDidShow;
+@end
+
+
+@interface HyBidCustomCTAView (SWIFT_EXTENSION(Smaato_HyBid)) <HyBidInterruptionDelegate>
+- (void)adHasFocus;
+- (void)adHasNoFocus;
+@end
+
+
+
 @interface HyBidCustomCTAView (SWIFT_EXTENSION(Smaato_HyBid))
 - (void)presentCustomCTAWithDelay;
 - (void)removeCustomCTA;
 - (void)changeDelegateFor:(id <HyBidCustomCTAViewDelegate> _Nonnull)delegate;
 + (BOOL)isCustomCTAValidWithAd:(HyBidAd * _Nonnull)ad SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 enum HyBidGDPRk : NSInteger;
 
@@ -749,7 +778,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@protocol HyBidInternalWebBrowserDelegate;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC12Smaato_HyBid43HyBidInternalWebBrowserNavigationController")
@@ -758,12 +786,48 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidInterna
 + (HyBidInternalWebBrowserNavigationController * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (void)viewDidDisappear:(BOOL)animated;
-- (void)navigateToURL:(NSString * _Nonnull)url delegate:(id <HyBidInternalWebBrowserDelegate> _Nonnull)delegate;
+- (void)navigateToURL:(NSString * _Nonnull)url;
 - (HyBidWebBrowserNavigation)webBrowserNavigationBehaviourFromString:(NSString * _Nullable)value SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@protocol HyBidAdFeedbackViewDelegate;
+
+SWIFT_CLASS("_TtC12Smaato_HyBid24HyBidInterruptionHandler")
+@interface HyBidInterruptionHandler : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidInterruptionHandler * _Nonnull shared;)
++ (HyBidInterruptionHandler * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, weak) id <HyBidInterruptionDelegate> _Nullable delegate;
+@property (nonatomic, weak) id <HyBidInterruptionDelegate> _Nullable overlappingElementDelegate;
+@property (nonatomic, weak) id <HyBidAdFeedbackViewDelegate> _Nullable feedbackViewDelegate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)hasOnlyAppLifeCycleInterruption SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface HyBidInterruptionHandler (SWIFT_EXTENSION(Smaato_HyBid))
+- (void)vastEndCardWillShow;
+- (void)vastCustomEndCardWillShow;
+@end
+
+
+
+
+@interface HyBidInterruptionHandler (SWIFT_EXTENSION(Smaato_HyBid))
+- (void)productViewControllerDidFailWithError:(NSError * _Nonnull)error;
+@end
+
+
+@interface HyBidInterruptionHandler (SWIFT_EXTENSION(Smaato_HyBid)) <HyBidAdFeedbackViewDelegate>
+- (void)adFeedbackViewDidLoad;
+- (void)adFeedbackViewWillShow;
+- (void)adFeedbackViewDidShow;
+- (void)adFeedbackViewDidFailWithError:(NSError * _Nonnull)error;
+- (void)adFeedbackViewDidDismiss;
 @end
 
 @protocol HyBidInterstitialAdDelegate;
@@ -806,6 +870,21 @@ SWIFT_PROTOCOL("_TtP12Smaato_HyBid27HyBidInterstitialAdDelegate_")
 - (void)interstitialDidTrackClick;
 - (void)interstitialDidDismiss;
 @end
+
+enum HyBidLandingBehaviourType : int32_t;
+
+SWIFT_CLASS("_TtC12Smaato_HyBid21HyBidLandingBehaviour")
+@interface HyBidLandingBehaviour : NSObject
+- (enum HyBidLandingBehaviourType)convertStringWithValue:(NSString * _Nullable)value SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(int32_t, HyBidLandingBehaviourType, open) {
+  HyBidLandingBehaviourTypeInstantCloseButton = 0,
+  HyBidLandingBehaviourTypeNoCountdown = 1,
+  HyBidLandingBehaviourTypeCountdown = 2,
+  HyBidLandingBehaviourTypeUnknown = 3,
+};
 
 
 SWIFT_CLASS("_TtC12Smaato_HyBid19HyBidLocationConfig")
@@ -859,30 +938,6 @@ typedef SWIFT_ENUM(int32_t, HyBidMRAIDCommandType, open) {
   HyBidMRAIDCommandTypeUnknown = 3,
 };
 
-enum HyBidNotificationType : int32_t;
-
-SWIFT_CLASS("_TtC12Smaato_HyBid23HyBidNotificationCenter")
-@interface HyBidNotificationCenter : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidNotificationCenter * _Nonnull shared;)
-+ (HyBidNotificationCenter * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)post:(enum HyBidNotificationType)notificationType object:(id _Nullable)object userInfo:(NSDictionary * _Nullable)userInfo;
-- (void)addObserver:(id _Nonnull)observer selector:(SEL _Nonnull)selector notificationType:(enum HyBidNotificationType)notificationType object:(id _Nullable)object;
-@end
-
-typedef SWIFT_ENUM(int32_t, HyBidNotificationType, open) {
-  HyBidNotificationTypeSKStoreProductViewIsReadyToPresent = 0,
-  HyBidNotificationTypeSKStoreProductViewIsReadyToPresentForSDKStorekit = 1,
-  HyBidNotificationTypeSKStoreProductViewIsShown = 2,
-  HyBidNotificationTypeSKStoreProductViewIsDismissed = 3,
-  HyBidNotificationTypeSKStoreProductViewIsDismissedFromVideo = 4,
-  HyBidNotificationTypeAdFeedbackViewIsDismissed = 5,
-  HyBidNotificationTypeAdFeedbackViewDidShow = 6,
-  HyBidNotificationTypeInternalWebBrowserDidShow = 7,
-  HyBidNotificationTypeInternalWebBrowserDidDismissed = 8,
-};
-
 typedef SWIFT_ENUM(NSInteger, HyBidOnTopOfType, open) {
   HyBidOnTopOfTypeUNKNOWN_TOP_EVENT = 0,
   HyBidOnTopOfTypeDISPLAY = 1,
@@ -927,7 +982,6 @@ SWIFT_CLASS("_TtC12Smaato_HyBid19HyBidReportingEvent")
 @property (nonatomic, copy) NSString * _Nonnull eventType;
 - (nonnull instancetype)initWith:(NSString * _Nonnull)eventType adFormat:(NSString * _Nullable)adFormat properties:(NSDictionary<NSString *, id> * _Nullable)properties OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWith:(NSString * _Nonnull)eventType errorMessage:(NSString * _Nullable)errorMessage properties:(NSDictionary<NSString *, id> * _Nullable)properties OBJC_DESIGNATED_INITIALIZER;
-- (NSString * _Nonnull)toJSON SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1021,6 +1075,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSDKConf
 @property (nonatomic, copy) NSString * _Nonnull apiURL;
 @property (nonatomic, copy) NSString * _Nonnull openRtbApiURL;
 @property (nonatomic, copy) NSString * _Nullable appID;
+@property (nonatomic, copy) NSString * _Nullable customRemoteConfigURL;
+@end
+
+
+SWIFT_CLASS("_TtC12Smaato_HyBid30HyBidSKAdNetworkViewController")
+@interface HyBidSKAdNetworkViewController : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSKAdNetworkViewController * _Nonnull shared;)
++ (HyBidSKAdNetworkViewController * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)presentSKStoreProductViewControllerWithProductParameters:(NSDictionary<NSString *, id> * _Nonnull)productParameters adFormat:(NSString * _Nonnull)adFormat isAutoSKPVC:(BOOL)isAutoSKPVC;
+- (BOOL)isSKProductViewControllerPresented SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class SKStoreProductViewController;
+
+@interface HyBidSKAdNetworkViewController (SWIFT_EXTENSION(Smaato_HyBid)) <SKStoreProductViewControllerDelegate>
+- (void)productViewControllerDidFinish:(SKStoreProductViewController * _Nonnull)viewController;
 @end
 
 
@@ -1102,6 +1173,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_SK
 + (NSInteger)DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_END_CARD_CLOSE_OFFSET;)
 + (NSInteger)DEFAULT_END_CARD_CLOSE_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_END_CARD_CLOSE_MAX_OFFSET;)
++ (NSInteger)DEFAULT_END_CARD_CLOSE_MAX_OFFSET SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSET;)
 + (NSInteger)DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSET;)
@@ -1192,6 +1265,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidViewbil
 @property (nonatomic) HyBidImpressionTrackerMethod impressionTrackerMethod;
 @property (nonatomic) NSInteger minVisibleTime;
 @property (nonatomic) double minVisiblePercent;
+@end
+
+@class UITouch;
+@class UIEvent;
+
+@interface SKStoreProductViewController (SWIFT_EXTENSION(Smaato_HyBid))
+- (void)viewDidAppear:(BOOL)animated;
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
 @end
 
 

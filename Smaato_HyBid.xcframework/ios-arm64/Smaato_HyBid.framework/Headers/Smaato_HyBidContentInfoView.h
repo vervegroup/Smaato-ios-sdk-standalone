@@ -22,6 +22,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Smaato_HyBidVASTIconViewTracking.h"
+#import "Smaato_HyBidVASTIconClickTracking.h"
 
 @class HyBidContentInfoView;
 
@@ -59,6 +60,7 @@ typedef enum {
 @property (nonatomic, strong) NSString *zoneID;
 @property (nonatomic) BOOL isCustom;
 @property (nonatomic, strong) NSArray<HyBidVASTIconViewTracking *> *viewTrackers;
+@property (nonatomic, strong) NSArray<HyBidVASTIconClickTracking *> *clickTrackers;
 @property (nonatomic, weak) NSObject <HyBidContentInfoViewDelegate> *delegate;
 @property (nonatomic) HyBidContentInfoClickAction clickAction;
 @property (nonatomic) HyBidContentInfoDisplay display;

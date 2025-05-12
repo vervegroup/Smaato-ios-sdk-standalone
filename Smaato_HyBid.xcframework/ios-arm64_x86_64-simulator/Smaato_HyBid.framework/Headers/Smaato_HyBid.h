@@ -133,7 +133,6 @@ FOUNDATION_EXPORT const unsigned char HyBidVersionString[];
 #import "Smaato_HyBidConfigManager.h"
 #import "Smaato_NSUserDefaults+HyBidCustomMethods.h"
 #import "Smaato_HyBidSKOverlayDelegate.h"
-#import "Smaato_HyBidInternalWebBrowserDelegate.h"
 
 // For swift compatibility, we are making this file public instead of private
 // Avoid using custom module map
@@ -142,6 +141,7 @@ FOUNDATION_EXPORT const unsigned char HyBidVersionString[];
 #import "Smaato_HyBidVASTEventProcessor.h"
 #import "Smaato_HyBidVASTImpression.h"
 #import "Smaato_UIApplication+PNLiteTopViewController.h"
+#import "Smaato_HyBidAdFeedbackViewDelegate.h"
 
 @class HyBidTargetingModel;
 @class HyBidReportingManager;

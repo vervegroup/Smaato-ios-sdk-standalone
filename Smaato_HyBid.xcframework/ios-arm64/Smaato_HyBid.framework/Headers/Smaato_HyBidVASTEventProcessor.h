@@ -28,6 +28,7 @@
 typedef NS_ENUM(NSInteger, HyBidVASTUrlType) {
     HyBidVASTImpressionURL,
     HyBidVASTClickTrackingURL,
+    HyBidVASTIconClickTrackingURL,
     HyBidVASTParserErrorURL,
     HyBidVASTErrorURL,
 };
