@@ -1,0 +1,11 @@
+framework module Smaato_HyBid {
+  umbrella header "Smaato_HyBid.h"
+  export *
+
+  module * { export * }
+}
+
+module Smaato_HyBid.Swift {
+  header "Smaato_HyBid-Swift.h"
+  requires objc
+}
