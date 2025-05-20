@@ -1,1 +1,0 @@
-# Smaato-ios-sdk-standalone
