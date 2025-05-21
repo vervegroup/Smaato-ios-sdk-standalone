@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/SMAAdRequestParams+Interstitial.h</key>
+		<data>
+		I45tuxfT89gl7ZJd7Fe7xD/scUc=
+		</data>
 		<key>Headers/SMAInterstitial.h</key>
 		<data>
 		aA98KMF1F3G67VFkOHxWKldLW90=
@@ -14,7 +18,7 @@
 		</data>
 		<key>Headers/SmaatoSDKInterstitial.h</key>
 		<data>
-		d5dMFdCz4ZOUtMsQYncLFuHu5c4=
+		ZATSTp6gfqrOryHyWShIoSKlWjA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -31,6 +35,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/SMAAdRequestParams+Interstitial.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y/49H2oI/G6sZNda1+9zcsRfQcIGIis1WPwdy6ujBFU=
+			</data>
+		</dict>
 		<key>Headers/SMAInterstitial.h</key>
 		<dict>
 			<key>hash2</key>
@@ -49,7 +60,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SL4Dwez2kKoVQb2YbZC6yIDC0A05vS8ZuF4yVr4nYjQ=
+			jDSdIeG2DBNdP/fTJvhLAlsOxtONfvwGmfui5neHOJw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

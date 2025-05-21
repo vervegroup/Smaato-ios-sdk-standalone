@@ -32145,7 +32145,7 @@
       "kind": "StringLiteral",
       "offset": 1437,
       "length": 8,
-      "value": "\"22.9.0\""
+      "value": "\"22.9.3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",

@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <SmaatoSDKInterstitial/SMAInterstitial.h>
 #import <SmaatoSDKInterstitial/SmaatoSDK+Interstitial.h>
+#import <SmaatoSDKInterstitial/SMAAdRequestParams+Interstitial.h>
 
 //! Project version number for SmaatoSDKInterstitial.
 FOUNDATION_EXPORT double SmaatoSDKInterstitialVersionNumber;
