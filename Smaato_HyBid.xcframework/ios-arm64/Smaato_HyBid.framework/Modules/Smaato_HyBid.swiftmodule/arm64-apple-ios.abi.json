@@ -21280,10 +21280,12 @@
             "mangledName": "$s12Smaato_HyBid0bC20AppImpressionWrapperC12createWithAd_8adFormatACSgSo0bcI0CSg_SStYaFZ",
             "moduleName": "Smaato_HyBid",
             "static": true,
+            "intro_iOS": "17.4",
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC",
+              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -21481,11 +21483,9 @@
         "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAppImpressionWrapper",
         "mangledName": "$s12Smaato_HyBid0bC20AppImpressionWrapperC",
         "moduleName": "Smaato_HyBid",
-        "intro_iOS": "17.4",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "Available"
+          "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "inheritsConvenienceInitializers": true,
@@ -33598,7 +33598,7 @@
       "kind": "StringLiteral",
       "offset": 398,
       "length": 8,
-      "value": "\"22.9.3\""
+      "value": "\"23.0.0\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",

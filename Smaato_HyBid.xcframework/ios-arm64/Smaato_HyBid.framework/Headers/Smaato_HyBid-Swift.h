@@ -606,9 +606,9 @@ SWIFT_CLASS("_TtC12Smaato_HyBid34HyBidAdAttributionSKOverlayManager") SWIFT_AVAI
 @end
 
 
-SWIFT_CLASS("_TtC12Smaato_HyBid25HyBidAppImpressionWrapper") SWIFT_AVAILABILITY(ios,introduced=17.4)
+SWIFT_CLASS("_TtC12Smaato_HyBid25HyBidAppImpressionWrapper")
 @interface HyBidAppImpressionWrapper : NSObject
-+ (void)createWithAd:(HyBidAd * _Nullable)ad adFormat:(NSString * _Nonnull)adFormat completionHandler:(void (^ _Nonnull)(HyBidAppImpressionWrapper * _Nullable))completionHandler;
++ (void)createWithAd:(HyBidAd * _Nullable)ad adFormat:(NSString * _Nonnull)adFormat completionHandler:(void (^ _Nonnull)(HyBidAppImpressionWrapper * _Nullable))completionHandler SWIFT_AVAILABILITY(ios,introduced=17.4);
 - (void)createWithAd:(HyBidAd * _Nullable)ad adFormat:(NSString * _Nonnull)adFormat completion:(void (^ _Nonnull)(HyBidAppImpressionWrapper * _Nullable))completion;
 /// Begin view with the internally held AppImpression
 - (void)beginViewForAdFormat:(NSString * _Nonnull)adFormat completion:(void (^ _Nonnull)(BOOL))completion;

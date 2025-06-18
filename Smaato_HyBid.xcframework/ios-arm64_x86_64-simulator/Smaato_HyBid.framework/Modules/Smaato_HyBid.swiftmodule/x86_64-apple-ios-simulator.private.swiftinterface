@@ -606,8 +606,8 @@ extension HyBidInterruptionHandler {
 extension UIKit.UILabel {
   @_Concurrency.MainActor @preconcurrency public func changeTextFont(text: Swift.String, font: UIKit.UIFont)
 }
-@_inheritsConvenienceInitializers @available(iOS 17.4, *)
-@objc public class HyBidAppImpressionWrapper : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class HyBidAppImpressionWrapper : ObjectiveC.NSObject {
+  @available(iOS 17.4, *)
   @objc public static func createWithAd(_ ad: HyBidAd?, adFormat: Swift.String) async -> HyBidAppImpressionWrapper?
   @objc public func createWithAd(_ ad: HyBidAd?, adFormat: Swift.String, completion: @escaping (HyBidAppImpressionWrapper?) -> Swift.Void)
   @objc public func beginView(forAdFormat adFormat: Swift.String, completion: @escaping @convention(block) (Swift.Bool) -> Swift.Void)
