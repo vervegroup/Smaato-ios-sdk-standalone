@@ -8,4 +8,4 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-SMAATO_SDK_VERSION = 22.9.3
+SMAATO_SDK_VERSION = 23.0.0
