@@ -114,6 +114,9 @@
  */
 @interface SMABannerView: UIView<HyBidAdViewDelegate>
 
+
+@property (nonatomic, strong) HyBidAdView * _Nonnull adView;
+
 /**
  Ad space identifier assigned by Smaato.
  */
