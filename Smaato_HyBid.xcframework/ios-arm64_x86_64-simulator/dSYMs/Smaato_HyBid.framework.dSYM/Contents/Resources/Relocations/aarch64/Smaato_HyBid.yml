@@ -4422,7 +4422,7 @@ relocations:
   - { offset: 0x192AB5, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x270, symBinAddr: 0x9CAC8, symSize: 0x8 }
   - { offset: 0x192AC9, size: 0x8, addend: 0x0, symName: '_$sIeg_SgWOy', symObjAddr: 0x278, symBinAddr: 0x9CAD0, symSize: 0x10 }
   - { offset: 0x192ADD, size: 0x8, addend: 0x0, symName: '_$sIeg_SgWOe', symObjAddr: 0x288, symBinAddr: 0x9CAE0, symSize: 0x10 }
-  - { offset: 0x192DEF, size: 0x8, addend: 0x0, symName: '_$s12Smaato_HyBid0bC9SDKConfigC12sharedConfigACvpZ', symObjAddr: 0x9628, symBinAddr: 0x184DA8, symSize: 0x0 }
+  - { offset: 0x192DEF, size: 0x8, addend: 0x0, symName: '_$s12Smaato_HyBid0bC9SDKConfigC12sharedConfigACvpZ', symObjAddr: 0x9638, symBinAddr: 0x184DA8, symSize: 0x0 }
   - { offset: 0x1931B2, size: 0x8, addend: 0x0, symName: '_$s12Smaato_HyBid0bC9SDKConfigC12sharedConfig_WZ', symObjAddr: 0x0, symBinAddr: 0x9CAF0, symSize: 0x2C }
   - { offset: 0x1931E2, size: 0x8, addend: 0x0, symName: '_$s12Smaato_HyBid0bC9SDKConfigC12sharedConfigACvau', symObjAddr: 0x2C, symBinAddr: 0x9CB1C, symSize: 0x40 }
   - { offset: 0x193207, size: 0x8, addend: 0x0, symName: '_$s12Smaato_HyBid0bC9SDKConfigC4testSbvpACTK', symObjAddr: 0x344, symBinAddr: 0x9CDD4, symSize: 0x44 }

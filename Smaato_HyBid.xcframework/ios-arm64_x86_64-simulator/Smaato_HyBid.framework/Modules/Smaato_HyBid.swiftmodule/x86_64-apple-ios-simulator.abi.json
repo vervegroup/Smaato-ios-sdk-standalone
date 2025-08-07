@@ -31636,7 +31636,7 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidSDKConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1027,
+      "offset": 1039,
       "length": 27,
       "value": "\"https:\/\/dsp.pubnative.net\""
     },

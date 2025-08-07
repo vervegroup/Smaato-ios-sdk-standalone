@@ -62,7 +62,7 @@
 	<true/>
 	<key>NSPrivacyTrackingDomains</key>
 	<array>
-		<string>server.pubnative.net</string>
+		<string>server.nextgen.verve.net</string>
 	</array>
 </dict>
 </plist>
