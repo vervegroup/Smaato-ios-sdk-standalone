@@ -11,6 +11,7 @@
 #import "Smaato_HyBidSKOverlayDelegate.h"
 
 @class HyBidRewardedPresenter;
+@class HyBidAdSessionData;
 
 @protocol HyBidRewardedPresenterDelegate<NSObject>
 
@@ -39,6 +40,7 @@
                                               clickType:(HyBidSKOverlayAutomaticCLickType)clickType;
 - (void)rewardedPresenterDidStorekitAutomaticClick:(HyBidRewardedPresenter *)rewardedPresenter
                                               clickType:(HyBidStorekitAutomaticClickType)clickType;
+- (void)rewardedPresenterDidReplay:(HyBidRewardedPresenter *)rewardedPresenter viewController:(UIViewController *)viewController;
 
 @end
 
@@ -48,6 +50,7 @@
 @property (nonatomic) NSObject <HyBidRewardedPresenterDelegate> *delegate;
 @property (nonatomic) NSObject <HyBidCustomCTAViewDelegate> *customCTADelegate;
 @property (nonatomic) NSObject <HyBidSKOverlayDelegate> *skoverlayDelegate;
+@property (nonatomic, strong) HyBidAdSessionData *adSessionData;
 
 - (void)load;
 

@@ -10,6 +10,7 @@
 #import "Smaato_HyBidSKOverlayDelegate.h"
 
 @class HyBidInterstitialPresenter;
+@class HyBidAdSessionData;
 
 @protocol HyBidInterstitialPresenterDelegate<NSObject>
 
@@ -36,6 +37,7 @@
 - (void)interstitialPresenterDidSKOverlayAutomaticClick:(HyBidInterstitialPresenter *)interstitialPresenter
                                               clickType:(HyBidSKOverlayAutomaticCLickType)clickType;
 - (void)interstitialPresenterDidStorekitAutomaticClick:(HyBidInterstitialPresenter *)interstitialPresenter           clickType:(HyBidStorekitAutomaticClickType)clickType;
+- (void)interstitialPresenterDidReplay:(HyBidInterstitialPresenter *)interstitialPresenter viewController:(UIViewController *)viewController;
 
 @end
 
@@ -45,6 +47,7 @@
 @property (nonatomic) NSObject <HyBidInterstitialPresenterDelegate> *delegate;
 @property (nonatomic, weak) NSObject <HyBidCustomCTAViewDelegate> *customCTADelegate;
 @property (nonatomic, weak) NSObject <HyBidSKOverlayDelegate> *skoverlayDelegate;
+@property (nonatomic, strong) HyBidAdSessionData *adSessionData;
 
 - (void)load;
 

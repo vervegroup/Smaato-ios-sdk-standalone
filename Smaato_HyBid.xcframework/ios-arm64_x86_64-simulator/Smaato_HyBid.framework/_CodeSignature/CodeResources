@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Smaato_HyBid-Swift.h</key>
 		<data>
-		D6Y3rK4jMiPsVPmvASh8QZrkRJ8=
+		rYZAuTdagnPQ7e79mfAqmmJ/PEA=
 		</data>
 		<key>Headers/Smaato_HyBid.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidAd.h</key>
 		<data>
-		zWobRiqVa0X3lCKR7XAoHT91ai8=
+		iisi2eKsgg31UfhkuBxiTptL5co=
 		</data>
 		<key>Headers/Smaato_HyBidAdCache.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidAdPresenter.h</key>
 		<data>
-		aSt9ZTgl7wDU/Eq42XoZtQu4MT4=
+		9Kdn4ZshQn4g05qd956zvPcz408=
 		</data>
 		<key>Headers/Smaato_HyBidAdPresenterFactory.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidAdRequest.h</key>
 		<data>
-		NGigxT4jwAbZSlMrJGW4i3d2yNA=
+		s2g6tuHB+v4FF3lGf88HKkBq8kU=
 		</data>
 		<key>Headers/Smaato_HyBidAdSize.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidHeaderBiddingUtils.h</key>
 		<data>
-		1xTKROTJ6ggbE6x/gg6Cvn6Dte8=
+		xJ86CPCx/Sma4I0UTn3A+HhU6JM=
 		</data>
 		<key>Headers/Smaato_HyBidIntegrationType.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidInterstitialPresenter.h</key>
 		<data>
-		PtPpIQ4Va+mQH8cNcknZMRqSYTE=
+		5H8su53hSFjHejFXGccLTBxGb3Y=
 		</data>
 		<key>Headers/Smaato_HyBidInterstitialPresenterFactory.h</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidNativeAd.h</key>
 		<data>
-		9fOdqb7dYoTI8dAPrGAq4G2KA04=
+		niyGyhWhVlmDkMJeZjybbwjtxBg=
 		</data>
 		<key>Headers/Smaato_HyBidNativeAdLoader.h</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidRequestParameter.h</key>
 		<data>
-		mwhUqU2g3JHN7balxwJ7BCU145A=
+		jIqQqChLcD4fIzO6xf2HkedBD/k=
 		</data>
 		<key>Headers/Smaato_HyBidRewardedAdRequest.h</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidRewardedPresenter.h</key>
 		<data>
-		OpYSLPt8DdDbneoR9vLKyrwXuRQ=
+		zD664LKd+kwWvKbTVM9rg5NFtK8=
 		</data>
 		<key>Headers/Smaato_HyBidRewardedPresenterFactory.h</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidSKAdNetworkParameter.h</key>
 		<data>
-		xICjXNtQKF5OREa7qDG0kbuxaLs=
+		iuG8rwkVifL7FP258tJenSCrlfc=
 		</data>
 		<key>Headers/Smaato_HyBidSKOverlay.h</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>Headers/Smaato_HyBidVASTEventProcessor.h</key>
 		<data>
-		HL1OfsKE6jraxFwwYchvCh0K8X4=
+		4SCxtQkwhjp8GZoAMHY+qugKceM=
 		</data>
 		<key>Headers/Smaato_HyBidVASTIconClickTracking.h</key>
 		<data>
@@ -290,51 +290,51 @@
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		HKOb88TCHpOLJLLv5j5ZFeMRgFo=
+		REEUdGJvPztB1TJh3snR2LFmDi8=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		01G3uQl83pdfFu9p+PAtHcOdiCY=
+		Cn/L7Aak9kSA/EzBAX3CSV72k18=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		V6AF69Vob95y6W+p7gevq7bta+I=
+		UCwRbNaHxnadw8Tu20yYT8YSpho=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pQBdIW4VhMVSSNSEDkGXuouWMeI=
+		MuMqXff3rQ5/Nldrux53BUJKJ5Y=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		qMsmKW19vxQyl1YtUPKHGkAFi8c=
+		oFHZVwUIG23ylnYEhAT8oWuQB0M=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pQBdIW4VhMVSSNSEDkGXuouWMeI=
+		MuMqXff3rQ5/Nldrux53BUJKJ5Y=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xcRaOTT1+4Wr1ZextIksiDX84VU=
+		L4H8l4zFQwYHtqRdeFaGfc9nKys=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		V6AF69Vob95y6W+p7gevq7bta+I=
+		UCwRbNaHxnadw8Tu20yYT8YSpho=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZeB6cVDEkSuIC+nrhrWao7tVRFQ=
+		99FtxDygMmQrFVHrdp+FUrgDU6E=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3v/kbtyoJ82gjwaNous1zzCp01k=
+		baxQbQnmonoPhAWT2NHbJdu0N2M=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZeB6cVDEkSuIC+nrhrWao7tVRFQ=
+		99FtxDygMmQrFVHrdp+FUrgDU6E=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bQ8IMsWvmD1j/EUHdMGi9K0QLUw=
+		5wNC/OBzkPVe2JGHoAgYTMGx/K0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -347,6 +347,10 @@
 		<key>Smaato_HyBidCustomCTAView.nib</key>
 		<data>
 		q/Jw3/r3narxjFCBS61IqkI0kJc=
+		</data>
+		<key>Smaato_HyBidExternalLink.png</key>
+		<data>
+		BWtJoUqNLwo+JIgBj+gkpKaJtVs=
 		</data>
 		<key>Smaato_HyBidMRAIDCloseCardView.nib</key>
 		<data>
@@ -422,7 +426,7 @@
 		</data>
 		<key>Smaato_PNLiteVASTPlayerFullScreenViewController.nib</key>
 		<data>
-		NDnD4PBAX/RmbCYSkxsjEDTWhbI=
+		xks1sN++C972eLw/e6ycVrlk7Bk=
 		</data>
 		<key>Smaato_PNLiteVASTPlayerInterstitialViewController.nib</key>
 		<data>
@@ -780,7 +784,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uQ1LaBxYMbTDEYNoAd0UwjjlkK2D6mU0hTLZeUnT+us=
+			F+98JpqzfVvfIcwms5pmBs17mtNhXUVrFP+YTYCoymg=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBid.h</key>
@@ -794,7 +798,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I1newf4igI4WwQJAW0MjemPHiUun/EO/7KLVL5/Gvs8=
+			9QYHsdqToU9JQoeCIv3QHPQ7woTczlJxH2yVpnn7CJg=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidAdCache.h</key>
@@ -829,7 +833,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9EiAk9G/yH3cQnxQMENZJBAolG3yqZnwcaVhUw/YUhc=
+			nHMgGj40ZXOy8BBJ7AcuM6L1R1jlQUaubOfXh2X3iOs=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidAdPresenterFactory.h</key>
@@ -843,7 +847,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y5KpGa27gZRZrBcV/luCRfe9qwCNgmHm/ch5Ly/itS4=
+			kc1o4P+94v13DqOyLRkOEvTWn9Z06PP1wyk1sk0WQKQ=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidAdSize.h</key>
@@ -948,7 +952,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pajf7UXRziiIlSbTC8hCoViMdxt/FiRdBRkZdr5nWB0=
+			KIZTLJkD4+Qq8dvXbtDxsFNtMhzEyRWR/QyRXkBS0IQ=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidIntegrationType.h</key>
@@ -969,7 +973,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NtoHsEw6YB9gkxx3dfvUa8Xs026bDNAl4hP3f039lVE=
+			ejWbEwNXG78JEK+/8F6MC7czy+x9x2QomdcCMyXQdnE=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidInterstitialPresenterFactory.h</key>
@@ -1018,7 +1022,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K4p0oald/J4cFAizP/xJKY7gGgJ5M3rTrzE1qjSIiOM=
+			UPVoDNSk8OHucsTfhNjyKM3IYQkO32660ov4v5Z0C3U=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidNativeAdLoader.h</key>
@@ -1053,7 +1057,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tp4M7r7+yYwapY57b4Y7i6MVvygB+VVlL/XzemegrGU=
+			a+gIdgySoD5vbw+S02rOOo0wqdHkpvZqkLNu/Ib0Daw=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidRewardedAdRequest.h</key>
@@ -1067,7 +1071,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DCXntyA1TsKaRa3O+82Y25G/F8oZF7Zpvr9bFydvaiU=
+			yY0RA3pAtdNJi0HVGYVWLNc8FVQ4k38PWz7NQGvfE4w=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidRewardedPresenterFactory.h</key>
@@ -1081,7 +1085,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			asXwVZvIboCtuJzQC3TT4Rr1sb03hAfHLwqW08J2GP8=
+			gtbJLLM46dYrf4zYl/YLe4yd7LSTNjflwYmMM8dpdMc=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidSKOverlay.h</key>
@@ -1165,7 +1169,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6dhkncRjfvSgA0xBa9oN3KfifEPeg5JphzuO4T6eO50=
+			93hpOyw0QSJSKIiwDt57k4SQbmXTkWCt10SFnzC/yUI=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBidVASTIconClickTracking.h</key>
@@ -1270,84 +1274,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sId04e/5LasqHoXAMlBZJ8zexa7ShBsaFx7wd9L5ZVI=
+			fxqCB5tJq2W+MeEYPVg017ItxhHqWjYYvTxHJ9ZECk8=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jXzsQobkSm+MvX9EXe/L5FrqIgU9Bj6owrpFtvkSF7o=
+			Ql4QRBubW4yUWOgLg2RhJ7dsQlsuuR7HHPFJKHAurTQ=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xpQKZGR41t0OPl5G4Pp4UAYgKnhMsUOvSTKPuaejrTw=
+			Jpbb/FouBIju1TBAGZQINe3WXrkBqGRDqplM8NqF3bw=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MuqtpVjWpcuGDU59jYuU5RnohqwNZdpPwAwbx4FnwFw=
+			N5JpUG5G1Dv1evoG8G46oj7j8iy+0ktBPQpPenKrsyk=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aYAMjE/K6pvoRDVnBs7AQa+ZEFUkTBQxky6Pu5z9EkM=
+			CoH55OU7DBc59yzRF95Kj72z1baInlDdFQ43qHeyzxE=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MuqtpVjWpcuGDU59jYuU5RnohqwNZdpPwAwbx4FnwFw=
+			N5JpUG5G1Dv1evoG8G46oj7j8iy+0ktBPQpPenKrsyk=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vc7KkdT/e/0eMvV0bkr0vNs43C0sV44vcIGHa3EO5OA=
+			fRxUP4rZQOBTb1A8n4vlh7Y+vlM5sbJunEdJYtlRRqM=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xpQKZGR41t0OPl5G4Pp4UAYgKnhMsUOvSTKPuaejrTw=
+			Jpbb/FouBIju1TBAGZQINe3WXrkBqGRDqplM8NqF3bw=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EzCQjC1sJa/mepebDAiS4Y0glx+yzuW4CKVR+p4qLCs=
+			cfRIzv2KTKw0TDtp9ymVmaxJsiLHjW6Is81owAzDwtU=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v3fACmfvfkvguH30T5zEqXjiViAPslu3bOczeP+JAJc=
+			htQqa4k/jGj5CxqsUfmavTKDYL4SJe5k2HNsxwV25Ik=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EzCQjC1sJa/mepebDAiS4Y0glx+yzuW4CKVR+p4qLCs=
+			cfRIzv2KTKw0TDtp9ymVmaxJsiLHjW6Is81owAzDwtU=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JuuNb+uhHsg+reooDvscS69OWugARn/f/9fuZ1CQNT0=
+			Ug351Sd1afyRyAhrXjq5Fd/jCpjN7JUML1klY1ATFqA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1369,6 +1373,13 @@
 			<key>hash2</key>
 			<data>
 			AIwPg8MBGg6VY8uexgp9PxcG0QNqU6mZPsr2JwkwFZo=
+			</data>
+		</dict>
+		<key>Smaato_HyBidExternalLink.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tgnvj1T7UBGGZXoH4Dz8okaWt2XOvbA3BjjxSnK0pQo=
 			</data>
 		</dict>
 		<key>Smaato_HyBidMRAIDCloseCardView.nib</key>
@@ -1501,7 +1512,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			seiAWHoXwSeJxea6xTAJbACe88/T6bOxixEyylawKps=
+			kTfujwvzQA+Jp2Q78FUVDqdZ1d3xh6WCOVC1mjqmRRE=
 			</data>
 		</dict>
 		<key>Smaato_PNLiteVASTPlayerInterstitialViewController.nib</key>

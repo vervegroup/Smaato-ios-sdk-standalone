@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Smaato_HyBid
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import ATOM
 import AVFoundation
 import AdAttributionKit
 import AdSupport
@@ -105,6 +106,13 @@ extension HyBidMRAIDCloseCardView : HyBidContentInfoViewDelegate {
   @objc public func reportBeacon(for beacon: HyBidReportingBeacon)
   @objc public func clearBeacons()
   @objc public func reportVASTTracker(for tracker: HyBidReportingVASTTracker)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ATOMManager : ObjectiveC.NSObject {
+  @objc public class func fireAdSessionEvent(data: HyBidAdSessionData)
+  @objc public class func createAdSessionData(from request: HyBidAdRequest?, ad: HyBidAd) -> HyBidAdSessionData
+  @objc public class func reportAdSessionDataSharedEvent(adSessionDict: [Swift.String : Any])
   @objc override dynamic public init()
   @objc deinit
 }
@@ -236,7 +244,8 @@ public typealias ReportingKey = Swift.String
     get
     set
   }
-  public var isStoreKitViewBeingPresented: Swift.Bool
+  @objc public var avoidAutoStoreKitPresentationAfterReplay: Swift.Bool
+  @objc public func presentStoreKitView(productParameters: Swift.Dictionary<Swift.String, Any>, adFormat: Swift.String, isAutoStoreKitView: Swift.Bool, ad: HyBidAd, rootViewController: UIKit.UIViewController)
   @objc public func presentStoreKitView(productParameters: Swift.Dictionary<Swift.String, Any>, adFormat: Swift.String, isAutoStoreKitView: Swift.Bool, ad: HyBidAd)
   @objc public func isSKProductViewControllerPresented() -> Swift.Bool
   @objc override dynamic public init()
@@ -373,6 +382,9 @@ extension StoreKit.SKStoreProductViewController {
   @objc public static let HYBID_OMSDK_IDENTIFIER: Swift.String
   @objc public static let SMAATO_OMSDK_IDENTIFIER: Swift.String
   @objc public static let SMAATO_OMSDK_VERSION: Swift.String
+  @objc public static let RENDERING_SUCCESS: Swift.String
+  @objc public static let AD_SESSION_DATA: Swift.String
+  @objc public static let PERCENT_VISIBLE: Swift.String
   @objc public static var mraidExpand: Swift.Bool
   @objc public static var showEndCard: Swift.Bool
   @objc public static var showCustomEndCard: Swift.Bool
@@ -400,7 +412,27 @@ extension StoreKit.SKStoreProductViewController {
   @objc public static var iconSizeReducedInputValue: Swift.Bool
   @objc public static var navigationModeInputValue: Swift.String
   @objc public static var landingPageInputValue: Swift.Bool
+  @objc public static var ctaSizeTypeInputValue: Swift.String
+  @objc public static var ctaLocationTypeInputValue: Swift.String
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class HyBidAAKNetworkRequestModel : ObjectiveC.NSObject {
+  @objc public func getAAKNetworkIDsString() -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class HyBidVASTTracker : ObjectiveC.NSObject {
+  @objc final public let type: Swift.String
+  @objc final public let url: Swift.String
+  @objc final public let beaconName: Swift.String?
+  public static var safeTriggeredTrackers: [HyBidVASTTracker] {
+    get
+  }
+  @objc public init(type: Swift.String, url: Swift.String, beaconName: Swift.String? = nil)
+  @objc public func shouldBeTriggered() -> Swift.Bool
+  @objc public func addToTriggeredTrackersList()
+  @objc public static func cleanTriggeredTrackersList()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class HyBidCustomCTAView : UIKit.UIView {
@@ -548,6 +580,41 @@ extension HyBidInterruptionHandler {
   @objc public func commandTypeWith(text: Swift.String) -> HyBidMRAIDCommand.HyBidMRAIDCommandType
   @objc deinit
 }
+@objc public class HyBidCTAData : ObjectiveC.NSObject {
+  @objc final public let size: HyBidCTASize
+  @objc final public let location: HyBidCTALocation
+  @objc final public let cornerRadius: CoreFoundation.CGFloat
+  @objc public init(size: HyBidCTASize, location: HyBidCTALocation)
+  @objc public static func sizeFromValue(_ value: Any) -> HyBidCTASize
+  @objc public static func locationFromValue(_ value: Any) -> HyBidCTALocation
+  @objc public func sizeValue() -> CoreFoundation.CGSize
+  @objc public func fontSize() -> CoreFoundation.CGFloat
+  @objc public func ctaImageWithFixedSize(image: UIKit.UIImage) -> UIKit.UIImage
+  @objc public func locationBottomConstraint() -> CoreFoundation.CGFloat
+  @objc public func locationLeadingConstraint() -> CoreFoundation.CGFloat
+  @objc public func accessibilityIdentifierString() -> Swift.String
+  @objc deinit
+}
+@objc public enum HyBidCTASize : Swift.Int32 {
+  @objc(HyBidCTASizeDefault) case defaultSize
+  case medium
+  case large
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+@objc public enum HyBidCTALocation : Swift.Int32 {
+  @objc(HyBidCTALocationDefault) case defaultLocation
+  case bottom_down
+  case bottom_up
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
 @objc public class HyBidReportingBeacon : ObjectiveC.NSObject {
   @objc public var properties: [ReportingKey : Any]?
   @objc public var beaconType: Swift.String
@@ -618,6 +685,16 @@ extension UIKit.UILabel {
 @_inheritsConvenienceInitializers @available(iOS 17.4, *)
 @objc public class HyBidAdAttributionSKOverlayManager : ObjectiveC.NSObject {
   @objc public func getAppConfiguration(appIdentifier: Swift.String?, position: StoreKit.SKOverlay.Position, userDismissible: Swift.Bool, ad: HyBidAd, adFormat: Swift.String) async -> StoreKit.SKOverlay.AppConfiguration?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class HyBidAdSessionData : ObjectiveC.NSObject {
+  @objc public var creativeId: Swift.String?
+  @objc public var campaignId: Swift.String?
+  @objc public var bidPrice: Swift.String?
+  @objc public var adFormat: Swift.String?
+  @objc public var renderingStatus: Swift.String?
+  @objc public var viewability: Foundation.NSNumber?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -703,6 +780,7 @@ extension UIKit.UILabel {
   @objc public static let LOAD: Swift.String
   @objc public static let LOAD_FAIL: Swift.String
   @objc public static let SHOW: Swift.String
+  @objc public static let REPLAY: Swift.String
   @objc public static let CACHE: Swift.String
   @objc public static let RESPONSE: Swift.String
   @objc public static let RENDER: Swift.String
@@ -746,6 +824,7 @@ extension UIKit.UILabel {
   @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_BEGIN_VIEW_ERROR: Swift.String
   @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_END_VIEW: Swift.String
   @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_END_VIEW_ERROR: Swift.String
+  @objc public static let AD_SESSION_DATA_SHARED_TO_ATOM: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -810,6 +889,12 @@ extension HyBidLandingBehaviour.HyBidLandingBehaviourType : Swift.RawRepresentab
 extension HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.Equatable {}
 extension HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.Hashable {}
 extension HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.RawRepresentable {}
+extension HyBidCTASize : Swift.Equatable {}
+extension HyBidCTASize : Swift.Hashable {}
+extension HyBidCTASize : Swift.RawRepresentable {}
+extension HyBidCTALocation : Swift.Equatable {}
+extension HyBidCTALocation : Swift.Hashable {}
+extension HyBidCTALocation : Swift.RawRepresentable {}
 extension HyBidGDPR.HyBidGDPRKeys : Swift.Equatable {}
 extension HyBidGDPR.HyBidGDPRKeys : Swift.Hashable {}
 extension HyBidGDPR.HyBidGDPRKeys : Swift.RawRepresentable {}
