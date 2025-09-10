@@ -7461,6 +7461,70 @@
           },
           {
             "kind": "Function",
+            "name": "isAutoStorekitEnabledForAd",
+            "printedName": "isAutoStorekitEnabledForAd(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidAd",
+                "printedName": "Smaato_HyBid.HyBidAd",
+                "usr": "c:objc(cs)HyBidAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Smaato_HyBid@objc(cs)HyBidSKAdNetworkViewController(cm)isAutoStorekitEnabledForAd:",
+            "mangledName": "$s12Smaato_HyBid0bC25SKAdNetworkViewControllerC26isAutoStorekitEnabledForAd2adSbSo0bcM0C_tFZ",
+            "moduleName": "Smaato_HyBid",
+            "static": true,
+            "objc_name": "isAutoStorekitEnabledForAd:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getStorekitAutoCloseDelay",
+            "printedName": "getStorekitAutoCloseDelay(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidAd",
+                "printedName": "Smaato_HyBid.HyBidAd",
+                "usr": "c:objc(cs)HyBidAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Smaato_HyBid@objc(cs)HyBidSKAdNetworkViewController(cm)getStorekitAutoCloseDelayWithAd:",
+            "mangledName": "$s12Smaato_HyBid0bC25SKAdNetworkViewControllerC25getStorekitAutoCloseDelay2adSiSo0bC2AdC_tFZ",
+            "moduleName": "Smaato_HyBid",
+            "static": true,
+            "objc_name": "getStorekitAutoCloseDelayWithAd:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "productViewControllerDidFinish",
             "printedName": "productViewControllerDidFinish(_:)",
             "children": [
@@ -8837,6 +8901,112 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET",
                 "mangledName": "$s12Smaato_HyBid0bC10SkipOffsetC39DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSETSivgZ",
+                "moduleName": "Smaato_HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DEFAULT_PC_END_CARD_CLOSE_DELAY",
+            "printedName": "DEFAULT_PC_END_CARD_CLOSE_DELAY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSkipOffset(cpy)DEFAULT_PC_END_CARD_CLOSE_DELAY",
+            "mangledName": "$s12Smaato_HyBid0bC10SkipOffsetC31DEFAULT_PC_END_CARD_CLOSE_DELAYSivpZ",
+            "moduleName": "Smaato_HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_PC_END_CARD_CLOSE_DELAY",
+                "mangledName": "$s12Smaato_HyBid0bC10SkipOffsetC31DEFAULT_PC_END_CARD_CLOSE_DELAYSivgZ",
+                "moduleName": "Smaato_HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DEFAULT_BC_END_CARD_CLOSE_DELAY",
+            "printedName": "DEFAULT_BC_END_CARD_CLOSE_DELAY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSkipOffset(cpy)DEFAULT_BC_END_CARD_CLOSE_DELAY",
+            "mangledName": "$s12Smaato_HyBid0bC10SkipOffsetC31DEFAULT_BC_END_CARD_CLOSE_DELAYSivpZ",
+            "moduleName": "Smaato_HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_BC_END_CARD_CLOSE_DELAY",
+                "mangledName": "$s12Smaato_HyBid0bC10SkipOffsetC31DEFAULT_BC_END_CARD_CLOSE_DELAYSivgZ",
                 "moduleName": "Smaato_HyBid",
                 "static": true,
                 "implicit": true,
@@ -14137,109 +14307,6 @@
           },
           {
             "kind": "Var",
-            "name": "endCardCloseOffset",
-            "printedName": "endCardCloseOffset",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "HyBidSkipOffset",
-                "printedName": "Smaato_HyBid.HyBidSkipOffset",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSkipOffset"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cpy)endCardCloseOffset",
-            "mangledName": "$s12Smaato_HyBid0bC9ConstantsC18endCardCloseOffsetAA0bc4SkipH0CvpZ",
-            "moduleName": "Smaato_HyBid",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HyBidSkipOffset",
-                    "printedName": "Smaato_HyBid.HyBidSkipOffset",
-                    "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSkipOffset"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cm)endCardCloseOffset",
-                "mangledName": "$s12Smaato_HyBid0bC9ConstantsC18endCardCloseOffsetAA0bc4SkipH0CvgZ",
-                "moduleName": "Smaato_HyBid",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HyBidSkipOffset",
-                    "printedName": "Smaato_HyBid.HyBidSkipOffset",
-                    "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSkipOffset"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cm)setEndCardCloseOffset:",
-                "mangledName": "$s12Smaato_HyBid0bC9ConstantsC18endCardCloseOffsetAA0bc4SkipH0CvsZ",
-                "moduleName": "Smaato_HyBid",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12Smaato_HyBid0bC9ConstantsC18endCardCloseOffsetAA0bc4SkipH0CvMZ",
-                "mangledName": "$s12Smaato_HyBid0bC9ConstantsC18endCardCloseOffsetAA0bc4SkipH0CvMZ",
-                "moduleName": "Smaato_HyBid",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "endCardCloseMaxOffset",
             "printedName": "endCardCloseMaxOffset",
             "children": [
@@ -15679,6 +15746,45 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "endCardCloseOffset",
+            "printedName": "endCardCloseOffset(adExperience:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidSkipOffset",
+                "printedName": "Smaato_HyBid.HyBidSkipOffset",
+                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSkipOffset"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cm)endCardCloseOffsetWithAdExperience:",
+            "mangledName": "$s12Smaato_HyBid0bC9ConstantsC18endCardCloseOffset12adExperienceAA0bc4SkipH0CSSSg_tFZ",
+            "moduleName": "Smaato_HyBid",
+            "static": true,
+            "objc_name": "endCardCloseOffsetWithAdExperience:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -17910,6 +18016,311 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "HyBidAdContext",
+        "printedName": "HyBidAdContext",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "vastPlayer",
+            "printedName": "vastPlayer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Smaato_HyBid.HyBidAdContext.Type) -> Smaato_HyBid.HyBidAdContext",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidAdContext",
+                    "printedName": "Smaato_HyBid.HyBidAdContext",
+                    "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Smaato_HyBid.HyBidAdContext.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HyBidAdContext",
+                        "printedName": "Smaato_HyBid.HyBidAdContext",
+                        "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext@HyBidAdContextVastPlayer",
+            "mangledName": "$s12Smaato_HyBid0bC9AdContextO10vastPlayeryA2CmF",
+            "moduleName": "Smaato_HyBid",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "endcard",
+            "printedName": "endcard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Smaato_HyBid.HyBidAdContext.Type) -> Smaato_HyBid.HyBidAdContext",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidAdContext",
+                    "printedName": "Smaato_HyBid.HyBidAdContext",
+                    "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Smaato_HyBid.HyBidAdContext.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HyBidAdContext",
+                        "printedName": "Smaato_HyBid.HyBidAdContext",
+                        "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext@HyBidAdContextEndcard",
+            "mangledName": "$s12Smaato_HyBid0bC9AdContextO7endcardyA2CmF",
+            "moduleName": "Smaato_HyBid",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "mraidView",
+            "printedName": "mraidView",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Smaato_HyBid.HyBidAdContext.Type) -> Smaato_HyBid.HyBidAdContext",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidAdContext",
+                    "printedName": "Smaato_HyBid.HyBidAdContext",
+                    "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Smaato_HyBid.HyBidAdContext.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HyBidAdContext",
+                        "printedName": "Smaato_HyBid.HyBidAdContext",
+                        "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext@HyBidAdContextMraidView",
+            "mangledName": "$s12Smaato_HyBid0bC9AdContextO9mraidViewyA2CmF",
+            "moduleName": "Smaato_HyBid",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "nativeAd",
+            "printedName": "nativeAd",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Smaato_HyBid.HyBidAdContext.Type) -> Smaato_HyBid.HyBidAdContext",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidAdContext",
+                    "printedName": "Smaato_HyBid.HyBidAdContext",
+                    "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Smaato_HyBid.HyBidAdContext.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HyBidAdContext",
+                        "printedName": "Smaato_HyBid.HyBidAdContext",
+                        "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext@HyBidAdContextNativeAd",
+            "mangledName": "$s12Smaato_HyBid0bC9AdContextO06nativeD0yA2CmF",
+            "moduleName": "Smaato_HyBid",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Smaato_HyBid.HyBidAdContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidAdContext",
+                    "printedName": "Smaato_HyBid.HyBidAdContext",
+                    "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12Smaato_HyBid0bC9AdContextO8rawValueACSgSi_tcfc",
+            "mangledName": "$s12Smaato_HyBid0bC9AdContextO8rawValueACSgSi_tcfc",
+            "moduleName": "Smaato_HyBid",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12Smaato_HyBid0bC9AdContextO8rawValueSivp",
+            "mangledName": "$s12Smaato_HyBid0bC9AdContextO8rawValueSivp",
+            "moduleName": "Smaato_HyBid",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12Smaato_HyBid0bC9AdContextO8rawValueSivg",
+                "mangledName": "$s12Smaato_HyBid0bC9AdContextO8rawValueSivg",
+                "moduleName": "Smaato_HyBid",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext",
+        "mangledName": "$s12Smaato_HyBid0bC9AdContextO",
+        "moduleName": "Smaato_HyBid",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "HyBidInterruptionHandler",
         "printedName": "HyBidInterruptionHandler",
         "children": [
@@ -17968,116 +18379,6 @@
           },
           {
             "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any Smaato_HyBid.HyBidInterruptionDelegate)?"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(py)delegate",
-            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC8delegateAA0bcD8Delegate_pSgvp",
-            "moduleName": "Smaato_HyBid",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "ReferenceOwnership",
-              "AccessControl",
-              "ObjC"
-            ],
-            "ownership": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any Smaato_HyBid.HyBidInterruptionDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HyBidInterruptionDelegate",
-                        "printedName": "any Smaato_HyBid.HyBidInterruptionDelegate",
-                        "usr": "c:@M@Smaato_HyBid@objc(pl)HyBidInterruptionDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)delegate",
-                "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC8delegateAA0bcD8Delegate_pSgvg",
-                "moduleName": "Smaato_HyBid",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any Smaato_HyBid.HyBidInterruptionDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HyBidInterruptionDelegate",
-                        "printedName": "any Smaato_HyBid.HyBidInterruptionDelegate",
-                        "usr": "c:@M@Smaato_HyBid@objc(pl)HyBidInterruptionDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)setDelegate:",
-                "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC8delegateAA0bcD8Delegate_pSgvs",
-                "moduleName": "Smaato_HyBid",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12Smaato_HyBid0bC19InterruptionHandlerC8delegateAA0bcD8Delegate_pSgvM",
-                "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC8delegateAA0bcD8Delegate_pSgvM",
-                "moduleName": "Smaato_HyBid",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "overlappingElementDelegate",
             "printedName": "overlappingElementDelegate",
             "children": [
@@ -18096,7 +18397,8 @@
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "ownership": 1,
             "hasStorage": true,
@@ -18324,6 +18626,96 @@
           },
           {
             "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidInterruptionDelegate",
+                "printedName": "any Smaato_HyBid.HyBidInterruptionDelegate",
+                "usr": "c:@M@Smaato_HyBid@objc(pl)HyBidInterruptionDelegate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidAdContext",
+                "printedName": "Smaato_HyBid.HyBidAdContext",
+                "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)setDelegate:for:",
+            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC11setDelegate_3foryAA0bcdG0_p_AA0bC9AdContextOtF",
+            "moduleName": "Smaato_HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "activateContext",
+            "printedName": "activateContext(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidAdContext",
+                "printedName": "Smaato_HyBid.HyBidAdContext",
+                "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)activateContext:",
+            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC15activateContextyyAA0bc2AdG0OF",
+            "moduleName": "Smaato_HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deactivateContext",
+            "printedName": "deactivateContext(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidAdContext",
+                "printedName": "Smaato_HyBid.HyBidAdContext",
+                "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)deactivateContext:",
+            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC17deactivateContextyyAA0bc2AdG0OF",
+            "moduleName": "Smaato_HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "hasOnlyAppLifeCycleInterruption",
             "printedName": "hasOnlyAppLifeCycleInterruption()",
             "children": [
@@ -18346,8 +18738,8 @@
           },
           {
             "kind": "Function",
-            "name": "vastEndCardWillShow",
-            "printedName": "vastEndCardWillShow()",
+            "name": "endCardWillShow",
+            "printedName": "endCardWillShow()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18356,8 +18748,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)vastEndCardWillShow",
-            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC19vastEndCardWillShowyyF",
+            "usr": "c:@CM@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)endCardWillShow",
+            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC15endCardWillShowyyF",
             "moduleName": "Smaato_HyBid",
             "declAttributes": [
               "Dynamic",
@@ -18369,8 +18761,8 @@
           },
           {
             "kind": "Function",
-            "name": "vastCustomEndCardWillShow",
-            "printedName": "vastCustomEndCardWillShow()",
+            "name": "customEndCardWillShow",
+            "printedName": "customEndCardWillShow()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18379,8 +18771,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)vastCustomEndCardWillShow",
-            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC25vastCustomEndCardWillShowyyF",
+            "usr": "c:@CM@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)customEndCardWillShow",
+            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC21customEndCardWillShowyyF",
             "moduleName": "Smaato_HyBid",
             "declAttributes": [
               "Dynamic",
@@ -18689,8 +19081,7 @@
         "moduleName": "Smaato_HyBid",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "inheritsConvenienceInitializers": true,
@@ -18820,8 +19211,8 @@
           },
           {
             "kind": "Function",
-            "name": "vastEndCardWillShow",
-            "printedName": "vastEndCardWillShow()",
+            "name": "endCardWillShow",
+            "printedName": "endCardWillShow()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18830,8 +19221,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(pl)HyBidInterruptionDelegate(im)vastEndCardWillShow",
-            "mangledName": "$s12Smaato_HyBid0bC20InterruptionDelegateP19vastEndCardWillShowyyF",
+            "usr": "c:@M@Smaato_HyBid@objc(pl)HyBidInterruptionDelegate(im)endCardWillShow",
+            "mangledName": "$s12Smaato_HyBid0bC20InterruptionDelegateP15endCardWillShowyyF",
             "moduleName": "Smaato_HyBid",
             "genericSig": "<τ_0_0 where τ_0_0 : Smaato_HyBid.HyBidInterruptionDelegate>",
             "sugared_genericSig": "<Self where Self : Smaato_HyBid.HyBidInterruptionDelegate>",
@@ -18845,8 +19236,8 @@
           },
           {
             "kind": "Function",
-            "name": "vastCustomEndCardWillShow",
-            "printedName": "vastCustomEndCardWillShow()",
+            "name": "customEndCardWillShow",
+            "printedName": "customEndCardWillShow()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -18855,8 +19246,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(pl)HyBidInterruptionDelegate(im)vastCustomEndCardWillShow",
-            "mangledName": "$s12Smaato_HyBid0bC20InterruptionDelegateP25vastCustomEndCardWillShowyyF",
+            "usr": "c:@M@Smaato_HyBid@objc(pl)HyBidInterruptionDelegate(im)customEndCardWillShow",
+            "mangledName": "$s12Smaato_HyBid0bC20InterruptionDelegateP21customEndCardWillShowyyF",
             "moduleName": "Smaato_HyBid",
             "genericSig": "<τ_0_0 where τ_0_0 : Smaato_HyBid.HyBidInterruptionDelegate>",
             "sugared_genericSig": "<Self where Self : Smaato_HyBid.HyBidInterruptionDelegate>",
@@ -36496,43 +36887,64 @@
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 466,
+      "length": 2,
+      "value": "35"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 512,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 557,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 698,
+      "offset": 835,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 601,
+      "offset": 738,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 769,
+      "offset": 906,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 945,
+      "offset": 1082,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4842,
+      "offset": 4979,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10942,
+      "offset": 12203,
       "length": 1,
       "value": "0"
     },
@@ -36671,29 +37083,43 @@
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1355,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1419,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "BooleanLiteral",
-      "offset": 1366,
+      "offset": 1499,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1411,
+      "offset": 1544,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1656,
+      "offset": 1789,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1846,
+      "offset": 1979,
       "length": 1,
       "value": "0"
     },
@@ -36966,49 +37392,42 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2504,
+      "offset": 2511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2665,
+      "offset": 2675,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2829,
+      "offset": 2825,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2979,
+      "offset": 2890,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3044,
+      "offset": 3234,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3388,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3524,
+      "offset": 3370,
       "length": 5,
       "value": "false"
     },
@@ -37291,6 +37710,34 @@
       "offset": 1818,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Interruption\/HyBidInterruptionHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 174,
+      "length": 7,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Interruption\/HyBidInterruptionHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 191,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Interruption\/HyBidInterruptionHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 210,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Interruption\/HyBidInterruptionHandler.swift",
+      "kind": "Array",
+      "offset": 975,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/VASTBeacons\/HyBidAuxiliaryAdEventType.swift",

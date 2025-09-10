@@ -251,6 +251,10 @@ public typealias ReportingKey = Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
+extension HyBidSKAdNetworkViewController {
+  @objc(isAutoStorekitEnabledForAd:) public static func isAutoStorekitEnabledForAd(ad: HyBidAd) -> Swift.Bool
+  @objc public static func getStorekitAutoCloseDelay(ad: HyBidAd) -> Swift.Int
+}
 extension HyBidSKAdNetworkViewController : StoreKit.SKStoreProductViewControllerDelegate {
   @objc dynamic public func productViewControllerDidFinish(_ viewController: StoreKit.SKStoreProductViewController)
 }
@@ -299,6 +303,8 @@ extension StoreKit.SKStoreProductViewController {
   @objc public static let DEFAULT_PC_VIDEO_MAX_SKIP_OFFSET_NON_COMPANION: Swift.Int
   @objc public static let DEFAULT_PC_INTERSTITIAL_SKIP_OFFSET: Swift.Int
   @objc public static let DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_PC_END_CARD_CLOSE_DELAY: Swift.Int
+  @objc public static let DEFAULT_BC_END_CARD_CLOSE_DELAY: Swift.Int
   @objc public var offset: Foundation.NSNumber?
   @objc public var isCustom: Swift.Bool
   @objc public var style: Foundation.NSNumber
@@ -399,7 +405,6 @@ extension StoreKit.SKStoreProductViewController {
   @objc public static var videoSkipOffset: HyBidSkipOffset
   @objc public static var pcVideoSkipOffset: HyBidSkipOffset
   @objc public static var interstitialActionBehaviour: HyBidInterstitialActionBehaviour
-  @objc public static var endCardCloseOffset: HyBidSkipOffset
   @objc public static var endCardCloseMaxOffset: HyBidSkipOffset
   @objc public static var nativeCloseButtonOffset: HyBidSkipOffset
   @objc public static var audioStatus: HyBidAudioStatus
@@ -414,6 +419,7 @@ extension StoreKit.SKStoreProductViewController {
   @objc public static var landingPageInputValue: Swift.Bool
   @objc public static var ctaSizeTypeInputValue: Swift.String
   @objc public static var ctaLocationTypeInputValue: Swift.String
+  @objc public static func endCardCloseOffset(adExperience: Swift.String?) -> HyBidSkipOffset
   @objc override dynamic public init()
   @objc deinit
 }
@@ -483,18 +489,31 @@ extension HyBidCustomCTAView : HyBidInterruptionDelegate {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public enum HyBidAdContext : Swift.Int {
+  case vastPlayer
+  case endcard
+  case mraidView
+  case nativeAd
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc public class HyBidInterruptionHandler : ObjectiveC.NSObject {
   @objc public static let shared: HyBidInterruptionHandler
-  @objc weak public var delegate: (any HyBidInterruptionDelegate)?
   @objc weak public var overlappingElementDelegate: (any HyBidInterruptionDelegate)?
   @objc weak public var feedbackViewDelegate: (any HyBidAdFeedbackViewDelegate)?
   @objc override dynamic public init()
-  @objc public func hasOnlyAppLifeCycleInterruption() -> Swift.Bool
   @objc deinit
+  @objc public func setDelegate(_ delegate: any HyBidInterruptionDelegate, for context: HyBidAdContext)
+  @objc public func activateContext(_ context: HyBidAdContext)
+  @objc public func deactivateContext(_ context: HyBidAdContext)
+  @objc public func hasOnlyAppLifeCycleInterruption() -> Swift.Bool
 }
 extension HyBidInterruptionHandler {
-  @objc dynamic public func vastEndCardWillShow()
-  @objc dynamic public func vastCustomEndCardWillShow()
+  @objc dynamic public func endCardWillShow()
+  @objc dynamic public func customEndCardWillShow()
 }
 extension HyBidInterruptionHandler {
   public func productViewControllerIsReadyToShow()
@@ -517,8 +536,8 @@ extension HyBidInterruptionHandler {
 @objc public protocol HyBidInterruptionDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func adHasNoFocus()
   @objc optional func adHasFocus()
-  @objc optional func vastEndCardWillShow()
-  @objc optional func vastCustomEndCardWillShow()
+  @objc optional func endCardWillShow()
+  @objc optional func customEndCardWillShow()
   @objc optional func willEnterForeground()
   @objc optional func feedbackViewWillShow()
   @objc optional func feedbackViewDidDismiss()
@@ -886,6 +905,9 @@ extension HyBidOnTopOfType : Swift.RawRepresentable {}
 extension HyBidLandingBehaviour.HyBidLandingBehaviourType : Swift.Equatable {}
 extension HyBidLandingBehaviour.HyBidLandingBehaviourType : Swift.Hashable {}
 extension HyBidLandingBehaviour.HyBidLandingBehaviourType : Swift.RawRepresentable {}
+extension HyBidAdContext : Swift.Equatable {}
+extension HyBidAdContext : Swift.Hashable {}
+extension HyBidAdContext : Swift.RawRepresentable {}
 extension HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.Equatable {}
 extension HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.Hashable {}
 extension HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.RawRepresentable {}

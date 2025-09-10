@@ -251,6 +251,10 @@ public typealias ReportingKey = Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
+extension Smaato_HyBid.HyBidSKAdNetworkViewController {
+  @objc(isAutoStorekitEnabledForAd:) public static func isAutoStorekitEnabledForAd(ad: Smaato_HyBid.HyBidAd) -> Swift.Bool
+  @objc public static func getStorekitAutoCloseDelay(ad: Smaato_HyBid.HyBidAd) -> Swift.Int
+}
 extension Smaato_HyBid.HyBidSKAdNetworkViewController : StoreKit.SKStoreProductViewControllerDelegate {
   @objc dynamic public func productViewControllerDidFinish(_ viewController: StoreKit.SKStoreProductViewController)
 }
@@ -299,6 +303,8 @@ extension StoreKit.SKStoreProductViewController {
   @objc public static let DEFAULT_PC_VIDEO_MAX_SKIP_OFFSET_NON_COMPANION: Swift.Int
   @objc public static let DEFAULT_PC_INTERSTITIAL_SKIP_OFFSET: Swift.Int
   @objc public static let DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_PC_END_CARD_CLOSE_DELAY: Swift.Int
+  @objc public static let DEFAULT_BC_END_CARD_CLOSE_DELAY: Swift.Int
   @objc public var offset: Foundation.NSNumber?
   @objc public var isCustom: Swift.Bool
   @objc public var style: Foundation.NSNumber
@@ -399,7 +405,6 @@ extension StoreKit.SKStoreProductViewController {
   @objc public static var videoSkipOffset: Smaato_HyBid.HyBidSkipOffset
   @objc public static var pcVideoSkipOffset: Smaato_HyBid.HyBidSkipOffset
   @objc public static var interstitialActionBehaviour: Smaato_HyBid.HyBidInterstitialActionBehaviour
-  @objc public static var endCardCloseOffset: Smaato_HyBid.HyBidSkipOffset
   @objc public static var endCardCloseMaxOffset: Smaato_HyBid.HyBidSkipOffset
   @objc public static var nativeCloseButtonOffset: Smaato_HyBid.HyBidSkipOffset
   @objc public static var audioStatus: Smaato_HyBid.HyBidAudioStatus
@@ -414,6 +419,7 @@ extension StoreKit.SKStoreProductViewController {
   @objc public static var landingPageInputValue: Swift.Bool
   @objc public static var ctaSizeTypeInputValue: Swift.String
   @objc public static var ctaLocationTypeInputValue: Swift.String
+  @objc public static func endCardCloseOffset(adExperience: Swift.String?) -> Smaato_HyBid.HyBidSkipOffset
   @objc override dynamic public init()
   @objc deinit
 }
@@ -483,18 +489,31 @@ extension Smaato_HyBid.HyBidCustomCTAView : Smaato_HyBid.HyBidInterruptionDelega
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public enum HyBidAdContext : Swift.Int {
+  case vastPlayer
+  case endcard
+  case mraidView
+  case nativeAd
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc public class HyBidInterruptionHandler : ObjectiveC.NSObject {
   @objc public static let shared: Smaato_HyBid.HyBidInterruptionHandler
-  @objc weak public var delegate: (any Smaato_HyBid.HyBidInterruptionDelegate)?
   @objc weak public var overlappingElementDelegate: (any Smaato_HyBid.HyBidInterruptionDelegate)?
   @objc weak public var feedbackViewDelegate: (any Smaato_HyBid.HyBidAdFeedbackViewDelegate)?
   @objc override dynamic public init()
-  @objc public func hasOnlyAppLifeCycleInterruption() -> Swift.Bool
   @objc deinit
+  @objc public func setDelegate(_ delegate: any Smaato_HyBid.HyBidInterruptionDelegate, for context: Smaato_HyBid.HyBidAdContext)
+  @objc public func activateContext(_ context: Smaato_HyBid.HyBidAdContext)
+  @objc public func deactivateContext(_ context: Smaato_HyBid.HyBidAdContext)
+  @objc public func hasOnlyAppLifeCycleInterruption() -> Swift.Bool
 }
 extension Smaato_HyBid.HyBidInterruptionHandler {
-  @objc dynamic public func vastEndCardWillShow()
-  @objc dynamic public func vastCustomEndCardWillShow()
+  @objc dynamic public func endCardWillShow()
+  @objc dynamic public func customEndCardWillShow()
 }
 extension Smaato_HyBid.HyBidInterruptionHandler {
   public func productViewControllerIsReadyToShow()
@@ -517,8 +536,8 @@ extension Smaato_HyBid.HyBidInterruptionHandler {
 @objc public protocol HyBidInterruptionDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func adHasNoFocus()
   @objc optional func adHasFocus()
-  @objc optional func vastEndCardWillShow()
-  @objc optional func vastCustomEndCardWillShow()
+  @objc optional func endCardWillShow()
+  @objc optional func customEndCardWillShow()
   @objc optional func willEnterForeground()
   @objc optional func feedbackViewWillShow()
   @objc optional func feedbackViewDidDismiss()
@@ -886,6 +905,9 @@ extension Smaato_HyBid.HyBidOnTopOfType : Swift.RawRepresentable {}
 extension Smaato_HyBid.HyBidLandingBehaviour.HyBidLandingBehaviourType : Swift.Equatable {}
 extension Smaato_HyBid.HyBidLandingBehaviour.HyBidLandingBehaviourType : Swift.Hashable {}
 extension Smaato_HyBid.HyBidLandingBehaviour.HyBidLandingBehaviourType : Swift.RawRepresentable {}
+extension Smaato_HyBid.HyBidAdContext : Swift.Equatable {}
+extension Smaato_HyBid.HyBidAdContext : Swift.Hashable {}
+extension Smaato_HyBid.HyBidAdContext : Swift.RawRepresentable {}
 extension Smaato_HyBid.HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.Equatable {}
 extension Smaato_HyBid.HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.Hashable {}
 extension Smaato_HyBid.HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.RawRepresentable {}

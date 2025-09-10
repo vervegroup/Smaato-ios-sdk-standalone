@@ -841,11 +841,14 @@ public protocol AtomGesturesDelegate : AnyObject {
   public static var signalsSavedInLocalDatabaseCallback: ((Foundation.Date) -> Swift.Void)?
   @objc public static func start(withApiKey apiKey: Swift.String, isTest: Swift.Bool) throws
   public static func getCurrentNetworkConnection() -> ATOM.ATOMReachability.Connection
+  public static func refreshConsent() throws
   @objc public static func start(withApiKey apiKey: Swift.String, isTest: Swift.Bool, withCallback callback: ((Swift.Bool) -> ())?) throws
   @objc public static func setAtomLoggerLevels(_ logLevels: [Swift.String])
   @objc public static func start(isTest: Swift.Bool) throws
   @objc public static func start(isTest: Swift.Bool, withCallback callback: ((Swift.Bool) -> ())?) throws
   @objc public static func stop(withCallback callback: ((Swift.Bool) -> ())?)
+  @available(*, deprecated, message: "Use cohorts(completion:) instead")
+  @objc(getCohorts) public static func cohorts() -> [ATOM.ATOMCohort]
   @objc(getCohortsWithCompletion:) public static func cohorts(completion: @escaping ([ATOM.ATOMCohort]) -> Swift.Void)
   public static func sendStartupData(completion: @escaping (Swift.Bool) -> Swift.Void)
   public static func updateCalculatedCohorts(onStartup isStartup: Swift.Bool = false, eventWasFired eventFired: Swift.Bool = false)
@@ -853,6 +856,7 @@ public protocol AtomGesturesDelegate : AnyObject {
   @objc public static func vgParameterBase64String() -> Swift.String?
   @objc(impressionFiredWithAdParameters:) public static func impressionFired(withAdParameters parameters: ATOM.ATOMAdParameters)
   @objc public static func fire(eventWithName name: Swift.String, eventWithValue value: Any? = nil, withDelegate delegate: (any ATOM.ATOMEventMatchDelegate)? = nil)
+  @objc public static func fire(eventWithName name: Swift.String, eventWithValue value: Any? = nil, withDelegate delegate: (any ATOM.ATOMEventMatchDelegate)? = nil, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
   @objc deinit
 }
 extension ATOM.Atom {
@@ -864,7 +868,7 @@ extension ATOM.Atom {
 }
 extension ATOM.Atom {
   public static func deleteAllGestures() throws
-  public static func deletePrevious1000GesturesIfNeeded() throws
+  public static func deletePrevious1000GesturesIfNeeded(completion: @escaping ((any Swift.Error)?) -> Swift.Void)
   public static func deleteAllSwipeGestures() throws
   public static func deleteAllPinchGestures() throws
   public static func deleteAllSwipeTicks() throws
@@ -1835,7 +1839,7 @@ extension ATOM.AtomGestures {
 }
 extension ATOM.AtomGestures {
   public static func deleteAllGestures() throws
-  public static func deletePrevious1000Gestures() throws
+  public static func deletePrevious1000Gestures(completion: @escaping ((any Swift.Error)?) -> Swift.Void)
   public static func deleteAllSwipeGestures() throws
   public static func deleteAllPinchGestures() throws
   public static func deleteAllSwipeTicks() throws

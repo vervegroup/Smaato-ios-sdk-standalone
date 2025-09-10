@@ -627,6 +627,13 @@ SWIFT_CLASS("_TtC12Smaato_HyBid34HyBidAdAttributionSKOverlayManager") SWIFT_AVAI
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+typedef SWIFT_ENUM(NSInteger, HyBidAdContext, open) {
+  HyBidAdContextVastPlayer = 0,
+  HyBidAdContextEndcard = 1,
+  HyBidAdContextMraidView = 2,
+  HyBidAdContextNativeAd = 3,
+};
+
 @class NSNumber;
 
 SWIFT_CLASS("_TtC12Smaato_HyBid18HyBidAdSessionData")
@@ -769,9 +776,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) HyBidSkipOffset * _Non
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) HyBidInterstitialActionBehaviour interstitialActionBehaviour;)
 + (HyBidInterstitialActionBehaviour)interstitialActionBehaviour SWIFT_WARN_UNUSED_RESULT;
 + (void)setInterstitialActionBehaviour:(HyBidInterstitialActionBehaviour)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) HyBidSkipOffset * _Nonnull endCardCloseOffset;)
-+ (HyBidSkipOffset * _Nonnull)endCardCloseOffset SWIFT_WARN_UNUSED_RESULT;
-+ (void)setEndCardCloseOffset:(HyBidSkipOffset * _Nonnull)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) HyBidSkipOffset * _Nonnull endCardCloseMaxOffset;)
 + (HyBidSkipOffset * _Nonnull)endCardCloseMaxOffset SWIFT_WARN_UNUSED_RESULT;
 + (void)setEndCardCloseMaxOffset:(HyBidSkipOffset * _Nonnull)value;
@@ -814,6 +818,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull ctaS
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull ctaLocationTypeInputValue;)
 + (NSString * _Nonnull)ctaLocationTypeInputValue SWIFT_WARN_UNUSED_RESULT;
 + (void)setCtaLocationTypeInputValue:(NSString * _Nonnull)value;
++ (HyBidSkipOffset * _Nonnull)endCardCloseOffsetWithAdExperience:(NSString * _Nullable)adExperience SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -849,8 +854,8 @@ SWIFT_PROTOCOL("_TtP12Smaato_HyBid25HyBidInterruptionDelegate_")
 @optional
 - (void)adHasNoFocus;
 - (void)adHasFocus;
-- (void)vastEndCardWillShow;
-- (void)vastCustomEndCardWillShow;
+- (void)endCardWillShow;
+- (void)customEndCardWillShow;
 - (void)willEnterForeground;
 - (void)feedbackViewWillShow;
 - (void)feedbackViewDidDismiss;
@@ -945,17 +950,22 @@ SWIFT_CLASS("_TtC12Smaato_HyBid24HyBidInterruptionHandler")
 @interface HyBidInterruptionHandler : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidInterruptionHandler * _Nonnull shared;)
 + (HyBidInterruptionHandler * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, weak) id <HyBidInterruptionDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <HyBidInterruptionDelegate> _Nullable overlappingElementDelegate;
 @property (nonatomic, weak) id <HyBidAdFeedbackViewDelegate> _Nullable feedbackViewDelegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Register a delegate for a specific context (call once per owner lifecycle).
+- (void)setDelegate:(id <HyBidInterruptionDelegate> _Nonnull)delegate for:(enum HyBidAdContext)context;
+/// Make this context the current receiver (push on stack).
+- (void)activateContext:(enum HyBidAdContext)context;
+/// Remove this context from the stack (usually on dismiss/deinit).
+- (void)deactivateContext:(enum HyBidAdContext)context;
 - (BOOL)hasOnlyAppLifeCycleInterruption SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 @interface HyBidInterruptionHandler (SWIFT_EXTENSION(Smaato_HyBid))
-- (void)vastEndCardWillShow;
-- (void)vastCustomEndCardWillShow;
+- (void)endCardWillShow;
+- (void)customEndCardWillShow;
 @end
 
 
@@ -1239,6 +1249,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSKAdNet
 @end
 
 
+@interface HyBidSKAdNetworkViewController (SWIFT_EXTENSION(Smaato_HyBid))
++ (BOOL)isAutoStorekitEnabledForAd:(HyBidAd * _Nonnull)ad SWIFT_WARN_UNUSED_RESULT;
++ (NSInteger)getStorekitAutoCloseDelayWithAd:(HyBidAd * _Nonnull)ad SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 SWIFT_CLASS("_TtC12Smaato_HyBid19HyBidSessionManager")
 @interface HyBidSessionManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSessionManager * _Nonnull sharedInstance;)
@@ -1339,6 +1355,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_PC
 + (NSInteger)DEFAULT_PC_INTERSTITIAL_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET;)
 + (NSInteger)DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_PC_END_CARD_CLOSE_DELAY;)
++ (NSInteger)DEFAULT_PC_END_CARD_CLOSE_DELAY SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_BC_END_CARD_CLOSE_DELAY;)
++ (NSInteger)DEFAULT_BC_END_CARD_CLOSE_DELAY SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) NSNumber * _Nullable offset;
 @property (nonatomic) BOOL isCustom;
 @property (nonatomic, strong) NSNumber * _Nonnull style;
