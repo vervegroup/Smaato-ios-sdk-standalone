@@ -117,6 +117,7 @@ FOUNDATION_EXPORT const unsigned char HyBidVersionString[];
 #import "Smaato_HyBidConfigManager.h"
 #import "Smaato_NSUserDefaults+HyBidCustomMethods.h"
 #import "Smaato_HyBidSKOverlayDelegate.h"
+#import "Smaato_ATOMManager.h"
 
 // For swift compatibility, we are making this file public instead of private
 // Avoid using custom module map

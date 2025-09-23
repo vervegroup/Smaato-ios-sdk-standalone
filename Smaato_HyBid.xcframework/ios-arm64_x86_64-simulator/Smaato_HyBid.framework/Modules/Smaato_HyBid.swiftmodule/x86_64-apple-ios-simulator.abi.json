@@ -4063,249 +4063,6 @@
       },
       {
         "kind": "Import",
-        "name": "ATOM",
-        "printedName": "ATOM",
-        "declKind": "Import",
-        "moduleName": "Smaato_HyBid"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ATOMManager",
-        "printedName": "ATOMManager",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "fireAdSessionEvent",
-            "printedName": "fireAdSessionEvent(data:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HyBidAdSessionData",
-                "printedName": "Smaato_HyBid.HyBidAdSessionData",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdSessionData"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)ATOMManager(cm)fireAdSessionEventWithData:",
-            "mangledName": "$s12Smaato_HyBid11ATOMManagerC18fireAdSessionEvent4datayAA0bcfG4DataC_tFZ",
-            "moduleName": "Smaato_HyBid",
-            "static": true,
-            "objc_name": "fireAdSessionEventWithData:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "createAdSessionData",
-            "printedName": "createAdSessionData(from:ad:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "HyBidAdSessionData",
-                "printedName": "Smaato_HyBid.HyBidAdSessionData",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdSessionData"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Smaato_HyBid.HyBidAdRequest?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HyBidAdRequest",
-                    "printedName": "Smaato_HyBid.HyBidAdRequest",
-                    "usr": "c:objc(cs)HyBidAdRequest"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HyBidAd",
-                "printedName": "Smaato_HyBid.HyBidAd",
-                "usr": "c:objc(cs)HyBidAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)ATOMManager(cm)createAdSessionDataFrom:ad:",
-            "mangledName": "$s12Smaato_HyBid11ATOMManagerC19createAdSessionData4from2adAA0bcfgH0CSo0bcF7RequestCSg_So0bcF0CtFZ",
-            "moduleName": "Smaato_HyBid",
-            "static": true,
-            "objc_name": "createAdSessionDataFrom:ad:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reportAdSessionDataSharedEvent",
-            "printedName": "reportAdSessionDataSharedEvent(adSessionDict:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)ATOMManager(cm)reportAdSessionDataSharedEventWithAdSessionDict:",
-            "mangledName": "$s12Smaato_HyBid11ATOMManagerC30reportAdSessionDataSharedEvent02adG4DictySDySSypG_tFZ",
-            "moduleName": "Smaato_HyBid",
-            "static": true,
-            "objc_name": "reportAdSessionDataSharedEventWithAdSessionDict:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ATOMManager",
-                "printedName": "Smaato_HyBid.ATOMManager",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)ATOMManager"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)ATOMManager(im)init",
-            "mangledName": "$s12Smaato_HyBid11ATOMManagerCACycfc",
-            "moduleName": "Smaato_HyBid",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@Smaato_HyBid@objc(cs)ATOMManager",
-        "mangledName": "$s12Smaato_HyBid11ATOMManagerC",
-        "moduleName": "Smaato_HyBid",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Smaato_HyBid",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -12851,6 +12608,165 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cm)PERCENT_VISIBLE",
                 "mangledName": "$s12Smaato_HyBid0bC9ConstantsC15PERCENT_VISIBLESSvgZ",
+                "moduleName": "Smaato_HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "HYBID_DEEPLINK_SCHEME",
+            "printedName": "HYBID_DEEPLINK_SCHEME",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cpy)HYBID_DEEPLINK_SCHEME",
+            "mangledName": "$s12Smaato_HyBid0bC9ConstantsC21HYBID_DEEPLINK_SCHEMESSvpZ",
+            "moduleName": "Smaato_HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cm)HYBID_DEEPLINK_SCHEME",
+                "mangledName": "$s12Smaato_HyBid0bC9ConstantsC21HYBID_DEEPLINK_SCHEMESSvgZ",
+                "moduleName": "Smaato_HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "HYBID_DEEPLINK_PARAM",
+            "printedName": "HYBID_DEEPLINK_PARAM",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cpy)HYBID_DEEPLINK_PARAM",
+            "mangledName": "$s12Smaato_HyBid0bC9ConstantsC20HYBID_DEEPLINK_PARAMSSvpZ",
+            "moduleName": "Smaato_HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cm)HYBID_DEEPLINK_PARAM",
+                "mangledName": "$s12Smaato_HyBid0bC9ConstantsC20HYBID_DEEPLINK_PARAMSSvgZ",
+                "moduleName": "Smaato_HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "HYBID_FALLBACK_PARAM",
+            "printedName": "HYBID_FALLBACK_PARAM",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cpy)HYBID_FALLBACK_PARAM",
+            "mangledName": "$s12Smaato_HyBid0bC9ConstantsC20HYBID_FALLBACK_PARAMSSvpZ",
+            "moduleName": "Smaato_HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidConstants(cm)HYBID_FALLBACK_PARAM",
+                "mangledName": "$s12Smaato_HyBid0bC9ConstantsC20HYBID_FALLBACK_PARAMSSvgZ",
                 "moduleName": "Smaato_HyBid",
                 "static": true,
                 "implicit": true,
@@ -37307,127 +37223,148 @@
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 7,
+      "value": "\"vrvdl\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 898,
+      "length": 13,
+      "value": "\"deeplinkUrl\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 964,
+      "length": 13,
+      "value": "\"fallbackUrl\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 861,
+      "offset": 1057,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 914,
+      "offset": 1110,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 973,
+      "offset": 1169,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 1237,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1227,
+      "offset": 1423,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1291,
+      "offset": 1487,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1452,
+      "offset": 1648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1620,
+      "offset": 1816,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1777,
+      "offset": 1973,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1947,
+      "offset": 2143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2094,
+      "offset": 2290,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2246,
+      "offset": 2442,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2511,
+      "offset": 2707,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2675,
+      "offset": 2871,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2825,
+      "offset": 3021,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2890,
+      "offset": 3086,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3234,
+      "offset": 3430,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3370,
+      "offset": 3566,
       "length": 5,
       "value": "false"
     },

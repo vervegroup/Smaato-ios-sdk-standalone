@@ -309,25 +309,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class HyBidAdSessionData;
-@class HyBidAdRequest;
-@class HyBidAd;
-@class NSString;
-
-SWIFT_CLASS("_TtC12Smaato_HyBid11ATOMManager")
-@interface ATOMManager : NSObject
-+ (void)fireAdSessionEventWithData:(HyBidAdSessionData * _Nonnull)data;
-+ (HyBidAdSessionData * _Nonnull)createAdSessionDataFrom:(HyBidAdRequest * _Nullable)request ad:(HyBidAd * _Nonnull)ad SWIFT_WARN_UNUSED_RESULT;
-+ (void)reportAdSessionDataSharedEventWithAdSessionDict:(NSDictionary<NSString *, id> * _Nonnull)adSessionDict;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 
 SWIFT_CLASS("_TtC12Smaato_HyBid24HyBidReportingProperties")
 @interface HyBidReportingProperties : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSString;
 
 SWIFT_CLASS_NAMED("AdFormat")
 @interface HyBidReportingAdFormat : HyBidReportingProperties
@@ -595,6 +583,7 @@ SWIFT_CLASS("_TtC12Smaato_HyBid27HyBidAAKNetworkRequestModel")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class HyBidAd;
 @class UIView;
 
 SWIFT_CLASS("_TtC12Smaato_HyBid39HyBidAdAttributionCustomClickAdsWrapper")
@@ -711,6 +700,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidConsent
 @end
 
 @class HyBidSkipOffset;
+@class NSDictionary;
 
 SWIFT_CLASS("_TtC12Smaato_HyBid14HyBidConstants")
 @interface HyBidConstants : NSObject
@@ -734,6 +724,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)AD_SESSION_DATA SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PERCENT_VISIBLE;)
 + (NSString * _Nonnull)PERCENT_VISIBLE SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_DEEPLINK_SCHEME;)
++ (NSString * _Nonnull)HYBID_DEEPLINK_SCHEME SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_DEEPLINK_PARAM;)
++ (NSString * _Nonnull)HYBID_DEEPLINK_PARAM SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_FALLBACK_PARAM;)
++ (NSString * _Nonnull)HYBID_FALLBACK_PARAM SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL mraidExpand;)
 + (BOOL)mraidExpand SWIFT_WARN_UNUSED_RESULT;
 + (void)setMraidExpand:(BOOL)value;
@@ -1139,6 +1135,7 @@ SWIFT_CLASS("_TtC12Smaato_HyBid19HyBidReportingEvent")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class HyBidAdRequest;
 
 SWIFT_CLASS("_TtC12Smaato_HyBid21HyBidReportingManager")
 @interface HyBidReportingManager : NSObject
