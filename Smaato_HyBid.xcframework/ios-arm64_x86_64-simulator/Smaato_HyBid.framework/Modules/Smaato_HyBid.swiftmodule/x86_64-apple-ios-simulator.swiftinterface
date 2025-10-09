@@ -504,6 +504,7 @@ extension HyBidCustomCTAView : HyBidInterruptionDelegate {
   @objc public func setDelegate(_ delegate: any HyBidInterruptionDelegate, for context: HyBidAdContext)
   @objc public func activateContext(_ context: HyBidAdContext)
   @objc public func deactivateContext(_ context: HyBidAdContext)
+  @objc public func activeDelegate() -> (any HyBidInterruptionDelegate)?
   @objc public func hasOnlyAppLifeCycleInterruption() -> Swift.Bool
 }
 extension HyBidInterruptionHandler {

@@ -955,6 +955,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidInterru
 - (void)activateContext:(enum HyBidAdContext)context;
 /// Remove this context from the stack (usually on dismiss/deinit).
 - (void)deactivateContext:(enum HyBidAdContext)context;
+- (id <HyBidInterruptionDelegate> _Nullable)activeDelegate SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)hasOnlyAppLifeCycleInterruption SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -2446,6 +2447,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidInterru
 - (void)activateContext:(enum HyBidAdContext)context;
 /// Remove this context from the stack (usually on dismiss/deinit).
 - (void)deactivateContext:(enum HyBidAdContext)context;
+- (id <HyBidInterruptionDelegate> _Nullable)activeDelegate SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)hasOnlyAppLifeCycleInterruption SWIFT_WARN_UNUSED_RESULT;
 @end
 

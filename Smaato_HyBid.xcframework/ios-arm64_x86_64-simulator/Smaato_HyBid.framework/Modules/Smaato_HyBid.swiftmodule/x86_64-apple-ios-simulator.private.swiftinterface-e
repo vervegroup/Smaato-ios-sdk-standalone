@@ -504,6 +504,7 @@ extension Smaato_HyBid.HyBidCustomCTAView : Smaato_HyBid.HyBidInterruptionDelega
   @objc public func setDelegate(_ delegate: any Smaato_HyBid.HyBidInterruptionDelegate, for context: Smaato_HyBid.HyBidAdContext)
   @objc public func activateContext(_ context: Smaato_HyBid.HyBidAdContext)
   @objc public func deactivateContext(_ context: Smaato_HyBid.HyBidAdContext)
+  @objc public func activeDelegate() -> (any Smaato_HyBid.HyBidInterruptionDelegate)?
   @objc public func hasOnlyAppLifeCycleInterruption() -> Swift.Bool
 }
 extension Smaato_HyBid.HyBidInterruptionHandler {
