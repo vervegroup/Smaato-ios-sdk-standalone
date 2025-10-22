@@ -870,13 +870,13 @@ SWIFT_PROTOCOL("_TtP12Smaato_HyBid25HyBidInterruptionDelegate_")
 @end
 
 
+
 @interface HyBidCustomCTAView (SWIFT_EXTENSION(Smaato_HyBid))
 - (void)presentCustomCTAWithDelay;
 - (void)removeCustomCTA;
 - (void)changeDelegateFor:(id <HyBidCustomCTAViewDelegate> _Nonnull)delegate;
 + (BOOL)isCustomCTAValidWithAd:(HyBidAd * _Nonnull)ad SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 enum HyBidGDPRk : NSInteger;
 

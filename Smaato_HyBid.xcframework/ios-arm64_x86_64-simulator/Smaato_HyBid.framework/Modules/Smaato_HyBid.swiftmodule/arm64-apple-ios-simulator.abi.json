@@ -7408,6 +7408,275 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Smaato_HyBid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AdAttributionKit",
+        "printedName": "AdAttributionKit",
+        "declKind": "Import",
+        "moduleName": "Smaato_HyBid"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyBidAdAttributionCustomClickAdsWrapper",
+        "printedName": "HyBidAdAttributionCustomClickAdsWrapper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(ad:adFormat:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidAdAttributionCustomClickAdsWrapper",
+                "printedName": "Smaato_HyBid.HyBidAdAttributionCustomClickAdsWrapper",
+                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidAd",
+                "printedName": "Smaato_HyBid.HyBidAd",
+                "usr": "c:objc(cs)HyBidAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)initWithAd:adFormat:",
+            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC2ad0J6FormatACSo0bcD0C_SSSgtcfc",
+            "moduleName": "Smaato_HyBid",
+            "objc_name": "initWithAd:adFormat:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startImpression",
+            "printedName": "startImpression(adView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)startImpressionWithAdView:",
+            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC15startImpression6adViewySo6UIViewCSg_tF",
+            "moduleName": "Smaato_HyBid",
+            "objc_name": "startImpressionWithAdView:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adHasCustomMarketPlace",
+            "printedName": "adHasCustomMarketPlace()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)adHasCustomMarketPlace",
+            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC05adHasF11MarketPlaceSbyF",
+            "moduleName": "Smaato_HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handlingCustomMarketPlace",
+            "printedName": "handlingCustomMarketPlace(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)handlingCustomMarketPlaceWithCompletion:",
+            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC08handlingF11MarketPlace10completionyySbc_tF",
+            "moduleName": "Smaato_HyBid",
+            "objc_name": "handlingCustomMarketPlaceWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidAdAttributionCustomClickAdsWrapper",
+                "printedName": "Smaato_HyBid.HyBidAdAttributionCustomClickAdsWrapper",
+                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)init",
+            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperCACycfc",
+            "moduleName": "Smaato_HyBid",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper",
+        "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC",
+        "moduleName": "Smaato_HyBid",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "HyBidOnTopOfType",
         "printedName": "HyBidOnTopOfType",
@@ -9368,258 +9637,6 @@
         "printedName": "AdAttributionKit",
         "declKind": "Import",
         "moduleName": "Smaato_HyBid"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "HyBidAdAttributionCustomClickAdsWrapper",
-        "printedName": "HyBidAdAttributionCustomClickAdsWrapper",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(ad:adFormat:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "HyBidAdAttributionCustomClickAdsWrapper",
-                "printedName": "Smaato_HyBid.HyBidAdAttributionCustomClickAdsWrapper",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HyBidAd",
-                "printedName": "Smaato_HyBid.HyBidAd",
-                "usr": "c:objc(cs)HyBidAd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)initWithAd:adFormat:",
-            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC2ad0J6FormatACSo0bcD0C_SSSgtcfc",
-            "moduleName": "Smaato_HyBid",
-            "objc_name": "initWithAd:adFormat:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "startImpression",
-            "printedName": "startImpression(adView:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIView?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)startImpressionWithAdView:",
-            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC15startImpression6adViewySo6UIViewCSg_tF",
-            "moduleName": "Smaato_HyBid",
-            "objc_name": "startImpressionWithAdView:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "adHasCustomMarketPlace",
-            "printedName": "adHasCustomMarketPlace()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)adHasCustomMarketPlace",
-            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC05adHasF11MarketPlaceSbyF",
-            "moduleName": "Smaato_HyBid",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "handlingCustomMarketPlace",
-            "printedName": "handlingCustomMarketPlace(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)handlingCustomMarketPlaceWithCompletion:",
-            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC08handlingF11MarketPlace10completionyySbc_tF",
-            "moduleName": "Smaato_HyBid",
-            "objc_name": "handlingCustomMarketPlaceWithCompletion:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "HyBidAdAttributionCustomClickAdsWrapper",
-                "printedName": "Smaato_HyBid.HyBidAdAttributionCustomClickAdsWrapper",
-                "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper(im)init",
-            "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperCACycfc",
-            "moduleName": "Smaato_HyBid",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionCustomClickAdsWrapper",
-        "mangledName": "$s12Smaato_HyBid0bC34AdAttributionCustomClickAdsWrapperC",
-        "moduleName": "Smaato_HyBid",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -36850,6 +36867,13 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/AAK\/HyBidAdAttributionCustomClickAdsWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 315,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/VASTBeacons\/HyBidOnTopOfType.swift",
       "kind": "IntegerLiteral",
       "offset": 198,
@@ -37026,15 +37050,8 @@
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/AAK\/HyBidAdAttributionCustomClickAdsManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 302,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/AAK\/HyBidAdAttributionCustomClickAdsManager.swift",
       "kind": "FloatLiteral",
-      "offset": 1974,
+      "offset": 263,
       "length": 4,
       "value": "15.0"
     },
@@ -37155,7 +37172,7 @@
       "kind": "StringLiteral",
       "offset": 335,
       "length": 7,
-      "value": "\"3.6.1\""
+      "value": "\"3.7.0\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",

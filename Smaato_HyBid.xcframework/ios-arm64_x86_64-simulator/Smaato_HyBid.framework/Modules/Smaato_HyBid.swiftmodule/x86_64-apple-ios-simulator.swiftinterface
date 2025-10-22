@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Smaato_HyBid
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name Smaato_HyBid
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AdAttributionKit
@@ -262,6 +262,13 @@ extension StoreKit.SKStoreProductViewController {
     @objc get
   }
 }
+@objc public class HyBidAdAttributionCustomClickAdsWrapper : ObjectiveC.NSObject {
+  @objc public init(ad: HyBidAd, adFormat: Swift.String? = nil)
+  @objc public func startImpression(adView: UIKit.UIView?)
+  @objc public func adHasCustomMarketPlace() -> Swift.Bool
+  @objc public func handlingCustomMarketPlace(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc deinit
+}
 @objc public enum HyBidOnTopOfType : Swift.Int, Swift.CaseIterable {
   case UNKNOWN_TOP_EVENT
   case DISPLAY
@@ -303,13 +310,6 @@ extension StoreKit.SKStoreProductViewController {
   @objc public init(offset: Foundation.NSNumber?, isCustom: Swift.Bool)
   @objc public init(offset: Foundation.NSNumber?, isCustom: Swift.Bool, style: Foundation.NSNumber = 0)
   @objc public func configure(offset: Foundation.NSNumber?, isCustom: Swift.Bool, style: Foundation.NSNumber = 0)
-  @objc deinit
-}
-@objc public class HyBidAdAttributionCustomClickAdsWrapper : ObjectiveC.NSObject {
-  @objc public init(ad: HyBidAd, adFormat: Swift.String? = nil)
-  @objc public func startImpression(adView: UIKit.UIView?)
-  @objc public func adHasCustomMarketPlace() -> Swift.Bool
-  @objc public func handlingCustomMarketPlace(completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidSessionManager : ObjectiveC.NSObject {

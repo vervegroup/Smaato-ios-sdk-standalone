@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Smaato_HyBid-Swift.h</key>
 		<data>
-		4xvZAvZ6hw2qNhgK3zoQJ3G0Ngg=
+		WtbgFjKHNhAYm+QEdbgrL/irCcI=
 		</data>
 		<key>Headers/Smaato_HyBid.h</key>
 		<data>
@@ -290,23 +290,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		he1axuzf13WwmmSkP5nJtdwanWU=
+		5aJfy0YnDMNdTspIJN/8EjaCQCk=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		krSPSOeeLxWSZ1DApVitDwFE358=
+		KxNVrDcUG5+jY5RR/dzJ1wYyROA=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		n5qlB1Pj9Kwt2yYqTaKTXBtUNM0=
+		egWF8eXSb12gWwn1WnTslR7yS7U=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		H0QYMcdyPk4XyZZ8d1vlM1jyNY0=
+		2+1xfQkI1RtRvWZKgu8jZnKeXR4=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gIVUNwBSdlgZwSYYQo0NcB4+uGo=
+		PrPhKpPCgUG2F7NCcBz/WadN7RQ=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -314,19 +314,19 @@
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gIVUNwBSdlgZwSYYQo0NcB4+uGo=
+		PrPhKpPCgUG2F7NCcBz/WadN7RQ=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+1FN9/5jNUv2FSAOZFLoHSDSNrU=
+		7qfEKaigcbQyHuBou6uGducpRLU=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		H0QYMcdyPk4XyZZ8d1vlM1jyNY0=
+		2+1xfQkI1RtRvWZKgu8jZnKeXR4=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		AGvxFjZ6epxZ+SQHVNwleSYGvRk=
+		dwSUjQ4ZIMVpTCYunMm2mqaFQdo=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -334,11 +334,11 @@
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AGvxFjZ6epxZ+SQHVNwleSYGvRk=
+		dwSUjQ4ZIMVpTCYunMm2mqaFQdo=
 		</data>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2/XnAfVOSHuC4gTGwbxUZujkXo8=
+		h/HsHxhCQtzY11xV90lQzntzNCU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -795,7 +795,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x/ezZYdOjgXoOhqEzR0qOgaKXEx327t0wcoBwzHL/wQ=
+			sOK0/UR3jgZ9uUj802B9hE7fxmxpjbOB5rE2Z12DN2w=
 			</data>
 		</dict>
 		<key>Headers/Smaato_HyBid.h</key>
@@ -1285,28 +1285,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qlmtVQf2Y3/Nc44vzOtmU9bOIEnOpuG5k3SKVCmD9iY=
+			nGx6VO5cwj7+RK1pMY/ougQJOLuqw4J6A69YkYROWWQ=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F3jaT9FPjIVMB1lUPsTxZbgsER4jAliyeTL1e9xtxVc=
+			+jJ4BMtit5J6B2l9rmT/FzAXTw9PZklvRiJ45UbBb7E=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jRAIVHUItJah4d0UV3V0Q1EMWpcJUU8ygsWqhNcM9Bk=
+			gMdkAIp0eF9Ukm86SNchfshgG1PU6Ny9v1gq4BRoDSw=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mN47iiI5aW6Xs1gvhn1q7VodC9fjDXZflwN2NqRruE8=
+			3Oo+KtBTyHcn40mgfzGb3cgkm+DJs1HathY1bKurPcs=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1320,28 +1320,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mN47iiI5aW6Xs1gvhn1q7VodC9fjDXZflwN2NqRruE8=
+			3Oo+KtBTyHcn40mgfzGb3cgkm+DJs1HathY1bKurPcs=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0AmlNXuOioh528yPtP9qBsBDerN97n95cSP8xmNTUaE=
+			AKWzRAOJbaKqitxTP12gFUW1p8M4ShAN3zgwHUVW10U=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jRAIVHUItJah4d0UV3V0Q1EMWpcJUU8ygsWqhNcM9Bk=
+			gMdkAIp0eF9Ukm86SNchfshgG1PU6Ny9v1gq4BRoDSw=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FfGEthH2K2jMmYfe3wOvd9glDkQVhs54Iaz/b5tLNtg=
+			urSx3dX6lzmz4OugN/TaKj9zRo9xDYuwyRCDi5lBeDo=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1355,14 +1355,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FfGEthH2K2jMmYfe3wOvd9glDkQVhs54Iaz/b5tLNtg=
+			urSx3dX6lzmz4OugN/TaKj9zRo9xDYuwyRCDi5lBeDo=
 			</data>
 		</dict>
 		<key>Modules/Smaato_HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N/vZG8bu8XESzJvHkPeeyuAkMGVTlGVDabeMwAT8SXk=
+			/IKhTVQw3OJ4ShY2SVeRfN3ujmSpHnocMpUWtme2k8M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
