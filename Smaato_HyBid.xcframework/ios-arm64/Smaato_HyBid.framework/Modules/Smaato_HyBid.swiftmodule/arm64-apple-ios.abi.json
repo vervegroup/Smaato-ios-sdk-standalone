@@ -5084,11 +5084,9 @@
             "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidSettings(py)connectionType",
             "mangledName": "$s12Smaato_HyBid0bC8SettingsC14connectionTypeSSvp",
             "moduleName": "Smaato_HyBid",
-            "intro_iOS": "14.1",
             "declAttributes": [
               "AccessControl",
-              "ObjC",
-              "Available"
+              "ObjC"
             ],
             "accessors": [
               {
@@ -5787,12 +5785,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CoreLocation.CLLocation?",
+                "printedName": "_LocationEssentials.CLLocation?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "CLLocation",
-                    "printedName": "CoreLocation.CLLocation",
+                    "printedName": "_LocationEssentials.CLLocation",
                     "usr": "c:objc(cs)CLLocation"
                   }
                 ],
@@ -5816,12 +5814,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "CoreLocation.CLLocation?",
+                    "printedName": "_LocationEssentials.CLLocation?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "CLLocation",
-                        "printedName": "CoreLocation.CLLocation",
+                        "printedName": "_LocationEssentials.CLLocation",
                         "usr": "c:objc(cs)CLLocation"
                       }
                     ],
@@ -16809,6 +16807,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "HyBidInterruptionDelegate",
             "printedName": "HyBidInterruptionDelegate",
             "usr": "c:@M@Smaato_HyBid@objc(pl)HyBidInterruptionDelegate",
@@ -18347,8 +18352,7 @@
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
             "ownership": 1,
             "hasStorage": true,
@@ -18576,58 +18580,30 @@
           },
           {
             "kind": "Function",
-            "name": "setDelegate",
-            "printedName": "setDelegate(_:for:)",
+            "name": "activateContext",
+            "printedName": "activateContext(_:with:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidAdContext",
+                "printedName": "Smaato_HyBid.HyBidAdContext",
+                "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
               },
               {
                 "kind": "TypeNominal",
                 "name": "HyBidInterruptionDelegate",
                 "printedName": "any Smaato_HyBid.HyBidInterruptionDelegate",
                 "usr": "c:@M@Smaato_HyBid@objc(pl)HyBidInterruptionDelegate"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HyBidAdContext",
-                "printedName": "Smaato_HyBid.HyBidAdContext",
-                "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)setDelegate:for:",
-            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC11setDelegate_3foryAA0bcdG0_p_AA0bC9AdContextOtF",
-            "moduleName": "Smaato_HyBid",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "activateContext",
-            "printedName": "activateContext(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HyBidAdContext",
-                "printedName": "Smaato_HyBid.HyBidAdContext",
-                "usr": "c:@M@Smaato_HyBid@E@HyBidAdContext"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)activateContext:",
-            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC15activateContextyyAA0bc2AdG0OF",
+            "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidInterruptionHandler(im)activateContext:with:",
+            "mangledName": "$s12Smaato_HyBid0bC19InterruptionHandlerC15activateContext_4withyAA0bc2AdG0O_AA0bcD8Delegate_ptF",
             "moduleName": "Smaato_HyBid",
             "declAttributes": [
               "AccessControl",
@@ -18690,8 +18666,7 @@
             "moduleName": "Smaato_HyBid",
             "declAttributes": [
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -24318,10 +24293,12 @@
             "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionSKOverlayManager(im)getAppConfigurationWithAppIdentifier:position:userDismissible:ad:adFormat:completionHandler:",
             "mangledName": "$s12Smaato_HyBid0bC29AdAttributionSKOverlayManagerC19getAppConfiguration13appIdentifier8position15userDismissible2ad0P6FormatSo0fiJ0CSgSSSg_So0F8PositionVSbSo0bcD0CSStYaF",
             "moduleName": "Smaato_HyBid",
+            "intro_iOS": "17.4",
             "objc_name": "getAppConfigurationWithAppIdentifier:position:userDismissible:ad:adFormat:completionHandler:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -24356,11 +24333,9 @@
         "usr": "c:@M@Smaato_HyBid@objc(cs)HyBidAdAttributionSKOverlayManager",
         "mangledName": "$s12Smaato_HyBid0bC29AdAttributionSKOverlayManagerC",
         "moduleName": "Smaato_HyBid",
-        "intro_iOS": "17.4",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "Available"
+          "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "inheritsConvenienceInitializers": true,
@@ -34204,6 +34179,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -34966,6 +34948,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -35116,6 +35105,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }
@@ -35504,1246 +35500,1253 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 5785,
+      "offset": 5422,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 5834,
       "length": 6,
       "value": "\"%.0f\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 5923,
+      "offset": 5972,
       "length": 6,
       "value": "\"%.0f\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 6241,
+      "offset": 6290,
       "length": 10,
       "value": "\"portrait\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 6325,
+      "offset": 6374,
       "length": 11,
       "value": "\"landscape\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 6381,
+      "offset": 6430,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 6657,
+      "offset": 6706,
       "length": 10,
       "value": "\"portrait\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 6749,
+      "offset": 6798,
       "length": 11,
       "value": "\"landscape\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 6813,
+      "offset": 6862,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 6975,
+      "offset": 7024,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 6998,
+      "offset": 7047,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 7027,
+      "offset": 7076,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 7510,
+      "offset": 7559,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 7664,
+      "offset": 7713,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 7823,
+      "offset": 7872,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 7871,
+      "offset": 7920,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 7995,
+      "offset": 8044,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8064,
+      "offset": 8113,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8116,
+      "offset": 8165,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8120,
+      "offset": 8169,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8142,
+      "offset": 8191,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8159,
+      "offset": 8208,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8163,
+      "offset": 8212,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8186,
+      "offset": 8235,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8203,
+      "offset": 8252,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8208,
+      "offset": 8257,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8231,
+      "offset": 8280,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8248,
+      "offset": 8297,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8253,
+      "offset": 8302,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8276,
+      "offset": 8325,
       "length": 3,
       "value": "\"4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8293,
+      "offset": 8342,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8298,
+      "offset": 8347,
       "length": 2,
       "value": "55"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8321,
+      "offset": 8370,
       "length": 3,
       "value": "\"5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8338,
+      "offset": 8387,
       "length": 2,
       "value": "55"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8343,
+      "offset": 8392,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8366,
+      "offset": 8415,
       "length": 3,
       "value": "\"6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8383,
+      "offset": 8432,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8388,
+      "offset": 8437,
       "length": 2,
       "value": "85"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8411,
+      "offset": 8460,
       "length": 3,
       "value": "\"7\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8428,
+      "offset": 8477,
       "length": 2,
       "value": "85"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 8433,
+      "offset": 8482,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8457,
+      "offset": 8506,
       "length": 3,
       "value": "\"8\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8631,
+      "offset": 8680,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 8637,
+      "offset": 8686,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 9210,
+      "offset": 9259,
       "length": 24,
       "value": "\"https:\/\/api.ipify.org\/\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 9772,
+      "offset": 9821,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 9778,
+      "offset": 9827,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 10176,
+      "offset": 10225,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 10182,
+      "offset": 10231,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 10472,
+      "offset": 10521,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 10731,
+      "offset": 10780,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 10988,
+      "offset": 11037,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 11074,
+      "offset": 11123,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11284,
+      "offset": 11333,
       "length": 9,
       "value": "\"iPod5,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11334,
+      "offset": 11383,
       "length": 14,
       "value": "\"iPod Touch 5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11360,
+      "offset": 11409,
       "length": 9,
       "value": "\"iPod7,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11410,
+      "offset": 11459,
       "length": 14,
       "value": "\"iPod Touch 6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11436,
+      "offset": 11485,
       "length": 11,
       "value": "\"iPhone3,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11449,
+      "offset": 11498,
       "length": 11,
       "value": "\"iPhone3,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11462,
+      "offset": 11511,
       "length": 11,
       "value": "\"iPhone3,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11486,
+      "offset": 11535,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11508,
+      "offset": 11557,
       "length": 11,
       "value": "\"iPhone4,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11558,
+      "offset": 11607,
       "length": 11,
       "value": "\"iPhone 4s\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11581,
+      "offset": 11630,
       "length": 11,
       "value": "\"iPhone5,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11594,
+      "offset": 11643,
       "length": 11,
       "value": "\"iPhone5,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11631,
+      "offset": 11680,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11653,
+      "offset": 11702,
       "length": 11,
       "value": "\"iPhone5,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11666,
+      "offset": 11715,
       "length": 11,
       "value": "\"iPhone5,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11703,
+      "offset": 11752,
       "length": 11,
       "value": "\"iPhone 5c\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11726,
+      "offset": 11775,
       "length": 11,
       "value": "\"iPhone6,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11739,
+      "offset": 11788,
       "length": 11,
       "value": "\"iPhone6,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11776,
+      "offset": 11825,
       "length": 11,
       "value": "\"iPhone 5s\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11799,
+      "offset": 11848,
       "length": 11,
       "value": "\"iPhone7,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11849,
+      "offset": 11898,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11871,
+      "offset": 11920,
       "length": 11,
       "value": "\"iPhone7,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11921,
+      "offset": 11970,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11948,
+      "offset": 11997,
       "length": 11,
       "value": "\"iPhone8,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 11998,
+      "offset": 12047,
       "length": 11,
       "value": "\"iPhone 6s\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12021,
+      "offset": 12070,
       "length": 11,
       "value": "\"iPhone8,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12071,
+      "offset": 12120,
       "length": 16,
       "value": "\"iPhone 6s Plus\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12099,
+      "offset": 12148,
       "length": 11,
       "value": "\"iPhone9,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12112,
+      "offset": 12161,
       "length": 11,
       "value": "\"iPhone9,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12149,
+      "offset": 12198,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12171,
+      "offset": 12220,
       "length": 11,
       "value": "\"iPhone9,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12184,
+      "offset": 12233,
       "length": 11,
       "value": "\"iPhone9,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12221,
+      "offset": 12270,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12248,
+      "offset": 12297,
       "length": 11,
       "value": "\"iPhone8,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12298,
+      "offset": 12347,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12321,
+      "offset": 12370,
       "length": 12,
       "value": "\"iPhone10,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12335,
+      "offset": 12384,
       "length": 12,
       "value": "\"iPhone10,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12371,
+      "offset": 12420,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12393,
+      "offset": 12442,
       "length": 12,
       "value": "\"iPhone10,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12407,
+      "offset": 12456,
       "length": 12,
       "value": "\"iPhone10,5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12443,
+      "offset": 12492,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12470,
+      "offset": 12519,
       "length": 12,
       "value": "\"iPhone10,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12484,
+      "offset": 12533,
       "length": 12,
       "value": "\"iPhone10,6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12520,
+      "offset": 12569,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12542,
+      "offset": 12591,
       "length": 12,
       "value": "\"iPhone11,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12592,
+      "offset": 12641,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12615,
+      "offset": 12664,
       "length": 12,
       "value": "\"iPhone11,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12629,
+      "offset": 12678,
       "length": 12,
       "value": "\"iPhone11,6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12665,
+      "offset": 12714,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12692,
+      "offset": 12741,
       "length": 12,
       "value": "\"iPhone11,8\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12742,
+      "offset": 12791,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12765,
+      "offset": 12814,
       "length": 9,
       "value": "\"iPad2,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12776,
+      "offset": 12825,
       "length": 9,
       "value": "\"iPad2,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12787,
+      "offset": 12836,
       "length": 9,
       "value": "\"iPad2,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12798,
+      "offset": 12847,
       "length": 9,
       "value": "\"iPad2,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12815,
+      "offset": 12864,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12835,
+      "offset": 12884,
       "length": 9,
       "value": "\"iPad3,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12846,
+      "offset": 12895,
       "length": 9,
       "value": "\"iPad3,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12857,
+      "offset": 12906,
       "length": 9,
       "value": "\"iPad3,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12885,
+      "offset": 12934,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12905,
+      "offset": 12954,
       "length": 9,
       "value": "\"iPad3,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12916,
+      "offset": 12965,
       "length": 9,
       "value": "\"iPad3,5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12927,
+      "offset": 12976,
       "length": 9,
       "value": "\"iPad3,6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12955,
+      "offset": 13004,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12975,
+      "offset": 13024,
       "length": 9,
       "value": "\"iPad4,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12986,
+      "offset": 13035,
       "length": 9,
       "value": "\"iPad4,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 12997,
+      "offset": 13046,
       "length": 9,
       "value": "\"iPad4,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13025,
+      "offset": 13074,
       "length": 10,
       "value": "\"iPad Air\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13047,
+      "offset": 13096,
       "length": 9,
       "value": "\"iPad5,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13058,
+      "offset": 13107,
       "length": 9,
       "value": "\"iPad5,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13097,
+      "offset": 13146,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13121,
+      "offset": 13170,
       "length": 10,
       "value": "\"iPad6,11\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13133,
+      "offset": 13182,
       "length": 10,
       "value": "\"iPad6,12\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13171,
+      "offset": 13220,
       "length": 8,
       "value": "\"iPad 5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13191,
+      "offset": 13240,
       "length": 9,
       "value": "\"iPad7,5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13202,
+      "offset": 13251,
       "length": 9,
       "value": "\"iPad7,6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13241,
+      "offset": 13290,
       "length": 8,
       "value": "\"iPad 6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13261,
+      "offset": 13310,
       "length": 9,
       "value": "\"iPad2,5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13272,
+      "offset": 13321,
       "length": 9,
       "value": "\"iPad2,6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13283,
+      "offset": 13332,
       "length": 9,
       "value": "\"iPad2,7\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13311,
+      "offset": 13360,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13334,
+      "offset": 13383,
       "length": 9,
       "value": "\"iPad4,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13345,
+      "offset": 13394,
       "length": 9,
       "value": "\"iPad4,5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13356,
+      "offset": 13405,
       "length": 9,
       "value": "\"iPad4,6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13384,
+      "offset": 13433,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13409,
+      "offset": 13458,
       "length": 9,
       "value": "\"iPad4,7\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13420,
+      "offset": 13469,
       "length": 9,
       "value": "\"iPad4,8\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13431,
+      "offset": 13480,
       "length": 9,
       "value": "\"iPad4,9\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13459,
+      "offset": 13508,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13484,
+      "offset": 13533,
       "length": 9,
       "value": "\"iPad5,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13495,
+      "offset": 13544,
       "length": 9,
       "value": "\"iPad5,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13534,
+      "offset": 13583,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13559,
+      "offset": 13608,
       "length": 9,
       "value": "\"iPad6,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13570,
+      "offset": 13619,
       "length": 9,
       "value": "\"iPad6,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13609,
+      "offset": 13658,
       "length": 21,
       "value": "\"iPad Pro (9.7-inch)\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13642,
+      "offset": 13691,
       "length": 9,
       "value": "\"iPad6,7\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13653,
+      "offset": 13702,
       "length": 9,
       "value": "\"iPad6,8\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13692,
+      "offset": 13741,
       "length": 22,
       "value": "\"iPad Pro (12.9-inch)\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13726,
+      "offset": 13775,
       "length": 9,
       "value": "\"iPad7,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13737,
+      "offset": 13786,
       "length": 9,
       "value": "\"iPad7,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13776,
+      "offset": 13825,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13827,
+      "offset": 13876,
       "length": 9,
       "value": "\"iPad7,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13838,
+      "offset": 13887,
       "length": 9,
       "value": "\"iPad7,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13877,
+      "offset": 13926,
       "length": 22,
       "value": "\"iPad Pro (10.5-inch)\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13911,
+      "offset": 13960,
       "length": 9,
       "value": "\"iPad8,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13922,
+      "offset": 13971,
       "length": 9,
       "value": "\"iPad8,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13933,
+      "offset": 13982,
       "length": 9,
       "value": "\"iPad8,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13944,
+      "offset": 13993,
       "length": 9,
       "value": "\"iPad8,4\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13961,
+      "offset": 14010,
       "length": 20,
       "value": "\"iPad Pro (11-inch)\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 13993,
+      "offset": 14042,
       "length": 9,
       "value": "\"iPad8,5\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14004,
+      "offset": 14053,
       "length": 9,
       "value": "\"iPad8,6\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14015,
+      "offset": 14064,
       "length": 9,
       "value": "\"iPad8,7\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14026,
+      "offset": 14075,
       "length": 9,
       "value": "\"iPad8,8\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14043,
+      "offset": 14092,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14094,
+      "offset": 14143,
       "length": 12,
       "value": "\"AppleTV5,3\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14144,
+      "offset": 14193,
       "length": 10,
       "value": "\"Apple TV\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14166,
+      "offset": 14215,
       "length": 12,
       "value": "\"AppleTV6,2\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14216,
+      "offset": 14265,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14241,
+      "offset": 14290,
       "length": 19,
       "value": "\"AudioAccessory1,1\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14291,
+      "offset": 14340,
       "length": 9,
       "value": "\"HomePod\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14312,
+      "offset": 14361,
       "length": 6,
       "value": "\"i386\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14320,
+      "offset": 14369,
       "length": 8,
       "value": "\"x86_64\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14362,
+      "offset": 14411,
       "length": 104,
       "value": "\"Simulator \""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14425,
+      "offset": 14474,
       "length": 28,
       "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14458,
+      "offset": 14507,
       "length": 5,
       "value": "\"iOS\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "StringLiteral",
-      "offset": 14465,
+      "offset": 14514,
       "length": 1,
       "value": "\"\""
     },
@@ -36862,7 +36865,7 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12203,
+      "offset": 12460,
       "length": 1,
       "value": "0"
     },
@@ -37674,7 +37677,7 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Interruption\/HyBidInterruptionHandler.swift",
       "kind": "Array",
-      "offset": 975,
+      "offset": 932,
       "length": 2,
       "value": "[]"
     },
