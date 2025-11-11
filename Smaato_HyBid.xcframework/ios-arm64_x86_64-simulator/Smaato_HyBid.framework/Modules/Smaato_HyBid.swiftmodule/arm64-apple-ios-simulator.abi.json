@@ -36858,14 +36858,14 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4979,
+      "offset": 5378,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSKAdNetworkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12460,
+      "offset": 12955,
       "length": 1,
       "value": "0"
     },
