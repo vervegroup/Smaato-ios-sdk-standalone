@@ -22,7 +22,7 @@
 #import <UIKit/UIKit.h>
 #import <SmaatoSDKCore/SMAAdRequestParams.h>
 #import <SmaatoSDKBanner/SMABannerTypes.h>
-#import <Smaato_HyBid/Smaato_HyBidAdView.h>
+#import <NGSDK/NGSDKAdView.h>
 
 @class SMABannerView;
 /**
@@ -112,10 +112,10 @@
 /**
  Banner view used to display Image and RichMedia ad formats.
  */
-@interface SMABannerView: UIView<HyBidAdViewDelegate>
+@interface SMABannerView: UIView<NGSDKAdViewDelegate>
 
 
-@property (nonatomic, strong) HyBidAdView * _Nonnull adView;
+@property (nonatomic, strong) NGSDKAdView * _Nonnull adView;
 
 /**
  Ad space identifier assigned by Smaato.
@@ -185,5 +185,16 @@
 - (void)loadWithAdSpaceId:(NSString *_Nonnull)adSpaceId
                    adSize:(SMABannerAdSize)adSize
             requestParams:(SMAAdRequestParams *_Nullable)requestParams;
+
+/**
+ Create a banner view instance for ad response testing.
+ This method is useful for testing with ad responses from API calls.
+ 
+ @param adSize          Banner ad size
+ @param delegate        Delegate for banner callbacks
+ @return Banner view instance ready for ad response loading
+ */
++ (instancetype _Nonnull)createForAdResponseTestingWithAdSize:(SMABannerAdSize)adSize
+                                                      delegate:(id<SMABannerViewDelegate> _Nonnull)delegate;
 
 @end

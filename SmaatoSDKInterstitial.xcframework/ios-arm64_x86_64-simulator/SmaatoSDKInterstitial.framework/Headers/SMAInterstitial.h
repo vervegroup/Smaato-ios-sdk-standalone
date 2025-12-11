@@ -12,7 +12,7 @@
 
 @class SMAInterstitial;
 @class SMAAdRequestParams;
-@class HyBidInterstitialAd;
+@class NGSDKInterstitialAd;
 /**
  The delegate of a \c SMAInterstitial object must adopt the \c SMAInterstitialDelegate protocol to get callbacks about Interstitial Ad
  events.
@@ -79,7 +79,7 @@
 
 @property (nonatomic, weak) id<SMAInterstitialDelegate> delegate;
 
-@property (nonatomic, strong) HyBidInterstitialAd * _Nonnull interstitialAd;
+@property (nonatomic, strong) NGSDKInterstitialAd * _Nonnull interstitialAd;
 
 /**
  Registered adSpaceId (assigned by Smaato in SPX dashboard).
@@ -154,5 +154,14 @@
 + (void)loadInterstitialForAdSpaceId:(NSString *_Nonnull)adSpaceId
                             delegate:(id<SMAInterstitialDelegate> _Nonnull)delegate
                        requestParams:(SMAAdRequestParams *_Nullable)requestParams;
+
+/**
+ Create an interstitial instance for ad response testing.
+ This method is useful for testing with ad responses from API calls.
+ 
+ @param delegate  Delegate for interstitial callbacks
+ @return Interstitial instance ready for ad response loading
+ */
++ (instancetype _Nonnull)createForAdResponseTestingWithDelegate:(id<SMAInterstitialDelegate> _Nonnull)delegate;
 
 @end

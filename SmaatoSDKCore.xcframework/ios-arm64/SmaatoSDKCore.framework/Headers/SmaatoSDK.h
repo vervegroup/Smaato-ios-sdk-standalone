@@ -24,7 +24,7 @@
 #import <SmaatoSDKCore/SMAConfiguration.h>
 #import <SmaatoSDKCore/SMALocation.h>
 #import <SmaatoSDKCore/SmaatoSDKCore.h>
-#import <Smaato_HyBid/Smaato_HyBid.h>
+#import <NGSDK/NGSDK.h>
 
 /**
  Initializes the SDK with the given configuration and with SmaatoSdkInitialisationDelegate  methods

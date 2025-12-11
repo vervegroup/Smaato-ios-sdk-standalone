@@ -1,0 +1,44 @@
+// 
+// NGSDK SDK License
+//
+// https://github.com/pubnative/pubnative-hybid-ios-sdk/blob/main/LICENSE
+//
+
+#import <Foundation/Foundation.h>
+
+typedef NSString * NGSDKVASTAdTrackingEventType;
+
+// Player Operation Metrics
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_mute;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_unmute;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_pause;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_resume;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_rewind;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_click;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_skip;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_playerExpand;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_playerCollapse;
+
+// Linear Ad Metrics
+
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_loaded;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_start;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_firstQuartile;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_midpoint;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_thirdQuartile;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_complete;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_otherAdInteraction;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_progress;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_closeLinear;
+
+// Non Linear Ad Metrics
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_acceptInvitation;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_adExpand;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_adCollapse;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_minimize;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_close;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_overlayViewDuration;
+
+// Companign Ad Metrics
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_creativeView;
+extern NGSDKVASTAdTrackingEventType const NGSDKVASTAdTrackingEventType_ctaClick;

@@ -1,0 +1,11 @@
+framework module NGSDK {
+  umbrella header "NGSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module NGSDK.Swift {
+  header "NGSDK-Swift.h"
+  requires objc
+}

@@ -1,0 +1,1043 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NGSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AVFoundation
+import AdAttributionKit
+import AdSupport
+import AppTrackingTransparency
+import CoreBluetooth
+import CoreLocation
+import CoreTelephony
+import Foundation
+@_exported import NGSDK
+import Network
+import StoreKit
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _AdAttributionKit_StoreKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class NGSDKLogger : ObjectiveC.NSObject {
+  public static var logLevel: NGSDK.NGSDKLogLevel
+  @objc(setLogLevel:) public static func setLogLevel(_ logLevel: NGSDK.NGSDKLogLevel)
+  @objc public static func errorLog(fromClass className: Swift.String, fromMethod: Swift.String, withMessage: Swift.String)
+  @objc public static func warningLog(fromClass className: Swift.String, fromMethod: Swift.String, withMessage: Swift.String)
+  @objc public static func infoLog(fromClass className: Swift.String, fromMethod: Swift.String, withMessage: Swift.String)
+  @objc public static func debugLog(fromClass className: Swift.String, fromMethod: Swift.String, withMessage: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKAdAttributionParameter : ObjectiveC.NSObject {
+  @objc public static let jwt: Swift.String
+  @objc public static let custom_market_place: Swift.String
+  @objc public static let reengagement_url: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class NGSDKOpenRTBRequestModel : ObjectiveC.NSObject {
+  @objc public init(adRequestModel: NGSDK.NGSDKAdRequestModel, openRTBAdType: NGSDK.NGSDKOpenRTBAdType)
+  @objc public func getOpenRTBRequestBody() -> Swift.Dictionary<Swift.String, Any>
+  @objc deinit
+}
+extension UIKit.UIViewController {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public func showCustomAlert(title: Swift.String, message: Swift.String? = nil, style: UIKit.UIAlertController.Style = .alert, firstAction: UIKit.UIAlertAction? = nil, secondAction: UIKit.UIAlertAction? = nil, completionHandler: (() -> Swift.Void)? = nil)
+  #endif
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NGSDKSDKConfig : ObjectiveC.NSObject {
+  @objc public static let sharedConfig: NGSDK.NGSDKSDKConfig
+  @objc public var test: Swift.Bool
+  @objc public var reporting: Swift.Bool
+  @objc public var atomEnabled: Swift.Bool
+  @objc public var targeting: NGSDK.NGSDKTargetingModel?
+  @objc public var appToken: Swift.String?
+  @objc public var apiURL: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc public var openRtbApiURL: Swift.String
+  @objc public var appID: Swift.String?
+  @objc public var customRemoteConfigURL: Swift.String?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKImpressionConstants : ObjectiveC.NSObject {
+  @objc public static let PLACEMENT_POSITION_UNKNOWN: Swift.String
+  @objc public static let PLACEMENT_POSITION_FULLSCREEN: Swift.String
+  @objc public static let EXPANDABLE_DIRECTION_FULLSCREEN: Swift.String
+  @objc public static let EXPANDABLE_DIRECTION_RESIZE_MINIMIZE: Swift.String
+  @objc public static let VIDEO_PLACEMENT_TYPE_INTERSTITIAL: Swift.String
+  @objc public static let VIDEO_PLACEMENT_SUBTYPE_INTERSTITIAL: Swift.String
+  @objc public static let VIDEO_PLACEMENT_SUBTYPE_STANDALONE: Swift.String
+  @objc public static let VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ON: Swift.String
+  @objc public static let VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFF: Swift.String
+  @objc public static let VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ON: Swift.String
+  @objc public static let VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFF: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class NGSDKMRAIDCloseCardView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public init(dictionary: Foundation.NSDictionary)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
+  @objc deinit
+}
+extension NGSDK.NGSDKMRAIDCloseCardView : NGSDK.NGSDKContentInfoViewDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func contentInfoViewWidthNeedsUpdate(_ width: Foundation.NSNumber!)
+  #endif
+}
+@objc public protocol NGSDKReportingDelegate {
+  @objc func onEvent(with event: NGSDK.NGSDKReportingEvent)
+  @objc func onBeacon(with beacon: NGSDK.NGSDKReportingBeacon)
+  @objc func onVASTTracker(with tracker: NGSDK.NGSDKReportingVASTTracker)
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKReportingManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: NGSDK.NGSDKReportingManager
+  @objc public var events: [NGSDK.NGSDKReportingEvent]
+  @objc weak public var delegate: (any NGSDK.NGSDKReportingDelegate)?
+  @objc public var isAtomStarted: Swift.Bool
+  @objc public var beacons: [NGSDK.NGSDKReportingBeacon]
+  @objc public var vastTrackers: [NGSDK.NGSDKReportingVASTTracker]
+  @objc public func reportEvent(for event: NGSDK.NGSDKReportingEvent)
+  @objc public func reportEvents(for events: [NGSDK.NGSDKReportingEvent])
+  @objc public func clearAllReports()
+  @objc public func clearEvents()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func addCommonProperties(forAd ad: NGSDK.NGSDKAd?, withRequest request: NGSDK.NGSDKAdRequest?) -> [Swift.String : Swift.String]
+  #endif
+  @objc public func reportBeacon(for beacon: NGSDK.NGSDKReportingBeacon)
+  @objc public func clearBeacons()
+  @objc public func reportVASTTracker(for tracker: NGSDK.NGSDKReportingVASTTracker)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NGSDKSettings : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  @objc public static let sharedInstance: NGSDK.NGSDKSettings
+  @objc public var supportMultipleFidelities: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var advertisingId: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public var os: Swift.String {
+    @objc get
+  }
+  @objc public var osVersion: Swift.String {
+    @objc get
+  }
+  @objc public var deviceModel: Swift.String {
+    @objc get
+  }
+  @objc public var deviceModelIdentifier: Swift.String {
+    @objc get
+  }
+  @objc public var deviceMake: Swift.String {
+    @objc get
+  }
+  @objc public var deviceType: Swift.String {
+    @objc get
+  }
+  @objc public var screenHeightInPixelss: Swift.String {
+    @objc get
+  }
+  @objc public var screenWidthInPixels: Swift.String {
+    @objc get
+  }
+  @objc public var pxRatio: Swift.String {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var language: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public var jsValue: Swift.String {
+    @objc get
+  }
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var languageBCP47: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var carrierName: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var carrierMCCMNC: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public var connectionType: Swift.String {
+    @objc get
+  }
+  @objc public var deviceWidth: Swift.String {
+    @objc get
+  }
+  @objc public var deviceHeight: Swift.String {
+    @objc get
+  }
+  @objc public var orientation: Swift.String {
+    @objc get
+  }
+  @objc public var deviceSound: Swift.String {
+    @objc get
+  }
+  @objc public var audioVolumePercentage: Foundation.NSNumber {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var locale: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public var sdkVersion: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var appBundleID: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var appVersion: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public var isDeviceCharging: Swift.String {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var batteryLevel: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public var batterySaver: Swift.String {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var location: _LocationEssentials.CLLocation? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var identifierForVendor: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var ip: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var appTrackingTransparency: Foundation.NSNumber? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var isDarkModeEnabled: Swift.String? {
+    @objc get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public var isAirplaneModeEnabled: Swift.String? {
+    @objc get
+  }
+  #endif
+  @objc public var hasSIM: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
+}
+public typealias ReportingKey = Swift.String
+@objc public class NGSDKReportingEvent : ObjectiveC.NSObject {
+  @objc public var properties: [NGSDK.ReportingKey : Any]?
+  @objc public var eventType: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(with eventType: Swift.String, adFormat: Swift.String? = nil, properties: [NGSDK.ReportingKey : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(with eventType: Swift.String, errorMessage: Swift.String? = nil, properties: [NGSDK.ReportingKey : Any]? = nil)
+  #endif
+  public func propertiesValue() -> Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKSKAdNetworkViewController : ObjectiveC.NSObject {
+  @objc public static let shared: NGSDK.NGSDKSKAdNetworkViewController
+  public var isStoreKitViewPresented: Swift.Bool {
+    get
+    set
+  }
+  @objc public var avoidAutoStoreKitPresentationAfterReplay: Swift.Bool
+  @objc public func presentStoreKitView(productParameters: Swift.Dictionary<Swift.String, Any>, adFormat: Swift.String, isAutoStoreKitView: Swift.Bool, ad: NGSDK.NGSDKAd, rootViewController: UIKit.UIViewController)
+  @objc public func presentStoreKitView(productParameters: Swift.Dictionary<Swift.String, Any>, adFormat: Swift.String, isAutoStoreKitView: Swift.Bool, ad: NGSDK.NGSDKAd)
+  @objc public func isSKProductViewControllerPresented() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NGSDK.NGSDKSKAdNetworkViewController {
+  @objc(isAutoStorekitEnabledForAd:) public static func isAutoStorekitEnabledForAd(ad: NGSDK.NGSDKAd) -> Swift.Bool
+  @objc public static func getStorekitAutoCloseDelay(ad: NGSDK.NGSDKAd) -> Swift.Int
+}
+extension NGSDK.NGSDKSKAdNetworkViewController : StoreKit.SKStoreProductViewControllerDelegate {
+  @objc dynamic public func productViewControllerDidFinish(_ viewController: StoreKit.SKStoreProductViewController)
+}
+extension StoreKit.SKStoreProductViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
+}
+@objc public class NGSDKAdAttributionCustomClickAdsWrapper : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(ad: NGSDK.NGSDKAd, adFormat: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func startImpression(adView: UIKit.UIView?)
+  #endif
+  @objc public func adHasCustomMarketPlace() -> Swift.Bool
+  @objc public func handlingCustomMarketPlace(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc deinit
+}
+@objc public enum NGSDKOnTopOfType : Swift.Int, Swift.CaseIterable {
+  case UNKNOWN_TOP_EVENT
+  case DISPLAY
+  case COMPANION_AD
+  case CUSTOM_ENDCARD
+  public func stringValue() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [NGSDK.NGSDKOnTopOfType]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [NGSDK.NGSDKOnTopOfType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class NGSDKSkipOffset : ObjectiveC.NSObject {
+  @objc public static let DEFAULT_VIDEO_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_HTML_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_REWARDED_HTML_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD: Swift.Int
+  @objc public static let DEFAULT_END_CARD_CLOSE_OFFSET: Swift.Int
+  @objc public static let DEFAULT_END_CARD_CLOSE_MAX_OFFSET: Swift.Int
+  @objc public static let DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_REWARDED_HTML_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_INTERSTITIAL_HTML_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET: Swift.Int
+  @objc public static let DEFAULT_PC_VIDEO_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_PC_VIDEO_MAX_SKIP_OFFSET_COMPANION: Swift.Int
+  @objc public static let DEFAULT_PC_VIDEO_MAX_SKIP_OFFSET_NON_COMPANION: Swift.Int
+  @objc public static let DEFAULT_PC_INTERSTITIAL_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_PC_END_CARD_CLOSE_DELAY: Swift.Int
+  @objc public static let DEFAULT_BC_END_CARD_CLOSE_DELAY: Swift.Int
+  @objc public var offset: Foundation.NSNumber?
+  @objc public var isCustom: Swift.Bool
+  @objc public var style: Foundation.NSNumber
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(offset: Foundation.NSNumber?, isCustom: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(offset: Foundation.NSNumber?, isCustom: Swift.Bool, style: Foundation.NSNumber = 0)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func configure(offset: Foundation.NSNumber?, isCustom: Swift.Bool, style: Foundation.NSNumber = 0)
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NGSDKSessionManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: NGSDK.NGSDKSessionManager
+  @objc public var impressionCounter: [Swift.String : Swift.Int]
+  @objc public var sessionDuration: Swift.String
+  @objc public var safeImpressionCounter: [Swift.String : Swift.Int] {
+    @objc get
+  }
+  @objc public func setStartSession()
+  @objc public func updateSession(zoneID: Swift.String)
+  @objc public func incrementImpressionCounter(zoneID: Swift.String)
+  @objc public func sessionDuration(zoneID: Swift.String)
+  @objc public func setAgeOfAppSinceCreated()
+  @objc public func getAgeOfApp() -> Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NGSDKConsentConfig : ObjectiveC.NSObject {
+  @objc public static let sharedConfig: NGSDK.NGSDKConsentConfig
+  @objc public var coppa: Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKTargetingModel : ObjectiveC.NSObject {
+  @objc public var age: Foundation.NSNumber?
+  @objc public var interests: [Swift.String]
+  @objc public var gender: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKVASTEventBeaconsManager : ObjectiveC.NSObject {
+  @objc public static let shared: NGSDK.NGSDKVASTEventBeaconsManager
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func reportVASTEvent(type: Swift.String, ad: NGSDK.NGSDKAd?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func reportVASTEvent(type: Swift.String, ad: NGSDK.NGSDKAd?, errorCode: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func reportVASTEvent(type: Swift.String, ad: NGSDK.NGSDKAd?, onTopOf: NGSDK.NGSDKOnTopOfType)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func reportVASTEvent(type: Swift.String, ad: NGSDK.NGSDKAd?, onTopOf: NGSDK.NGSDKOnTopOfType, errorCode: Swift.Int)
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKInternalWebBrowser : ObjectiveC.NSObject {
+  @objc public static let shared: NGSDK.NGSDKInternalWebBrowser
+  @objc public var isInternalBrowserBeingPresented: Swift.Bool
+  @objc public func navigateToURL(_ url: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func webBrowserNavigationBehaviourFromString(_ value: Swift.String?) -> NGSDK.NGSDKWebBrowserNavigation
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKLandingBehaviour : ObjectiveC.NSObject {
+  @objc public enum NGSDKLandingBehaviourType : Swift.Int32 {
+    case instantCloseButton
+    case noCountdown
+    case countdown
+    case unknown
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int32)
+    #endif
+    public typealias RawValue = Swift.Int32
+    public var rawValue: Swift.Int32 {
+      get
+    }
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func convertString(value: Swift.String?) -> NGSDK.NGSDKLandingBehaviour.NGSDKLandingBehaviourType
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKConstants : ObjectiveC.NSObject {
+  @objc public static let HYBID_SDK_NAME: Swift.String
+  @objc public static let HYBID_OMSDK_VERSION: Swift.String
+  @objc public static let HYBID_SDK_VERSION: Swift.String
+  @objc public static let SMAATO_SDK_VERSION: Swift.String
+  @objc public static let HYBID_OMSDK_IDENTIFIER: Swift.String
+  @objc public static let SMAATO_OMSDK_IDENTIFIER: Swift.String
+  @objc public static let SMAATO_OMSDK_VERSION: Swift.String
+  @objc public static let RENDERING_SUCCESS: Swift.String
+  @objc public static let AD_SESSION_DATA: Swift.String
+  @objc public static let PERCENT_VISIBLE: Swift.String
+  @objc public static let HYBID_DEEPLINK_SCHEME: Swift.String
+  @objc public static let HYBID_DEEPLINK_PARAM: Swift.String
+  @objc public static let HYBID_FALLBACK_PARAM: Swift.String
+  @objc public static var mraidExpand: Swift.Bool
+  @objc public static var showEndCard: Swift.Bool
+  @objc public static var showCustomEndCard: Swift.Bool
+  @objc public static var customEndCardInputValue: Swift.String
+  @objc public static var customEndcardDisplay: NGSDK.NGSDKCustomEndcardDisplayBehaviour
+  @objc public static var interstitialCloseOnFinish: Swift.Bool
+  @objc public static var rewardedCloseOnFinish: Swift.Bool
+  @objc public static var rewardedHtmlSkipOffset: NGSDK.NGSDKSkipOffset
+  @objc public static var rewardedVideoSkipOffset: NGSDK.NGSDKSkipOffset
+  @objc public static var interstitialHtmlSkipOffset: NGSDK.NGSDKSkipOffset
+  @objc public static var pcInterstitialHtmlSkipOffset: NGSDK.NGSDKSkipOffset
+  @objc public static var videoSkipOffset: NGSDK.NGSDKSkipOffset
+  @objc public static var pcVideoSkipOffset: NGSDK.NGSDKSkipOffset
+  @objc public static var interstitialActionBehaviour: NGSDK.NGSDKInterstitialActionBehaviour
+  @objc public static var endCardCloseMaxOffset: NGSDK.NGSDKSkipOffset
+  @objc public static var nativeCloseButtonOffset: NGSDK.NGSDKSkipOffset
+  @objc public static var audioStatus: NGSDK.NGSDKAudioStatus
+  @objc public static var creativeAutoStorekitEnabled: Swift.Bool
+  @objc public static var sdkAutoStorekitEnabled: Swift.Bool
+  @objc public static var skAdNetworkModelInputValue: Foundation.NSDictionary
+  @objc public static var itunesIdValue: Swift.String
+  @objc public static var customCTAInputValue: Swift.String
+  @objc public static var customCtaEnabledInputValue: Swift.Bool
+  @objc public static var customCtaDelayInputValue: Swift.Int
+  @objc public static var customBundleId: Swift.String
+  @objc public static var iconSizeReducedInputValue: Swift.Bool
+  @objc public static var navigationModeInputValue: Swift.String
+  @objc public static var landingPageInputValue: Swift.Bool
+  @objc public static var ctaSizeTypeInputValue: Swift.String
+  @objc public static var ctaLocationTypeInputValue: Swift.String
+  @objc public static var sdkAutoStoreKitDelayInputValue: Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func endCardCloseOffset(adExperience: Swift.String?) -> NGSDK.NGSDKSkipOffset
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKAAKNetworkRequestModel : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func getAAKNetworkIDsString() -> Swift.String?
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class NGSDKVASTTracker : ObjectiveC.NSObject {
+  @objc final public let type: Swift.String
+  @objc final public let url: Swift.String
+  @objc final public let beaconName: Swift.String?
+  public static var safeTriggeredTrackers: [NGSDK.NGSDKVASTTracker] {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(type: Swift.String, url: Swift.String, beaconName: Swift.String? = nil)
+  #endif
+  @objc public func shouldBeTriggered() -> Swift.Bool
+  @objc public func addToTriggeredTrackersList()
+  @objc public static func cleanTriggeredTrackersList()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class NGSDKCustomCTAView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public init(ad: NGSDK.NGSDKAd, viewController: UIKit.UIViewController, delegate: any NGSDK.NGSDKCustomCTAViewDelegate, adFormat: Swift.String)
+  @objc deinit
+}
+extension NGSDK.NGSDKCustomCTAView {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func presentCustomCTAWithDelay()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func removeCustomCTA()
+  @objc(changeDelegateFor:) @_Concurrency.MainActor @preconcurrency dynamic public func changeDelegate(delegate: any NGSDK.NGSDKCustomCTAViewDelegate)
+  @objc @_Concurrency.MainActor @preconcurrency public static func isCustomCTAValid(ad: NGSDK.NGSDKAd) -> Swift.Bool
+}
+extension NGSDK.NGSDKCustomCTAView : NGSDK.NGSDKInterruptionDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adHasFocus()
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adHasNoFocus()
+}
+@objc public protocol NGSDKInterstitialAdDelegate {
+  @objc func interstitialDidLoad()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func interstitialDidFailWithError(_ error: (any Swift.Error)!)
+  #endif
+  @objc func interstitialDidTrackImpression()
+  @objc func interstitialDidTrackClick()
+  @objc func interstitialDidDismiss()
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKInterstitialAd : ObjectiveC.NSObject {
+  @objc public var ad: NGSDK.NGSDKAd?
+  @objc public var isReady: Swift.Bool
+  @objc public var isMediation: Swift.Bool
+  @objc public var mediationWatermarkData: Foundation.Data?
+  @objc public var isAutoCacheOnLoad: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc(initWithDelegate:) convenience public init(delegate: any NGSDK.NGSDKInterstitialAdDelegate)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(initWithZoneID:andWithDelegate:) convenience public init(zoneID: Swift.String?, andWith delegate: any NGSDK.NGSDKInterstitialAdDelegate)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(initWithZoneID:withAppToken:andWithDelegate:) convenience public init(zoneID: Swift.String?, withAppToken appToken: Swift.String?, andWith delegate: any NGSDK.NGSDKInterstitialAdDelegate)
+  #endif
+  @objc public func setOpenRTBAdType(adFormat: NGSDK.NGSDKOpenRTBAdType)
+  @objc public func load()
+  @objc public func loadExchangeAd()
+  @objc public func prepare()
+  @objc(setMediationVendor:) public func setMediationVendor(with mediationVendor: Swift.String)
+  @objc(prepareAdWithContent:) public func prepareAdWithContent(adContent: Swift.String)
+  @objc(prepareAdWithAdReponse:) public func prepareAdWithAdReponse(adReponse: Swift.String)
+  @objc(prepareExchangeAdWithAdReponse:) public func prepareExchangeAdWithAdReponse(adReponse: Swift.String)
+  @objc(prepareVideoTagFrom:) public func prepareVideoTag(from url: Swift.String)
+  @objc(prepareCustomMarkupFrom:) public func prepareCustomMarkupFrom(_ markup: Swift.String)
+  @objc public func show()
+  @objc(showFromViewController:) public func show(from viewController: UIKit.UIViewController)
+  @objc public func renderAd(ad: NGSDK.NGSDKAd)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(setMediationWatermark:) public func setMediationWatermark(_ pngData: Foundation.Data?)
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum NGSDKAdContext : Swift.Int {
+  case vastPlayer
+  case endcard
+  case mraidView
+  case nativeAd
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKInterruptionHandler : ObjectiveC.NSObject {
+  @objc public static let shared: NGSDK.NGSDKInterruptionHandler
+  @objc weak public var overlappingElementDelegate: (any NGSDK.NGSDKInterruptionDelegate)?
+  @objc weak public var feedbackViewDelegate: (any NGSDK.NGSDKAdFeedbackViewDelegate)?
+  @objc override dynamic public init()
+  @objc deinit
+  @objc public func activateContext(_ context: NGSDK.NGSDKAdContext, with delegate: any NGSDK.NGSDKInterruptionDelegate)
+  @objc public func deactivateContext(_ context: NGSDK.NGSDKAdContext)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func activeDelegate() -> (any NGSDK.NGSDKInterruptionDelegate)?
+  #endif
+  @objc public func hasOnlyAppLifeCycleInterruption() -> Swift.Bool
+}
+extension NGSDK.NGSDKInterruptionHandler {
+  @objc dynamic public func endCardWillShow()
+  @objc dynamic public func customEndCardWillShow()
+}
+extension NGSDK.NGSDKInterruptionHandler {
+  public func productViewControllerIsReadyToShow()
+  public func productViewControllerWillShow()
+  public func productViewControllerDidShow(isAutoStoreKitView: Swift.Bool, adFormat: Swift.String)
+  public func productViewControllerDidFinish()
+  @objc dynamic public func productViewControllerDidFail(error: any Swift.Error)
+}
+extension NGSDK.NGSDKInterruptionHandler : NGSDK.NGSDKAdFeedbackViewDelegate {
+  @objc dynamic public func adFeedbackViewDidLoad()
+  @objc dynamic public func adFeedbackViewWillShow()
+  @objc dynamic public func adFeedbackViewDidShow()
+  @objc dynamic public func adFeedbackViewDidFailWithError(_ error: any Swift.Error)
+  @objc dynamic public func adFeedbackViewDidDismiss()
+}
+extension NGSDK.NGSDKInterruptionHandler {
+  public func internalWebBrowserDidShow()
+  public func internalWebBrowserDidDismiss()
+}
+@objc public protocol NGSDKInterruptionDelegate : ObjectiveC.NSObjectProtocol {
+  @objc optional func adHasNoFocus()
+  @objc optional func adHasFocus()
+  @objc optional func endCardWillShow()
+  @objc optional func customEndCardWillShow()
+  @objc optional func willEnterForeground()
+  @objc optional func feedbackViewWillShow()
+  @objc optional func feedbackViewDidDismiss()
+  @objc optional func productViewControllerIsReadyToShow()
+  @objc optional func productViewControllerWillShow()
+  @objc optional func productViewControllerDidShow()
+  @objc optional func productViewControllerDidFail(error: any Swift.Error)
+  @objc optional func productViewControllerDidFinish()
+  @objc optional func internalWebBrowserDidShow()
+}
+@objc public protocol NGSDKRewardedAdDelegate {
+  @objc func rewardedDidLoad()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func rewardedDidFailWithError(_ error: (any Swift.Error)!)
+  #endif
+  @objc func rewardedDidTrackImpression()
+  @objc func rewardedDidTrackClick()
+  @objc func rewardedDidDismiss()
+  @objc func onReward()
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKRewardedAd : ObjectiveC.NSObject {
+  @objc public var ad: NGSDK.NGSDKAd?
+  @objc public var isReady: Swift.Bool
+  @objc public var isMediation: Swift.Bool
+  @objc public var mediationWatermarkData: Foundation.Data?
+  @objc public var isAutoCacheOnLoad: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc(initWithDelegate:) convenience public init(delegate: any NGSDK.NGSDKRewardedAdDelegate)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(initWithZoneID:andWithDelegate:) convenience public init(zoneID: Swift.String?, andWith delegate: any NGSDK.NGSDKRewardedAdDelegate)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(initWithZoneID:withAppToken:andWithDelegate:) convenience public init(zoneID: Swift.String?, withAppToken appToken: Swift.String?, andWith delegate: any NGSDK.NGSDKRewardedAdDelegate)
+  #endif
+  @objc public func load()
+  @objc public func loadExchangeAd()
+  @objc public func setOpenRTBAdType(adFormat: NGSDK.NGSDKOpenRTBAdType)
+  @objc public func prepare()
+  @objc(setMediationVendor:) public func setMediationVendor(with mediationVendor: Swift.String)
+  @objc(prepareCustomMarkupFrom:) public func prepareCustomMarkupFrom(_ markup: Swift.String)
+  @objc(prepareAdWithContent:) public func prepareAdWithContent(adContent: Swift.String)
+  @objc(prepareExchangeAdWithAdReponse:) public func prepareExchangeAdWithAdReponse(adReponse: Swift.String)
+  @objc(prepareAdWithAdReponse:) public func prepareAdWithAdReponse(adReponse: Swift.String)
+  @objc public func show()
+  @objc(showFromViewController:) public func show(from viewController: UIKit.UIViewController)
+  @objc public func renderAd(ad: NGSDK.NGSDKAd)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc(setMediationWatermark:) public func setMediationWatermark(_ pngData: Foundation.Data?)
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKMRAIDCommand : ObjectiveC.NSObject {
+  @objc public enum NGSDKMRAIDCommandType : Swift.Int32 {
+    case mraid
+    case verveAdExperience
+    case consoleLog
+    case unknown
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int32)
+    #endif
+    public typealias RawValue = Swift.Int32
+    public var rawValue: Swift.Int32 {
+      get
+    }
+  }
+  @available(*, unavailable)
+  @objc override dynamic public init()
+  @objc public func commandTypeWith(text: Swift.String) -> NGSDK.NGSDKMRAIDCommand.NGSDKMRAIDCommandType
+  @objc deinit
+}
+@objc public class NGSDKCTAData : ObjectiveC.NSObject {
+  @objc final public let size: NGSDK.NGSDKCTASize
+  @objc final public let location: NGSDK.NGSDKCTALocation
+  @objc final public let cornerRadius: CoreFoundation.CGFloat
+  @objc public init(size: NGSDK.NGSDKCTASize, location: NGSDK.NGSDKCTALocation)
+  @objc public static func sizeFromValue(_ value: Any) -> NGSDK.NGSDKCTASize
+  @objc public static func locationFromValue(_ value: Any) -> NGSDK.NGSDKCTALocation
+  @objc public func sizeValue() -> CoreFoundation.CGSize
+  @objc public func fontSize() -> CoreFoundation.CGFloat
+  @objc public func ctaImageWithFixedSize(image: UIKit.UIImage) -> UIKit.UIImage
+  @objc public func locationBottomConstraint() -> CoreFoundation.CGFloat
+  @objc public func locationLeadingConstraint() -> CoreFoundation.CGFloat
+  @objc public func accessibilityIdentifierString() -> Swift.String
+  @objc deinit
+}
+@objc public enum NGSDKCTASize : Swift.Int32 {
+  @objc(NGSDKCTASizeDefault) case defaultSize
+  case medium
+  case large
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int32)
+  #endif
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+@objc public enum NGSDKCTALocation : Swift.Int32 {
+  @objc(NGSDKCTALocationDefault) case defaultLocation
+  case bottom_down
+  case bottom_up
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int32)
+  #endif
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+@objc public class NGSDKReportingBeacon : ObjectiveC.NSObject {
+  @objc public var properties: [NGSDK.ReportingKey : Any]?
+  @objc public var beaconType: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(with beaconType: Swift.String, properties: [NGSDK.ReportingKey : Any]? = nil)
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKGDPR : ObjectiveC.NSObject {
+  @objc(NGSDKGDPRk) public enum NGSDKGDPRKeys : Swift.Int, Swift.CaseIterable {
+    case CCPAPrivacyKey
+    case GDPRConsentKey
+    case GDPRAppliesKey
+    case CCPAPublicPrivacyKey
+    case GDPRPublicConsentKey
+    case GDPRPublicConsentV2Key
+    case GPPPublicString
+    case GPPPublicID
+    case GPPString
+    case GPPID
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [NGSDK.NGSDKGDPR.NGSDKGDPRKeys]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [NGSDK.NGSDKGDPR.NGSDKGDPRKeys] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @available(*, unavailable)
+  @objc override dynamic public init()
+  @objc(stringValueForKey:) public static func stringValue(key: NGSDK.NGSDKGDPR.NGSDKGDPRKeys) -> Swift.String
+  @objc public static func allGDPRKeys() -> [Swift.String]
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKCustomCTATracking : ObjectiveC.NSObject {
+  @available(*, unavailable)
+  @objc override dynamic public init()
+  @objc public init(ad: NGSDK.NGSDKAd)
+  @objc public func impressionBeacons() -> Swift.Array<NGSDK.NGSDKDataModel>
+  @objc public func clickBeacons() -> Swift.Array<NGSDK.NGSDKDataModel>
+  @objc public func endCardClickBeacons() -> Swift.Array<NGSDK.NGSDKDataModel>
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NGSDKLocationConfig : ObjectiveC.NSObject {
+  @objc public static let sharedConfig: NGSDK.NGSDKLocationConfig
+  @objc public var locationTrackingEnabled: Swift.Bool {
+    @objc get
+    @objc set(enabled)
+  }
+  @objc public var locationUpdatesEnabled: Swift.Bool {
+    @objc get
+    @objc set(enabled)
+  }
+  @objc deinit
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency public func changeTextFont(text: Swift.String, font: UIKit.UIFont)
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKAppImpressionWrapper : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 17.4, *)
+  @objc public static func createWithAd(_ ad: NGSDK.NGSDKAd?, adFormat: Swift.String) async -> NGSDK.NGSDKAppImpressionWrapper?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func createWithAd(_ ad: NGSDK.NGSDKAd?, adFormat: Swift.String, completion: @escaping (NGSDK.NGSDKAppImpressionWrapper?) -> Swift.Void)
+  #endif
+  @objc public func beginView(forAdFormat adFormat: Swift.String, completion: @escaping @convention(block) (Swift.Bool) -> Swift.Void)
+  @objc public func endView(forAdFormat adFormat: Swift.String, completion: @escaping @convention(block) (Swift.Bool) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKAdAttributionSKOverlayManager : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 17.4, *)
+  @objc public func getAppConfiguration(appIdentifier: Swift.String?, position: StoreKit.SKOverlay.Position, userDismissible: Swift.Bool, ad: NGSDK.NGSDKAd, adFormat: Swift.String) async -> StoreKit.SKOverlay.AppConfiguration?
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKAdSessionData : ObjectiveC.NSObject {
+  @objc public var creativeId: Swift.String?
+  @objc public var campaignId: Swift.String?
+  @objc public var bidPrice: Swift.String?
+  @objc public var adFormat: Swift.String?
+  @objc public var renderingStatus: Swift.String?
+  @objc public var viewability: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NGSDKViewbilityConfig : ObjectiveC.NSObject {
+  @objc public static let sharedConfig: NGSDK.NGSDKViewbilityConfig
+  @objc public var impressionTrackerMethod: NGSDK.NGSDKImpressionTrackerMethod
+  @objc public var minVisibleTime: Swift.Int
+  @objc public var minVisiblePercent: Swift.Double
+  @objc deinit
+}
+@objc public class NGSDKReportingVASTTracker : ObjectiveC.NSObject {
+  @objc public var properties: [NGSDK.ReportingKey : Any]?
+  @objc public var trackerType: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(with trackerType: Swift.String, properties: [NGSDK.ReportingKey : Any]? = nil)
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class NGSDKReportingProperties : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(NGSDKReportingCommon) public class Common : NGSDK.NGSDKReportingProperties {
+  @objc public static let AD_FORMAT: Swift.String
+  @objc public static let AD_SIZE: Swift.String
+  @objc public static let CATEGORY_ID: Swift.String
+  @objc public static let CAMPAIGN_ID: Swift.String
+  @objc public static let EVENT_TYPE: Swift.String
+  @objc public static let CREATIVE_TYPE: Swift.String
+  @objc public static let TIMESTAMP: Swift.String
+  @objc public static let APPTOKEN: Swift.String
+  @objc public static let ZONE_ID: Swift.String
+  @objc public static let INTEGRATION_TYPE: Swift.String
+  @objc public static let KEY_MEDIATION_VENDOR: Swift.String
+  @objc public static let TIME_TO_LOAD: Swift.String
+  @objc public static let AD_TYPE: Swift.String
+  @objc public static let CACHE_TIME: Swift.String
+  @objc public static let AD_REQUEST: Swift.String
+  @objc public static let AD_RESPONSE: Swift.String
+  @objc public static let RESPONSE_TIME: Swift.String
+  @objc public static let REQUEST_TYPE: Swift.String
+  @objc public static let RENDER_TIME: Swift.String
+  @objc public static let AD_POSITION: Swift.String
+  @objc public static let ERROR_CODE: Swift.String
+  @objc public static let ERROR_MESSAGE: Swift.String
+  @objc public static let CREATIVE: Swift.String
+  @objc public static let HAS_END_CARD: Swift.String
+  @objc public static let LAST_SESSION_TIMESTAMP: Swift.String
+  @objc public static let IMPRESSION_SESSION_COUNT: Swift.String
+  @objc public static let START_SESSION_TIMESTAMP: Swift.String
+  @objc public static let SESSION_DURATION: Swift.String
+  @objc public static let AGE_OF_APP: Swift.String
+  @objc public static let BEACON_TYPE: Swift.String
+  @objc public static let VAST_TRACKER_TYPE: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(NGSDKReportingEventType) public class EventType : NGSDK.NGSDKReportingProperties {
+  @objc public static let REQUEST: Swift.String
+  @objc public static let IMPRESSION: Swift.String
+  @objc public static let OMID_IMPRESSION: Swift.String
+  @objc public static let CLICK: Swift.String
+  @objc public static let ERROR: Swift.String
+  @objc public static let INTERSTITIAL_CLOSED: Swift.String
+  @objc public static let REWARDED_CLOSED: Swift.String
+  @objc public static let VIDEO_STARTED: Swift.String
+  @objc public static let VIDEO_DISMISSED: Swift.String
+  @objc public static let VIDEO_MUTE: Swift.String
+  @objc public static let VIDEO_UNMUTE: Swift.String
+  @objc public static let AD_SESSION_INITIALIZED: Swift.String
+  @objc public static let AD_SESSION_LOADED: Swift.String
+  @objc public static let AD_SESSION_STARTED: Swift.String
+  @objc public static let AD_SESSION_STOPPED: Swift.String
+  @objc public static let VIDEO_AD_FIRST_QUARTILE: Swift.String
+  @objc public static let VIDEO_AD_MIDPOINT: Swift.String
+  @objc public static let VIDEO_AD_THIRD_QUARTILE: Swift.String
+  @objc public static let VIDEO_AD_COMPLETE: Swift.String
+  @objc public static let VIDEO_AD_PAUSE: Swift.String
+  @objc public static let VIDEO_AD_RESUME: Swift.String
+  @objc public static let VIDEO_AD_BUFFER_START: Swift.String
+  @objc public static let VIDEO_AD_BUFFER_FINISH: Swift.String
+  @objc public static let VIDEO_AD_VOLUME_CHANGE: Swift.String
+  @objc public static let VIDEO_AD_SKIPPED: Swift.String
+  @objc public static let VIDEO_AD_CLICKED: Swift.String
+  @objc public static let LOAD: Swift.String
+  @objc public static let LOAD_FAIL: Swift.String
+  @objc public static let SHOW: Swift.String
+  @objc public static let REPLAY: Swift.String
+  @objc public static let CACHE: Swift.String
+  @objc public static let RESPONSE: Swift.String
+  @objc public static let RENDER: Swift.String
+  @objc public static let RENDER_ERROR: Swift.String
+  @objc public static let COMPANION_VIEW: Swift.String
+  @objc public static let REWARD: Swift.String
+  @objc public static let SESSION_REPORT_INFO: Swift.String
+  @objc public static let CUSTOM_ENDCARD_IMPRESSION: Swift.String
+  @objc public static let CUSTOM_ENDCARD_IMPRESSION_ERROR: Swift.String
+  @objc public static let DEFAULT_ENDCARD_SKIP: Swift.String
+  @objc public static let DEFAULT_ENDCARD_CLOSE: Swift.String
+  @objc public static let DEFAULT_ENDCARD_IMPRESSION: Swift.String
+  @objc public static let DEFAULT_ENDCARD_IMPRESSION_ERROR: Swift.String
+  @objc public static let DEFAULT_ENDCARD_CLICK: Swift.String
+  @objc public static let CUSTOM_ENDCARD_CLOSE: Swift.String
+  @objc public static let CUSTOM_ENDCARD_CLICK: Swift.String
+  @objc public static let ATOM_ACTIVATED: Swift.String
+  @objc public static let ATOM_DEACTIVATED: Swift.String
+  @objc public static let ATOM_ACTIVATED_RECEIVED: Swift.String
+  @objc public static let ATOM_DEACTIVATED_RECEIVED: Swift.String
+  @objc public static let CUSTOM_CTA_IMPRESSION: Swift.String
+  @objc public static let CUSTOM_CTA_CLICK: Swift.String
+  @objc public static let CUSTOM_CTA_ENDCARD_CLICK: Swift.String
+  @objc public static let SKOVERLAY_IMPRESSION: Swift.String
+  @objc public static let SKOVERLAY_IMPRESSION_ERROR: Swift.String
+  @objc public static let STOREKIT_PRODUCT_VIEW_DISMISS: Swift.String
+  @objc public static let STOREKIT_AUTOMATIC_CLICK: Swift.String
+  @objc public static let STOREKIT_AUTOMATIC_DEFAULT_ENDCARD_CLICK: Swift.String
+  @objc public static let STOREKIT_AUTOMATIC_CUSTOM_ENDCARD_CLICK: Swift.String
+  @objc public static let SKOVERLAY_AUTOMATIC_CLICK: Swift.String
+  @objc public static let SKOVERLAY_AUTOMATIC_DEFAULT_ENDCARD_CLICK: Swift.String
+  @objc public static let SKOVERLAY_AUTOMATIC_CUSTOM_ENDCARD_CLICK: Swift.String
+  @objc public static let AUTO_STORE_KIT_IMPRESSION: Swift.String
+  @objc public static let AUTO_STORE_KIT_IMPRESSION_ERROR: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_AD_TYPE_MACRO: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_ERROR: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_HANDLE_TAP: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_HANDLE_TAP_ERROR: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_BEGIN_VIEW: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_BEGIN_VIEW_ERROR: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_END_VIEW: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_END_VIEW_ERROR: Swift.String
+  @objc public static let AD_SESSION_DATA_SHARED_TO_ATOM: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(NGSDKReportingCreativeType) public class CreativeType : NGSDK.NGSDKReportingProperties {
+  @objc public static let STANDARD: Swift.String
+  @objc public static let VIDEO: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(NGSDKReportingAdFormat) public class AdFormat : NGSDK.NGSDKReportingProperties {
+  @objc public static let NATIVE: Swift.String
+  @objc public static let BANNER: Swift.String
+  @objc public static let FULLSCREEN: Swift.String
+  @objc public static let REWARDED: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(NGSDKReportingVASTBeacon) public class VASTBeacon : NGSDK.NGSDKReportingProperties {
+  @objc public static let BEACONS: Swift.String
+  @objc public static let ONTOPOF: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(NGSDKReportingBeaconType) public class BeaconType : NGSDK.NGSDKReportingProperties {
+  @objc public static let CLICK: Swift.String
+  @objc public static let IMPRESSION: Swift.String
+  @objc public static let CUSTOM_ENDCARD_IMPRESSION: Swift.String
+  @objc public static let CUSTOM_ENDCARD_CLICK: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(NGSDKReportingVASTTrackerType) public class VASTTrackerType : NGSDK.NGSDKReportingProperties {
+  @objc public static let IMPRESSION: Swift.String
+  @objc public static let COMPANION_CLICK_THROUGH: Swift.String
+  @objc public static let CLICK_TRACKING: Swift.String
+  @objc public static let PROGRESS: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol NGSDKURLRedirectorDelegate {
+  @objc func onURLRedirectorStart(url: Swift.String)
+  @objc func onURLRedirectorRedirect(url: Swift.String)
+  @objc func onURLRedirectorFinish(url: Swift.String)
+  @objc func onURLRedirectorFail(url: Swift.String, withError error: any Swift.Error)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class NGSDKURLRedirector : ObjectiveC.NSObject, Foundation.URLSessionTaskDelegate, Foundation.URLSessionDataDelegate {
+  @objc weak public var delegate: (any NGSDK.NGSDKURLRedirectorDelegate)?
+  @objc public var userAgent: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func drill(url: Swift.String, skanModel: NGSDK.NGSDKSkAdNetworkModel?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
+  #endif
+  @objc public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  #endif
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NGSDK.NGSDKOnTopOfType : Swift.Equatable {}
+extension NGSDK.NGSDKOnTopOfType : Swift.Hashable {}
+extension NGSDK.NGSDKOnTopOfType : Swift.RawRepresentable {}
+extension NGSDK.NGSDKLandingBehaviour.NGSDKLandingBehaviourType : Swift.Equatable {}
+extension NGSDK.NGSDKLandingBehaviour.NGSDKLandingBehaviourType : Swift.Hashable {}
+extension NGSDK.NGSDKLandingBehaviour.NGSDKLandingBehaviourType : Swift.RawRepresentable {}
+extension NGSDK.NGSDKAdContext : Swift.Equatable {}
+extension NGSDK.NGSDKAdContext : Swift.Hashable {}
+extension NGSDK.NGSDKAdContext : Swift.RawRepresentable {}
+extension NGSDK.NGSDKMRAIDCommand.NGSDKMRAIDCommandType : Swift.Equatable {}
+extension NGSDK.NGSDKMRAIDCommand.NGSDKMRAIDCommandType : Swift.Hashable {}
+extension NGSDK.NGSDKMRAIDCommand.NGSDKMRAIDCommandType : Swift.RawRepresentable {}
+extension NGSDK.NGSDKCTASize : Swift.Equatable {}
+extension NGSDK.NGSDKCTASize : Swift.Hashable {}
+extension NGSDK.NGSDKCTASize : Swift.RawRepresentable {}
+extension NGSDK.NGSDKCTALocation : Swift.Equatable {}
+extension NGSDK.NGSDKCTALocation : Swift.Hashable {}
+extension NGSDK.NGSDKCTALocation : Swift.RawRepresentable {}
+extension NGSDK.NGSDKGDPR.NGSDKGDPRKeys : Swift.Equatable {}
+extension NGSDK.NGSDKGDPR.NGSDKGDPRKeys : Swift.Hashable {}
+extension NGSDK.NGSDKGDPR.NGSDKGDPRKeys : Swift.RawRepresentable {}

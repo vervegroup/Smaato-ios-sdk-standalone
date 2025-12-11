@@ -22,19 +22,19 @@
 		</data>
 		<key>Headers/SmaatoSDK.h</key>
 		<data>
-		HC2HIrnIHXfth2P1vL+F4PUKHMw=
+		gjc+69C/h+vKFHpXkjQ5VIkgt7I=
 		</data>
 		<key>Headers/SmaatoSDKCore.h</key>
 		<data>
-		8Uj50LF2OwkDKcyqSr8Oo6sWevE=
+		rZJ1URq8HLDphZ8Pn9wRd7yEyPE=
 		</data>
 		<key>Headers/SmaatoUBCache.h</key>
 		<data>
-		t0wwQKhMyryre08SjniggPoqGHE=
+		iXTNZvFVPppr9R+IVzQ/f2hwxhI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+fDifXwoZZsy/e/AQknSDCYh+5U=
+		bbBby0PzOUdtiG4DyFQ6bpT3D6c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,21 +83,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O4sUqziaNYm1g/02h91aS1P395OWabpZcN4HFGZg83M=
+			jyGO6V34IRmILOolHrfHBKXckyPaHy8yZrEnq7p40FQ=
 			</data>
 		</dict>
 		<key>Headers/SmaatoSDKCore.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fZqv6Rfg4mQlSRRQH/qvInk4ZOvkNudLN/mg+i008bo=
+			/hSEWa7kZX+p1eQPD9otSbpiZSPsobFTYpiIN+ik5CM=
 			</data>
 		</dict>
 		<key>Headers/SmaatoUBCache.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pg4y4L+yKVyf1YaReNzBD8H4zQT+yOMTrnZcTfsHAg8=
+			K+VAl4FKMWtJwHKydRDKyW9JjmQzT5O/y0t+9IJiNjc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

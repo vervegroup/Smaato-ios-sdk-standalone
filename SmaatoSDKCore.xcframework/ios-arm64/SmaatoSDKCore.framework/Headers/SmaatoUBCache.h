@@ -22,14 +22,14 @@
 
 #import <Foundation/Foundation.h>
 
-@class HyBidAd;
-@class HyBidNativeAd;
+@class NGSDKAd;
+@class NGSDKNativeAd;
 
 @interface SmaatoUBCache : NSObject
 
-+ (void)addToCache:(NSString *)uuid ad:(HyBidAd *)ad;
-+ (HyBidAd *)getAdWithuId:(NSString *)uid;
-+ (void)addNativeAdToCache:(NSString *)uuid ad:(HyBidNativeAd *)ad;
-+ (HyBidNativeAd *)getNativeAdWithuId:(NSString *)uid;
++ (void)addToCache:(NSString *)uuid ad:(NGSDKAd *)ad;
++ (NGSDKAd *)getAdWithuId:(NSString *)uid;
++ (void)addNativeAdToCache:(NSString *)uuid ad:(NGSDKNativeAd *)ad;
++ (NGSDKNativeAd *)getNativeAdWithuId:(NSString *)uid;
 @end
 

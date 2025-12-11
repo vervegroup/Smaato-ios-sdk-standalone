@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 
 @class SMARewardedInterstitial;
-@class HyBidRewardedAd;
+@class NGSDKRewardedAd;
 /**
  The delegate of a \c SMARewardedInterstitial object must adopt the \c SMARewardedInterstitialDelegate
  protocol to get callbacks about Rewarded interstitial Ad events.
@@ -64,7 +64,7 @@
 
 @interface SMARewardedInterstitial: NSObject
 
-@property (nonatomic, strong) HyBidRewardedAd * _Nonnull rewardedAd;
+@property (nonatomic, strong) NGSDKRewardedAd * _Nonnull rewardedAd;
 
 /**
  Registered adSpaceId (assigned by Smaato in SPX dashboard).
@@ -117,5 +117,14 @@
  Not recommended to use. Call `[SmaatoSDK loadRewardedInterstitialForAdSpaceId:delegate:]` instead.
  */
 - (null_unspecified instancetype)init NS_UNAVAILABLE;
+
+/**
+ Create a rewarded interstitial instance for ad response testing.
+ This method is useful for testing with ad responses from API calls.
+ 
+ @param delegate  Delegate for rewarded interstitial callbacks
+ @return Rewarded interstitial instance ready for ad response loading
+ */
++ (instancetype _Nonnull)createForAdResponseTestingWithDelegate:(id<SMARewardedInterstitialDelegate> _Nonnull)delegate;
 
 @end

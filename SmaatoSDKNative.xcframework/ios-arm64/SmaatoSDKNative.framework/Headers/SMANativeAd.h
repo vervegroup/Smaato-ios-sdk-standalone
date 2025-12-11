@@ -21,7 +21,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Smaato_HyBid/Smaato_HyBidNativeAdLoader.h>
+#import <NGSDK/NGSDKNativeAdLoader.h>
 
 
 @class SMAAdRequestParams;
@@ -115,7 +115,7 @@ Sent when the ad view impression has been tracked by the sdk.
 /**
 \c SMANativeAd class encapsulates public properties and methods and acts as entry point for Native ad request.
 */
-@interface SMANativeAd: NSObject<HyBidNativeAdLoaderDelegate,HyBidNativeAdDelegate>
+@interface SMANativeAd: NSObject<NGSDKNativeAdLoaderDelegate,NGSDKNativeAdDelegate>
 
 /**
 Ad space identifier assigned by Smaato.
