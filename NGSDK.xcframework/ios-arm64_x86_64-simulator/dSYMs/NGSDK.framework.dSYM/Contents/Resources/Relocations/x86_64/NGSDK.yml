@@ -4693,7 +4693,7 @@ relocations:
   - { offset: 0x22CD26, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x700, symBinAddr: 0x130F30, symSize: 0x40 }
   - { offset: 0x22CD3A, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x740, symBinAddr: 0x130F70, symSize: 0x10 }
   - { offset: 0x22CE23, size: 0x8, addend: 0x0, symName: '_$sSo17UIAlertControllerC5title7message14preferredStyleABSSSg_AFSo0abF0VtcfCTO', symObjAddr: 0x410, symBinAddr: 0x130C40, symSize: 0x140 }
-  - { offset: 0x22D053, size: 0x8, addend: 0x0, symName: '_$s5NGSDK14NGSDKSDKConfigC12sharedConfigACvpZ', symObjAddr: 0xAAF8, symBinAddr: 0x2925D8, symSize: 0x0 }
+  - { offset: 0x22D053, size: 0x8, addend: 0x0, symName: '_$s5NGSDK14NGSDKSDKConfigC12sharedConfigACvpZ', symObjAddr: 0xAB08, symBinAddr: 0x2925D8, symSize: 0x0 }
   - { offset: 0x22D5CA, size: 0x8, addend: 0x0, symName: '_$s5NGSDK14NGSDKSDKConfigC12sharedConfig_WZ', symObjAddr: 0x0, symBinAddr: 0x130F80, symSize: 0x30 }
   - { offset: 0x22D5E4, size: 0x8, addend: 0x0, symName: '_$s5NGSDK14NGSDKSDKConfigCMa', symObjAddr: 0x30, symBinAddr: 0x130FB0, symSize: 0x20 }
   - { offset: 0x22D5F8, size: 0x8, addend: 0x0, symName: '_$s5NGSDK14NGSDKSDKConfigC12sharedConfigACvau', symObjAddr: 0x70, symBinAddr: 0x130FF0, symSize: 0x40 }

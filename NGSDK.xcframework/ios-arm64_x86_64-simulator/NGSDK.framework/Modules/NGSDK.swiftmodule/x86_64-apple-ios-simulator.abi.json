@@ -35849,9 +35849,9 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/NGSDKSDKConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1027,
-      "length": 27,
-      "value": "\"https:\/\/dsp.pubnative.net\""
+      "offset": 1039,
+      "length": 31,
+      "value": "\"https:\/\/dsp.nextgen.verve.net\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/NGSDKImpressionConstants.swift",
