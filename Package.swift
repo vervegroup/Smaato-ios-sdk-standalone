@@ -45,43 +45,43 @@ let package = Package(
                 "NGSDK",
                 "OMSDK"
             ],
-            path: "Sources/SmaatoSDKDependencies"
+            path: "Sources"
         ),
 
         .target(
             name: "SmaatoSDKCoreDependencies",
             dependencies: ["SmaatoSDKCoreBinary", "ATOM", "NGSDK", "OMSDK"],
-            path: "Sources/SmaatoSDKCoreDependencies"
+            path: "Sources"
         ),
         .target(
             name: "SmaatoSDKBannerDependencies",
             dependencies: ["SmaatoSDKBannerBinary", "SmaatoSDKCoreBinary", "ATOM", "NGSDK", "OMSDK"],
-            path: "Sources/SmaatoSDKBannerDependencies"
+            path: "Sources"
         ),
         .target(
             name: "SmaatoSDKInterstitialDependencies",
             dependencies: ["SmaatoSDKInterstitialBinary", "SmaatoSDKCoreBinary", "ATOM", "NGSDK", "OMSDK"],
-            path: "Sources/SmaatoSDKInterstitialDependencies"
+            path: "Sources"
         ),
         .target(
             name: "SmaatoSDKRewardedAdsDependencies",
             dependencies: ["SmaatoSDKRewardedAdsBinary", "SmaatoSDKCoreBinary", "ATOM", "NGSDK", "OMSDK"],
-            path: "Sources/SmaatoSDKRewardedAdsDependencies"
+            path: "Sources"
         ),
         .target(
             name: "SmaatoSDKNativeDependencies",
             dependencies: ["SmaatoSDKNativeBinary", "SmaatoSDKCoreBinary", "ATOM", "NGSDK", "OMSDK"],
-            path: "Sources/SmaatoSDKNativeDependencies"
+            path: "Sources"
         ),
         .target(
             name: "SmaatoSDKUnifiedBiddingDependencies",
             dependencies: ["SmaatoSDKUnifiedBiddingBinary", "SmaatoSDKCoreBinary", "ATOM", "NGSDK", "OMSDK"],
-            path: "Sources/SmaatoSDKUnifiedBiddingDependencies"
+            path: "Sources"
         ),
         .target(
             name: "SmaatoSDKInAppBiddingDependencies",
             dependencies: ["SmaatoSDKInAppBiddingBinary", "SmaatoSDKCoreBinary", "ATOM", "NGSDK", "OMSDK"],
-            path: "Sources/SmaatoSDKInAppBiddingDependencies"
+            path: "Sources"
         )
     ]
 )
