@@ -1,9 +1,4 @@
-//
-//  Package.swift
-//  
-//
-//  Created by Aysel Abdullayeva on 06.02.26.
-//
+// swift-tools-version:5.9
 
 import PackageDescription
 
