@@ -20,7 +20,7 @@ let package = Package(
         .binaryTarget(name: "SmaatoSDKUnifiedBiddingBinary", path: "SmaatoSDKUnifiedBidding.xcframework"),
         .binaryTarget(name: "SmaatoSDKInAppBiddingBinary", path: "SmaatoSDKInAppBidding.xcframework"),
 
-        .binaryTarget(name: "SmaatoHyBidBianry", path: "Smaato_HyBid.xcframework"),
+        .binaryTarget(name: "SmaatoHyBidBinary", path: "Smaato_HyBid.xcframework"),
         .binaryTarget(name: "OMSDK", path: "OMSDK-1.5.4/OMSDK_Pubnativenet.xcframework"),
 
         .target(
