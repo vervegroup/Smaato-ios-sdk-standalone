@@ -6,7 +6,9 @@ let package = Package(
     name: "SmaatoSDKStandalone",
     platforms: [.iOS(.v12)],
     products: [
-        .library(name: "SmaatoSDK", targets: ["SmaatoSDKDependencies"])
+        .library(name: "SmaatoSDK", targets: ["SmaatoSDKDependencies"]),
+        .library(name: "SmaatoSDKAdaptersAdMob", targets: ["SmaatoSDKAdaptersAdMob"]),
+        .library(name: "SmaatoSDKAdaptersAppLovinWaterfall", targets: ["SmaatoSDKAdaptersAppLovinWaterfall"])
     ],
     targets: [
         .binaryTarget(name: "ATOM", path: "ATOM.xcframework"),
@@ -41,6 +43,54 @@ let package = Package(
                 "OMSDK_Smaato"
             ],
             path: "Sources"
+        ),
+        .target(
+            name: "SmaatoSDKAdaptersAdMob",
+            dependencies: [
+                "SmaatoSDKCoreBinary",
+                "SmaatoSDKBannerBinary",
+                "SmaatoSDKInterstitialBinary",
+                "SmaatoSDKNativeBinary",
+                "SmaatoSDKRewardedAdsBinary"
+            ],
+            path: "SmaatoSDKAdapters/AdMob",
+            publicHeadersPath: ".",
+            sources: [
+                "Banner/SMAAdMobSmaatoBannerAdapter.m",
+                "Interstitial/SMAAdMobSmaatoInterstitialAdapter.m",
+                "Native/SMAAdMobSmaatoNativeAdapter.m",
+                "RewardedVideo/SMAAdMobSmaatoRewardedVideoAdapter.m"
+            ],
+            cSettings: [
+                .headerSearchPath("Banner"),
+                .headerSearchPath("Interstitial"),
+                .headerSearchPath("Native"),
+                .headerSearchPath("RewardedVideo")
+            ],
+            linkerSettings: [
+                .unsafeFlags(["-ObjC"])
+            ]
+        ),
+        .target(
+            name: "SmaatoSDKAdaptersAppLovinWaterfall",
+            dependencies: [
+                "SmaatoSDKCoreBinary",
+                "SmaatoSDKBannerBinary",
+                "SmaatoSDKInterstitialBinary",
+                "SmaatoSDKNativeBinary",
+                "SmaatoSDKRewardedAdsBinary"
+            ],
+            path: "SmaatoSDKAdapters/ApplovinWaterfall",
+            publicHeadersPath: ".",
+            sources: [
+                "SmaatoApplovinMediationAdapter.m"
+            ],
+            cSettings: [
+                .headerSearchPath(".")
+            ],
+            linkerSettings: [
+                .unsafeFlags(["-ObjC"])
+            ]
         )
     ]
 )
