@@ -54,13 +54,13 @@ let package = Package(
                 "SmaatoSDKRewardedAdsBinary"
             ],
             path: "SmaatoSDKAdapters/AdMob",
-            publicHeadersPath: ".",
             sources: [
                 "Banner/SMAAdMobSmaatoBannerAdapter.m",
                 "Interstitial/SMAAdMobSmaatoInterstitialAdapter.m",
                 "Native/SMAAdMobSmaatoNativeAdapter.m",
                 "RewardedVideo/SMAAdMobSmaatoRewardedVideoAdapter.m"
             ],
+            publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath("Banner"),
                 .headerSearchPath("Interstitial"),
@@ -81,10 +81,10 @@ let package = Package(
                 "SmaatoSDKRewardedAdsBinary"
             ],
             path: "SmaatoSDKAdapters/ApplovinWaterfall",
-            publicHeadersPath: ".",
             sources: [
                 "SmaatoApplovinMediationAdapter.m"
             ],
+            publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
             ],
