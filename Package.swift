@@ -11,10 +11,10 @@ let package = Package(
         .library(name: "SmaatoSDKAdaptersAppLovinWaterfall", targets: ["SmaatoSDKAdaptersAppLovinWaterfall"])
     ],
     dependencies: [
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "11.0.0")
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "11.0.0"),
+        .package(url: "https://github.com/pubnative/ATOM.git", exact: "3.8.0-spm.2")
     ],
     targets: [
-        .binaryTarget(name: "ATOM", path: "ATOM.xcframework"),
         .binaryTarget(name: "NGSDK", path: "NGSDK.xcframework"),
 
         .binaryTarget(name: "SmaatoSDKCoreBinary", path: "SmaatoSDKCore.xcframework"),
@@ -40,10 +40,10 @@ let package = Package(
                 "SmaatoSDKUnifiedBiddingBinary",
                 "SmaatoSDKInAppBiddingBinary",
                 "SmaatoHyBidBinary",
-                "ATOM",
                 "NGSDK",
                 "OMSDK_Pubnativenet",
-                "OMSDK_Smaato"
+                "OMSDK_Smaato",
+                .product(name: "ATOM", package: "ATOM")
             ],
             path: "Sources"
         ),
