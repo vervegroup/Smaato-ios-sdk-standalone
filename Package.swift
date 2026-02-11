@@ -10,6 +10,9 @@ let package = Package(
         .library(name: "SmaatoSDKAdaptersAdMob", targets: ["SmaatoSDKAdaptersAdMob"]),
         .library(name: "SmaatoSDKAdaptersAppLovinWaterfall", targets: ["SmaatoSDKAdaptersAppLovinWaterfall"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "11.0.0")
+    ],
     targets: [
         .binaryTarget(name: "ATOM", path: "ATOM.xcframework"),
         .binaryTarget(name: "NGSDK", path: "NGSDK.xcframework"),
@@ -51,7 +54,8 @@ let package = Package(
                 "SmaatoSDKBannerBinary",
                 "SmaatoSDKInterstitialBinary",
                 "SmaatoSDKNativeBinary",
-                "SmaatoSDKRewardedAdsBinary"
+                "SmaatoSDKRewardedAdsBinary",
+                .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
             ],
             path: "SmaatoSDKAdapters/AdMob",
             sources: [
