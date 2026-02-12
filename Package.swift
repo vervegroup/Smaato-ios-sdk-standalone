@@ -26,7 +26,7 @@ let package = Package(
         .binaryTarget(name: "SmaatoSDKInAppBiddingBinary", path: "SmaatoSDKInAppBidding.xcframework"),
 
         .binaryTarget(name: "SmaatoHyBidBinary", path: "Smaato_HyBid.xcframework"),
-        .binaryTarget(name: "OMSDK_Pubnativenet", path: "OMSDK-1.5.4/OMSDK_Pubnativenet.xcframework"),
+        .binaryTarget(name: "Smaato_OMSDK_Pubnativenet", path: "OMSDK-1.5.4/OMSDK_Pubnativenet.xcframework"),
         .binaryTarget(name: "OMSDK_Smaato", path: "OMSDK-Smaato-1.5.2/OMSDK_Smaato.xcframework"),
         
         .target(
@@ -41,7 +41,7 @@ let package = Package(
                 "SmaatoSDKInAppBiddingBinary",
                 "SmaatoHyBidBinary",
                 "NGSDK",
-                "OMSDK_Pubnativenet",
+                "Smaato_OMSDK_Pubnativenet",
                 "OMSDK_Smaato",
                 .product(name: "ATOM", package: "ATOM")
             ],
