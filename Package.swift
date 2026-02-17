@@ -12,7 +12,6 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", from: "11.0.0"),
-        .package(url: "https://github.com/pubnative/ATOM.git", exact: "3.8.0-spm.2")
     ],
     targets: [
         .binaryTarget(name: "NGSDK", path: "NGSDK.xcframework"),
@@ -24,10 +23,6 @@ let package = Package(
         .binaryTarget(name: "SmaatoSDKNativeBinary", path: "SmaatoSDKNative.xcframework"),
         .binaryTarget(name: "SmaatoSDKUnifiedBiddingBinary", path: "SmaatoSDKUnifiedBidding.xcframework"),
         .binaryTarget(name: "SmaatoSDKInAppBiddingBinary", path: "SmaatoSDKInAppBidding.xcframework"),
-
-        .binaryTarget(name: "SmaatoHyBidBinary", path: "Smaato_HyBid.xcframework"),
-        .binaryTarget(name: "Smaato_OMSDK_Pubnativenet", path: "OMSDK-1.5.4/OMSDK_Pubnativenet.xcframework"),
-        .binaryTarget(name: "OMSDK_Smaato", path: "OMSDK-Smaato-1.5.2/OMSDK_Smaato.xcframework"),
         
         .target(
             name: "SmaatoSDKDependencies",
@@ -39,11 +34,7 @@ let package = Package(
                 "SmaatoSDKNativeBinary",
                 "SmaatoSDKUnifiedBiddingBinary",
                 "SmaatoSDKInAppBiddingBinary",
-                "SmaatoHyBidBinary",
                 "NGSDK",
-                "Smaato_OMSDK_Pubnativenet",
-                "OMSDK_Smaato",
-                .product(name: "ATOM", package: "ATOM")
             ],
             path: "Sources"
         ),
