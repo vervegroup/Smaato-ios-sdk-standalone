@@ -89,6 +89,30 @@ extension NGSDKMRAIDCloseCardView : NGSDKContentInfoViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func contentInfoViewWidthNeedsUpdate(_ width: Foundation.NSNumber!)
   #endif
 }
+@objc(NGSDKBeaconItem) public class NGSDKBeaconItem : ObjectiveC.NSObject {
+  @objc final public let type: Swift.String
+  @objc final public let url: Swift.String?
+  @objc final public let js: Swift.String?
+  @objc public var content: Swift.String {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(type: Swift.String, url: Swift.String?, js: Swift.String?)
+  #endif
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(NGSDKBeaconsInspector) public class NGSDKBeaconsInspector : ObjectiveC.NSObject {
+  @objc public static let shared: NGSDKBeaconsInspector
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func setResponseForBeaconsInspector(_ response: Swift.String?)
+  #endif
+  @objc public func firedBeacons() -> [NGSDKBeaconItem]
+  @objc public func adBeaconsFromLastResponse(completion: @escaping ([NGSDKBeaconItem]) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func adBeacons(fromResponse response: Swift.String?, completion: @escaping ([NGSDKBeaconItem]) -> Swift.Void)
+  #endif
+  @objc deinit
+}
 @objc public protocol NGSDKReportingDelegate {
   @objc func onEvent(with event: NGSDKReportingEvent)
   @objc func onBeacon(with beacon: NGSDKReportingBeacon)
@@ -442,19 +466,19 @@ extension StoreKit.SKStoreProductViewController {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class NGSDKConstants : ObjectiveC.NSObject {
-  @objc public static let HYBID_SDK_NAME: Swift.String
-  @objc public static let HYBID_OMSDK_VERSION: Swift.String
-  @objc public static let HYBID_SDK_VERSION: Swift.String
+  @objc public static let NGSDK_SDK_NAME: Swift.String
+  @objc public static let NGSDK_OMSDK_VERSION: Swift.String
+  @objc public static let NGSDK_SDK_VERSION: Swift.String
   @objc public static let SMAATO_SDK_VERSION: Swift.String
-  @objc public static let HYBID_OMSDK_IDENTIFIER: Swift.String
+  @objc public static let NGSDK_OMSDK_IDENTIFIER: Swift.String
   @objc public static let SMAATO_OMSDK_IDENTIFIER: Swift.String
   @objc public static let SMAATO_OMSDK_VERSION: Swift.String
   @objc public static let RENDERING_SUCCESS: Swift.String
   @objc public static let AD_SESSION_DATA: Swift.String
   @objc public static let PERCENT_VISIBLE: Swift.String
-  @objc public static let HYBID_DEEPLINK_SCHEME: Swift.String
-  @objc public static let HYBID_DEEPLINK_PARAM: Swift.String
-  @objc public static let HYBID_FALLBACK_PARAM: Swift.String
+  @objc public static let NGSDK_DEEPLINK_SCHEME: Swift.String
+  @objc public static let NGSDK_DEEPLINK_PARAM: Swift.String
+  @objc public static let NGSDK_FALLBACK_PARAM: Swift.String
   @objc public static var mraidExpand: Swift.Bool
   @objc public static var showEndCard: Swift.Bool
   @objc public static var showCustomEndCard: Swift.Bool
@@ -477,15 +501,12 @@ extension StoreKit.SKStoreProductViewController {
   @objc public static var skAdNetworkModelInputValue: Foundation.NSDictionary
   @objc public static var itunesIdValue: Swift.String
   @objc public static var customCTAInputValue: Swift.String
-  @objc public static var customCtaEnabledInputValue: Swift.Bool
-  @objc public static var customCtaDelayInputValue: Swift.Int
   @objc public static var customBundleId: Swift.String
   @objc public static var iconSizeReducedInputValue: Swift.Bool
   @objc public static var navigationModeInputValue: Swift.String
   @objc public static var landingPageInputValue: Swift.Bool
   @objc public static var ctaSizeTypeInputValue: Swift.String
   @objc public static var ctaLocationTypeInputValue: Swift.String
-  @objc public static var sdkAutoStoreKitDelayInputValue: Swift.Int
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func endCardCloseOffset(adExperience: Swift.String?) -> NGSDKSkipOffset
   #endif
@@ -541,7 +562,6 @@ extension NGSDKCustomCTAView : NGSDKInterruptionDelegate {
   @objc public var ad: NGSDKAd?
   @objc public var isReady: Swift.Bool
   @objc public var isMediation: Swift.Bool
-  @objc public var mediationWatermarkData: Foundation.Data?
   @objc public var isAutoCacheOnLoad: Swift.Bool {
     @objc get
     @objc set
@@ -566,9 +586,6 @@ extension NGSDKCustomCTAView : NGSDKInterruptionDelegate {
   @objc public func show()
   @objc(showFromViewController:) public func show(from viewController: UIKit.UIViewController)
   @objc public func renderAd(ad: NGSDKAd)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc(setMediationWatermark:) public func setMediationWatermark(_ pngData: Foundation.Data?)
-  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -649,7 +666,6 @@ extension NGSDKInterruptionHandler {
   @objc public var ad: NGSDKAd?
   @objc public var isReady: Swift.Bool
   @objc public var isMediation: Swift.Bool
-  @objc public var mediationWatermarkData: Foundation.Data?
   @objc public var isAutoCacheOnLoad: Swift.Bool {
     @objc get
     @objc set
@@ -673,9 +689,6 @@ extension NGSDKInterruptionHandler {
   @objc public func show()
   @objc(showFromViewController:) public func show(from viewController: UIKit.UIViewController)
   @objc public func renderAd(ad: NGSDKAd)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc(setMediationWatermark:) public func setMediationWatermark(_ pngData: Foundation.Data?)
-  #endif
   @objc override dynamic public init()
   @objc deinit
 }

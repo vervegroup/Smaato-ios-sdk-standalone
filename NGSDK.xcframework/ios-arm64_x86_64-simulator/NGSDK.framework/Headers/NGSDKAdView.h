@@ -1,7 +1,6 @@
 // 
 // NGSDK SDK License
 //
-// https://github.com/pubnative/pubnative-hybid-ios-sdk/blob/main/LICENSE
 //
 
 #import <UIKit/UIKit.h>
@@ -16,8 +15,6 @@ typedef enum {
     BANNER_POSITION_TOP,
     BANNER_POSITION_BOTTOM
 } NGSDKBannerPosition;
-
-NS_ASSUME_NONNULL_BEGIN
 
 @protocol NGSDKAdViewDelegate<NSObject>
 
@@ -42,7 +39,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NGSDKBannerPosition bannerPosition;
 @property (nonatomic, assign) BOOL isAutoCacheOnLoad;
 @property (nonatomic) NSInteger autoRefreshTimeInSeconds;
-@property (nonatomic, strong, nullable) NSData *mediationWatermarkData;
 
 - (instancetype)initWithSize:(NGSDKAdSize *)adSize;
 - (instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
@@ -67,8 +63,5 @@ NS_ASSUME_NONNULL_BEGIN
 - (NGSDKAdPresenter *)createAdPresenter;
 
 - (void)setMediationVendor:(NSString *)mediationVendor;
-- (void)setMediationWatermark:(NSData * _Nullable)pngData;
 
 @end
-
-NS_ASSUME_NONNULL_END

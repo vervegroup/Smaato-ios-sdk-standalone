@@ -4,313 +4,321 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AdResponse.json</key>
+		<data>
+		3234u8h1bEaWgnj+/2CHM3BG9nA=
+		</data>
 		<key>Headers/ATOMManager.h</key>
 		<data>
-		Yv7tNcGbjcLPqSNAe37JqcwVfWE=
+		HeKmro85nStlwGNDt3lRWkbOAsM=
 		</data>
 		<key>Headers/NGSDK-Swift.h</key>
 		<data>
-		p6WCt2+e7v3BxWvdMu7zRMiplwY=
+		qKk7vcVWHpCcOfokiKfJNgiAjiM=
 		</data>
 		<key>Headers/NGSDK.h</key>
 		<data>
-		sk+oypq5DchHTB6PgVfRnTaBd9M=
+		YBkQW/l8r23m3kFp/r6yjw89NxY=
 		</data>
 		<key>Headers/NGSDKAd.h</key>
 		<data>
-		IbB/ctjMrd1/KfZN20X6VXSucF8=
+		81+Cq2CZyhCKODw/hD8cweTdHaU=
 		</data>
 		<key>Headers/NGSDKAdCache.h</key>
 		<data>
-		mZj23jonnP4yPXqYrZPMluiteYM=
+		x5gEF3edjTca8TxKUHus9nKrsaI=
 		</data>
 		<key>Headers/NGSDKAdFeedbackViewDelegate.h</key>
 		<data>
-		b0q2dYgb0bQWel1oN+AU0xGQrQw=
+		zqw906KqiEsMTunikXeey6k/6qA=
 		</data>
 		<key>Headers/NGSDKAdImpression.h</key>
 		<data>
-		jQqcU0UnsmAcW/NJC+PtcGasD9o=
+		yMfU7aCvja4fU7yVVfdiDP7bKrA=
 		</data>
 		<key>Headers/NGSDKAdModel.h</key>
 		<data>
-		l6qyAY9/5K6k7SRQ4Tba/cXeWYk=
+		hNFBLg+ELpeLIW9wRa4avtjPjn0=
 		</data>
 		<key>Headers/NGSDKAdPresenter.h</key>
 		<data>
-		OpyNvjRXzdHMdLsYCT+99yHMtlA=
+		lvWlkwX6d2nc1Y5CEgk1nMV597o=
 		</data>
 		<key>Headers/NGSDKAdPresenterFactory.h</key>
 		<data>
-		bTUAzZuoD5xqqABW0j1z8NwXhp0=
+		XRWHaT/U0ENVuvDQYsLlY+lbNbE=
 		</data>
 		<key>Headers/NGSDKAdRequest.h</key>
 		<data>
-		Ku68iDDstwyUaGLKt1LZvCpsqDQ=
+		qL8snu2BZpPcHfhuBxtyq3/18ww=
 		</data>
 		<key>Headers/NGSDKAdRequestModel.h</key>
 		<data>
-		Aaz7E3JgNNH3HCnd/D7mdz3jY9E=
+		vcfV8gMmNscM3eeVuNegjwLjjKg=
 		</data>
 		<key>Headers/NGSDKAdSize.h</key>
 		<data>
-		nW3ofMmJ0Mu1y3ygbnsJEkxvQL4=
+		zFNWMXEUys5gjY8di+3qOmchZW8=
 		</data>
 		<key>Headers/NGSDKAdSourceConfig.h</key>
 		<data>
-		exIStILFfYE4X1z6RVuG7pgNbcg=
+		FetgpMXlU1clvxr5J108cjtMPwE=
 		</data>
 		<key>Headers/NGSDKAdView.h</key>
 		<data>
-		RayuhaXfhwvMQDjIjQbheGT4QU0=
+		SZ3M78PFb0c0tueIW+mLMQ1zn3M=
 		</data>
 		<key>Headers/NGSDKBannerAdRequest.h</key>
 		<data>
-		i7UDBCICP6Y0iyStyRqVuG99Hcs=
+		EyXQyAxbR2oHyhgmgsNFsP7tjRI=
 		</data>
 		<key>Headers/NGSDKBannerPresenterFactory.h</key>
 		<data>
-		TQ0Fb/6+QVjbpcX2QCbRUi7LNaw=
+		99p9m0VETUmCzodzgVm6yNxQKpU=
 		</data>
 		<key>Headers/NGSDKBaseModel.h</key>
 		<data>
-		wdWjds+fL+bk5IhLAmqQtxD6zAA=
+		v5FefLIg7WIb7sjgB9YCMTVOmnc=
+		</data>
+		<key>Headers/NGSDKBeaconsInspectorHelper.h</key>
+		<data>
+		G/ZFx3pMbIwA+RY3OFz5T033v8s=
 		</data>
 		<key>Headers/NGSDKConfig.h</key>
 		<data>
-		kxoIS+Mc7QEHpexvxJA8lKB07Fk=
+		EDwV6rT8OQg10l1nUkM8p8iC3vs=
 		</data>
 		<key>Headers/NGSDKConfigManager.h</key>
 		<data>
-		nE3ktwdpO334H5Q6hilQmaksWlI=
+		ApkxcyX1OUksm/cktLRbBMud5JY=
 		</data>
 		<key>Headers/NGSDKConfigModel.h</key>
 		<data>
-		noVCb4NKf4rRko/WIm5Ex/FeVoU=
+		GLUdyk4LYVS1tdPfYc2iuqoZwyg=
 		</data>
 		<key>Headers/NGSDKContentInfoView.h</key>
 		<data>
-		LMCVkOONTR8A1jfOV7fT9XOh0Os=
+		nTU373qIb49Z1poy/uyhN6yg9c4=
 		</data>
 		<key>Headers/NGSDKCustomCTAViewDelegate.h</key>
 		<data>
-		B0I0aQ+sYhlEwS685ODfEh2udAY=
+		CzppsfE+UNaKxHbMOdAGHpizD6U=
 		</data>
 		<key>Headers/NGSDKDataModel.h</key>
 		<data>
-		a7qed2p5mSW19PIlU5d3wyUiy/8=
+		wzfLhgEbswTUvwnxYUiW3kbh/bk=
 		</data>
 		<key>Headers/NGSDKDiagnosticsManager.h</key>
 		<data>
-		kjZmolQo12TmmnEFMhXeOCk1ftU=
+		U7GU6RkPkruSHXvPYMzoav5hV0A=
 		</data>
 		<key>Headers/NGSDKEndCard.h</key>
 		<data>
-		xceAkR6SY+O+hVzydks7/XnySSA=
+		xaXrF46F6G7cNgxb0WrWnnqPpDI=
 		</data>
 		<key>Headers/NGSDKError.h</key>
 		<data>
-		5ZiLXlSMYRlHpmjJjgnDeSvVgGs=
+		tFs4mvceUsswSKiM6U0PUaQvD+0=
 		</data>
 		<key>Headers/NGSDKHeaderBiddingUtils.h</key>
 		<data>
-		9bOvlxrIL+2Tle4y43sJqLVgWao=
+		a+M9ZQh/rgaMSXCwmhq7Khtqbzc=
 		</data>
 		<key>Headers/NGSDKIntegrationType.h</key>
 		<data>
-		Vvb+HFN1b+nRWr2YvnF1RamA3fY=
+		clylAdTbrRxNHWtUEZtYvsxbjh8=
 		</data>
 		<key>Headers/NGSDKInterstitialAdRequest.h</key>
 		<data>
-		bVaKpD1dq8+uNUo9AvwUlFsiDes=
+		CWdZNn5TJD5RquWPdiU/8B5gmhs=
 		</data>
 		<key>Headers/NGSDKInterstitialPresenter.h</key>
 		<data>
-		fPWbHEe9l1JJtyq4IqwTXCJW/Pk=
+		//TUgdJ5Lqh6pKufLEwW2OIzjXU=
 		</data>
 		<key>Headers/NGSDKInterstitialPresenterFactory.h</key>
 		<data>
-		QvNI5TZo298ouzhmpfpB/HsQNJI=
+		MxnESsQ7ZOMWuFMPHyBIDj7w5kA=
 		</data>
 		<key>Headers/NGSDKLeaderboardAdRequest.h</key>
 		<data>
-		KcC8VfwpTzKauYySusXohrHc22c=
+		3P6cO9u6tqUbH7togRsN6Y11uaE=
 		</data>
 		<key>Headers/NGSDKLocationManager.h</key>
 		<data>
-		apLiEE93Mnzz/wNr3mvWPblD3Xs=
+		eU16dvTLTq+e87/kHXlKFMzX1Tg=
 		</data>
 		<key>Headers/NGSDKMRAIDServiceDelegate.h</key>
 		<data>
-		PUf8zpY0KgNbPTmMBQGZMfJgiXg=
+		e824WNbDCXZuTKCsglDLMr+M3v8=
 		</data>
 		<key>Headers/NGSDKMRAIDServiceProvider.h</key>
 		<data>
-		DRRDZDJejJO2Rbh5eynV6IaacLo=
+		4y1uC/afC7Amdz/636xMNs8/vJQ=
 		</data>
 		<key>Headers/NGSDKMRAIDView.h</key>
 		<data>
-		QOQF2uyS/DlTppLyWaqqymzgLv4=
+		7wIqI3/yc17lgGbsetvmfr3AJ/Y=
 		</data>
 		<key>Headers/NGSDKMRectAdRequest.h</key>
 		<data>
-		IKT5rCP5ZYj1zspwds6gdkUTo4k=
+		0Zg1YWhWOYpfgzVOuGhiCpr4xi4=
 		</data>
 		<key>Headers/NGSDKNativeAd.h</key>
 		<data>
-		Ft+uLf8pkibvRgNgKA/ThYZoBiM=
+		Char/k74ltIkVkl7Y38vO73ebC8=
 		</data>
 		<key>Headers/NGSDKNativeAdLoader.h</key>
 		<data>
-		v6rmPlDKd/H0IADehPeocouOE9M=
+		xvnzjLYIVOyq0Q8Rop7I7d/NKr4=
 		</data>
 		<key>Headers/NGSDKNativeAdRenderer.h</key>
 		<data>
-		6fC7/gUGHEwxqPx98H/KxMaB/g4=
+		6XuTL66f23mKN2iPNSg0etlSKvQ=
 		</data>
 		<key>Headers/NGSDKOpenRTBBaseModel.h</key>
 		<data>
-		dQ/KGNs1HpjHVxyjkYjMxdQxLjg=
+		s2TftDVX/+wfccr2wCj/80LDp3I=
 		</data>
 		<key>Headers/NGSDKOpenRTBDataModel.h</key>
 		<data>
-		PUGD+JSFq/cxi8t7Y2NqejgY+Yg=
+		tAn7GcJVb6OckkcVZKIkV5kGNyQ=
 		</data>
 		<key>Headers/NGSDKRequestParameter.h</key>
 		<data>
-		Rb3sp6uF7QcprLPUnTHD3cMbeWM=
+		5QtJLe4KjxOsd0X/ULwcS73vZFY=
 		</data>
 		<key>Headers/NGSDKRewardedAdRequest.h</key>
 		<data>
-		3+L3hisbZDl2SP1xyh0AbzBoplA=
+		LyR+5t57Ywj4Yymi3Qn/3eGXvzQ=
 		</data>
 		<key>Headers/NGSDKRewardedPresenter.h</key>
 		<data>
-		4zaavENQRxcKKNYoo6nlIE5f3K0=
+		wrDWRhplZkuQ40bJp1QweWcSCZw=
 		</data>
 		<key>Headers/NGSDKRewardedPresenterFactory.h</key>
 		<data>
-		98VeJ0GaiecADtHhZstBnfE840M=
+		JeYWqKW5dctG1AzWU7r5FpzwNMo=
 		</data>
 		<key>Headers/NGSDKSKAdNetworkParameter.h</key>
 		<data>
-		ZdcS94fuBlRKte9uUAaehhLACE8=
+		Wesm4+9idsnkxDrJfRnELEl+LwM=
 		</data>
 		<key>Headers/NGSDKSKOverlay.h</key>
 		<data>
-		pqytTXPJgn6J3cjAKs6pog5exiQ=
+		LqWSU65nnrcX5nKdJQcDaLevfe4=
 		</data>
 		<key>Headers/NGSDKSKOverlayDelegate.h</key>
 		<data>
-		mYZmSRyplymBa9T05rYkG0IRp6w=
+		aMZeSGy43hXHyY0iftgsF9dGzsA=
 		</data>
 		<key>Headers/NGSDKSKOverlayTimerType.h</key>
 		<data>
-		A45jvgpLEmzcrhFPhJfmi7bdwsM=
+		I02/fFpZ7p12OStPAtjwguOV26g=
 		</data>
 		<key>Headers/NGSDKSignalDataProcessor.h</key>
 		<data>
-		d2V4iUqoKlKo52Q7OH7oA2E82og=
+		sAxqZ4CbO8k3VVuQFkm4RldSeh4=
 		</data>
 		<key>Headers/NGSDKSkAdNetworkModel.h</key>
 		<data>
-		bqZ/aL98ELmJLB5CllnVr5kQtaI=
+		bh7S9PHXLrHlgwLIFZg8Dc+CfBM=
 		</data>
 		<key>Headers/NGSDKSkAdNetworkRequestModel.h</key>
 		<data>
-		22GWZ0pMfbrYRoRQNiZgnHqlBh0=
+		+M4yVeZfjvKF6Yc2+tsebd9dmGI=
 		</data>
 		<key>Headers/NGSDKStarRatingView.h</key>
 		<data>
-		5kcqkWISoCaAcps3bQni8CpaMzo=
+		R1e/OW3cNhr55xBJfIE4cAMSuCc=
 		</data>
 		<key>Headers/NGSDKTimerState.h</key>
 		<data>
-		awQSMKz6L5vnl8YeKeWow7/nr30=
+		xN89TDGL1+437ijuOMe/lc7fVGc=
 		</data>
 		<key>Headers/NGSDKUserDataManager.h</key>
 		<data>
-		ECQzOrPU+0SGEY/2PO+8lIzTaeY=
+		hGbRSTFNLgFrjRKHDYu8a/B5xuY=
 		</data>
 		<key>Headers/NGSDKVASTAdTrackingEventType.h</key>
 		<data>
-		KyrNE1011l5hKa0RG6Gd8jQg8gY=
+		v3bjPiOfPNVKLGWsKAUoqZZHwJE=
 		</data>
 		<key>Headers/NGSDKVASTEventProcessor.h</key>
 		<data>
-		X0MJCpiJ/sgQOEg7NAvRAWIOrdE=
+		q1rscVzQLUXjNWs8plZDnUi8Nv4=
 		</data>
 		<key>Headers/NGSDKVASTIconClickTracking.h</key>
 		<data>
-		UY6GaYx9S/5lsquF1WIP1MduQb0=
+		t5QLCF6EAYwZ9nIHPVLQqo3Bfr4=
 		</data>
 		<key>Headers/NGSDKVASTIconViewTracking.h</key>
 		<data>
-		OPtozkl80IuPEjStnNYJppn4Qj0=
+		wRSwZExfXLQsTX1qwiff9tCbpOs=
 		</data>
 		<key>Headers/NGSDKVASTImpression.h</key>
 		<data>
-		yvFZ5IUitOz6ZdWx2F552810OwQ=
+		9vjXgoX21Wx3EZLgpa41xDyp364=
 		</data>
 		<key>Headers/NGSDKVASTTracking.h</key>
 		<data>
-		ntJPUySnNk0gQgQRr0jazRA+2wk=
+		4eh+vPH8EWqHxzOwkF1QiVOMDlU=
 		</data>
 		<key>Headers/NGSDKVASTTrackingEvents.h</key>
 		<data>
-		s/n633k+MZVMesBYbK0v4Xqtpko=
+		OH/pIwaRa6RXD9PO27vpE8uR7Lw=
 		</data>
 		<key>Headers/NGSDKViewabilityManager.h</key>
 		<data>
-		HJtynOudHOYNIuDdFHSErcCy/Jk=
+		FzX6rRwoSxxnNLCUoox58LSqrp4=
 		</data>
 		<key>Headers/NGSDKWebBrowserUserAgentInfo.h</key>
 		<data>
-		owHHLJzI14T2/O6ZBz2xduYaEso=
+		xGTsOnchgbaZwqLF4p8GbvzXqio=
 		</data>
 		<key>Headers/NGSDKXML.h</key>
 		<data>
-		+cpX0lu/fYD8/SMUEEf2ruzuxzI=
+		tEsyOhHnZ9dHmBJSqYC5dzOA1nQ=
 		</data>
 		<key>Headers/NGSDKXMLElementEx.h</key>
 		<data>
-		urfAqdU6f6EnDnICfX/d4Cjxuto=
+		Tw1Kls78CWthHi7W5b7U+MhLE1w=
 		</data>
 		<key>Headers/NSUserDefaults+NGSDKCustomMethods.h</key>
 		<data>
-		yn7lRRxGCcMtEziJ05J5lb8uGcE=
+		DgLBnJK496DtvLhBsZiQ2YQ84cE=
 		</data>
 		<key>Headers/OMIDAdSessionWrapper.h</key>
 		<data>
-		iBsm3T4GUjBn7t15upH29kr42Q0=
+		uGCNhLFqTFnJbvAs1xkM/05zmm8=
 		</data>
 		<key>Headers/UIApplication+NGSDKTopViewController.h</key>
 		<data>
-		dq4HtUf69iOpn/MSg2RLZUvDCMc=
+		HDOEgYRwaQFHnN1tYWMeBjOhcso=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GN1ijBQJ+PNDljFhGKbDyXsXV5s=
-		</data>
-		<key>InternalWebBrowser.storyboardc/HyBidInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
-		<data>
-		56vw5TTf0reuG5Z4aSYy2GjAfo8=
-		</data>
-		<key>InternalWebBrowser.storyboardc/HyBidInternalWebBrowserViewController.nib/runtime.nib</key>
-		<data>
-		C/gY8oFV5pM73MXiaV2tIu3Ap7M=
+		6D5/lEoPCTDU7vHMkfxU5JQYQEw=
 		</data>
 		<key>InternalWebBrowser.storyboardc/Info.plist</key>
 		<data>
-		ZteNhcpxozgcFOPToWyHFwQH6zQ=
+		yvW/igoPb33LHZvlyffPlck97vw=
+		</data>
+		<key>InternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
+		<data>
+		bBNZX6sSGzqtjviD0Qh6v2gIQgQ=
+		</data>
+		<key>InternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/runtime.nib</key>
+		<data>
+		RjbLlLMWAG8kAep/XNYLjEPM1nQ=
 		</data>
 		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/objects-14.0+.nib</key>
 		<data>
-		tr4Z9SLid1MVyk2kO07H3HMg/5I=
+		evRq7roicuZ8p3GHD4MGpM3jasU=
 		</data>
 		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/runtime.nib</key>
 		<data>
-		jC5tW1C6EnKNAK4CSgemSLr7n38=
+		dQCU4KJyHaAbY3eIxOP/g0Moams=
 		</data>
 		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
 		<data>
@@ -322,19 +330,19 @@
 		</data>
 		<key>Modules/NGSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		wUf0H7Jtah1PQFswaJ7eLsKTMVI=
+		dA6gz1LC1pGGXwl/cT/TOJyXy7A=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		YSqcM8FlB0Ykl5AWPKKP5dEStXs=
+		GBXqGekMR19excHnXIMQQ9C4MH8=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		NSTGBwb2TmnDRc199SPjGR1EFMs=
+		ZuhmHIsmCmSnOl7P3zYgKgvcE/Y=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ahvIBSYOHHNoytISfk2yVEhE/lw=
+		SuO4+Fcx5o2z0wQnoIN8H6djoc8=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -342,19 +350,19 @@
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ahvIBSYOHHNoytISfk2yVEhE/lw=
+		SuO4+Fcx5o2z0wQnoIN8H6djoc8=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		whB7g/sMRMWht/X7mvbXqigKmEk=
+		HfY4a+DsnWWjs7vGud5i3o7rDAs=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		NSTGBwb2TmnDRc199SPjGR1EFMs=
+		ZuhmHIsmCmSnOl7P3zYgKgvcE/Y=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		JJxjlr+IkEi1/ehpi+upUbeaEt4=
+		TE2WQRtj2sfcJQTB9On6hDocCDc=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -362,11 +370,11 @@
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JJxjlr+IkEi1/ehpi+upUbeaEt4=
+		TE2WQRtj2sfcJQTB9On6hDocCDc=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+u5S8A5imDXKpg/d7K4+a0qRMdI=
+		JWhCI0eXDCF/z9jlAVn+7dqIffE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -422,7 +430,7 @@
 		</data>
 		<key>NGSDKVASTPlayerFullScreenViewController.nib</key>
 		<data>
-		xks1sN++C972eLw/e6ycVrlk7Bk=
+		IrSMtoA7cifQq83rQFGfMUA/p00=
 		</data>
 		<key>NGSDKVASTPlayerInterstitialViewController.nib</key>
 		<data>
@@ -434,7 +442,7 @@
 		</data>
 		<key>NGSDKVASTPlayerViewController.nib</key>
 		<data>
-		odtWtqMt4t17K5hc6LnpU5mor9Y=
+		PviWiGUYDHjeRe6aWVJpM1fchXo=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -555,14 +563,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hybidmraidscaling.js</key>
-		<data>
-		lX9jRRR4iGncI1nH6RENPYDax7s=
-		</data>
-		<key>hybidscaling.js</key>
-		<data>
-		HOHM2hOeRkRf9MA+vIPQHL7Khjs=
-		</data>
 		<key>id.lproj/NGSDKLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -639,13 +639,17 @@
 		<data>
 		g2ohUOJnGP51qHkOzx7IkjF9RpY=
 		</data>
+		<key>ngsdkmraidscaling.js</key>
+		<data>
+		1xLAk5eySknhRkA7U1fqNxv7OKU=
+		</data>
+		<key>ngsdkscaling.js</key>
+		<data>
+		PmdBKn02D7HzuX+CwSpCbJkxMa8=
+		</data>
 		<key>omsdk.js</key>
 		<data>
-		ooF6nmPFIk7twLDRefviZtdSgKA=
-		</data>
-		<key>omsdk_Smaato.js</key>
-		<data>
-		6+hfCdXnixKm+657WUiXeprAN1c=
+		qiF/d9/6etNua6ogbOW25SEpCOI=
 		</data>
 		<key>pl.lproj/NGSDKLocalizable.strings</key>
 		<dict>
@@ -780,536 +784,550 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AdResponse.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cvJUVmGC6VqwJKGYZo335kxVR1WJTQwPQDyst3FGdzw=
+			</data>
+		</dict>
 		<key>Headers/ATOMManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q8MsWlAcn4cmaB0xmqpL4ux0qYo8K294mL6Kf4e8htc=
+			gF+HQ7CX+fNpn9iNNeuAT/Gdo1EGen9v9DDZ0o+Nhws=
 			</data>
 		</dict>
 		<key>Headers/NGSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xilnbySeeSKNq7GXWKomQIVJ1q8Fi1MUR44KSl5h/RA=
+			pCjtq5TGU0Tuj+US3P6mQffVgrHj+4TjIRW9un8SQqE=
 			</data>
 		</dict>
 		<key>Headers/NGSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/a7O+L7KxO1zAh1Q2kjnfhQ9YIaOhlX84xf9h90PF0=
+			wnyg9S+Gd+7LN4KQurMVqMddyiJHD5IrquxbAlbDzm4=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hLpNSAXx9QJzbG7Gz4RVoVWYJWASeLiGhPaHSMn6cXs=
+			iN/wJQkBRzfHFCsUv96JJye/L06Gu1tPzlZKbSC6aYA=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdCache.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AGW3GtXpLkJSYvGFYO0VcaGVUJHUSnCOrjE5cxh7jzw=
+			PYnNuhhPCnLW7s08a4iILK11PetTd4O1MYhfPnNDPCA=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdFeedbackViewDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eZx7HTTmx3soNrd8UaTWyqe9J4NH12+esvhHSEGSX/M=
+			AU1J6eKFr+Vv4/wgmyWGsC5yClOsDz1Fekb2SMAVr70=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdImpression.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pOI/sWYb5s/WrnkGbdBLfv7CZ4PjjXgO02BMysVjjxg=
+			ttf0qq1bfzurOMotcOTLDC2tKqaQWanp5slSV40yOss=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yey7JvgJG2dmw0eNJWdp9iWmuU0z0mD+nM3wXOS7loY=
+			YY7S+JaugJiLK1ZJYaAm3P3lCym0D5hr7FreOj9ErIY=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdPresenter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E1vMbsnUaPTotZs6HXOhMWK3eyFENmHSr5wSwvfKVWM=
+			vlXIgMNrdDOvfTwMhJ+XJUOZEMhxLn4FeCbUSw7eXbA=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdPresenterFactory.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			29j1oiLuMDTFVcd7LMgMn9Bf105rYyrzKps79lmNmCk=
+			8qh0gQaksxqcYeaam1GNFLXP+hLyvVn1pCOCHXmLNnY=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+xszLNyfnt/uctbFcR8waTooGSNvl3lvfqcH5J9reOM=
+			QVdFv1NCvHtR1M155i2HZ0WQ+pYxYI7b32FzE90LWP0=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdRequestModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HMd0ln73RtqiCzTdw9WT9h83C5sL5/oID+FTj+kGVDY=
+			eheHzjyahAWAg5gy5zCYTUC/y9e5I0JcLUyEuAzioao=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdSize.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6rKUwenOHu4feVaHtEXDLBwo7PKZDIIvXmmRDalxQ1A=
+			JY5RyvZ4SrgdieO8GYsK6a6tnDzSd93ESQ1P7o0OdTk=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdSourceConfig.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yJYNTPorDhv+5G5Spo1kUM0hjJlU731Uf88BeWSqLLU=
+			YEJWYkw9EO1MElz1Wet/TVBng2msHIKNzd8U1aIatzU=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hv4W5vZEzkJsz1/QAoKsNQCosbp9bNsDwHSYG7E3nxg=
+			eIT9vwnlwiOaYKiNs4snWFeX8eOpQiaFcXsGn950Hr8=
 			</data>
 		</dict>
 		<key>Headers/NGSDKBannerAdRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mmnGVp/Gm/VnoYYP7qQhEdAfcC6ColP8d/K/D+XfK8E=
+			MYKagWHjJb7zpTcKYtfMk51UvZ8NBg2oAFpNnpA8ujU=
 			</data>
 		</dict>
 		<key>Headers/NGSDKBannerPresenterFactory.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A/qBgAVSRLClSUexDeXcUVeybpViuKYZjyJd/PmznFM=
+			rbHQTulmhADRsRlyp3+fXej4P31AoTM6M9NXVT3dC0U=
 			</data>
 		</dict>
 		<key>Headers/NGSDKBaseModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vfL7xDByppW2OAXWLS3PMFqNRWHsCMqTE9qNQn78V98=
+			YK5YciOSmui1sIMrV+ZZxE4wtzIXBjjV0qfKw/DWEgI=
+			</data>
+		</dict>
+		<key>Headers/NGSDKBeaconsInspectorHelper.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HX6jPHWHbC/SCJ2qC2F7UfAq8i0lJtLALcWxUdWU+JM=
 			</data>
 		</dict>
 		<key>Headers/NGSDKConfig.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cD96FCakjz2NDwwgISdTHxDkAHLTumbqbSf3ccC7NQU=
+			O7r/VD8eNtlakIpJPnJU4egWIVlEGmO9chylpt7yuf8=
 			</data>
 		</dict>
 		<key>Headers/NGSDKConfigManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p4QWf/gQ/cYwBMKLnAA9JTZxCDAU3bxC+i2jKtjH6/U=
+			fAoj3Gra3BSp2f4Y8bgzMQUP5Sh46fxAPaxgOoGpUEc=
 			</data>
 		</dict>
 		<key>Headers/NGSDKConfigModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lOaMjL/lwxdRquY3krbfJn6PrJ39Ka1BARbeGl5zGFE=
+			KwdJ4rNo1Oh7ZJDS4xQuv0/wJwPu47WfwPsxBnYg0ec=
 			</data>
 		</dict>
 		<key>Headers/NGSDKContentInfoView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B5bzNHZibSkJwhRlZSEG0YR3JvebyC2/wTv8gzR9/RY=
+			l9gSi3MnlPc/5v1QF93BFN4gH7hNgL4XkOZtGYcNSyI=
 			</data>
 		</dict>
 		<key>Headers/NGSDKCustomCTAViewDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IxHwKyiBY3vYYhEHAexn/XClJs0DIDEf6jVEAKbYing=
+			mf0xN6iHcScTpCCICtdaUyWV54mCwczxQP9+Gz7cmFE=
 			</data>
 		</dict>
 		<key>Headers/NGSDKDataModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wBOKlgH74NBR5nUvnyLcsYQEKTcVX1ccvWOq+yc0GEk=
+			aJDQPQRIqXea0kyZj9wcsTJzVqr2sb9VuCGpx5Ue75w=
 			</data>
 		</dict>
 		<key>Headers/NGSDKDiagnosticsManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zjo5h6AcA0KtaVUtqFPs5PS1dLEgE9T0zeIp7o7so+E=
+			U9/HWHv/+6Fa3A+yZDvJmf3pCUW9xH9VxkO8GL/RSJg=
 			</data>
 		</dict>
 		<key>Headers/NGSDKEndCard.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AuuMOPkz4CJRYdyL5gKtdrvd5Ty1Znl9ay5gjJwQWS8=
+			Uc/egAN1FqZD3AVO+rl1DG8yoytgefZb4fJbinWxXfQ=
 			</data>
 		</dict>
 		<key>Headers/NGSDKError.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2B4lTY6i/IJ7esGypyeUQRWsKHkr9YMfT2tOlRFaOlM=
+			YY5C9OJkV7DLiRGoSNrSdKRpKApfOlOxsc15X8GiY8I=
 			</data>
 		</dict>
 		<key>Headers/NGSDKHeaderBiddingUtils.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3R/Dv+gpxzxwVPTExZl0/vZX8wuYu2ytUcduHP+jvlA=
+			LctO1lpAD0igJ/EBzDggxhrz7shqtK0WX7Q/jgQLwpM=
 			</data>
 		</dict>
 		<key>Headers/NGSDKIntegrationType.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PERzrtSleJLX2/1meGGw4Zru9I8GYCowH9pHTDUtx0o=
+			SOfGgzgEmvdyWmvZ3it7/00QBWzBVHIYcr6P4oAd5sU=
 			</data>
 		</dict>
 		<key>Headers/NGSDKInterstitialAdRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a+eeLg0oCQ3gSlXe4x7y7+wosBKr0M1tH7srWfE4exg=
+			hE/p++0JwImN/JMS8IMiyE0y4O0hZJW4qe3Ea48kakk=
 			</data>
 		</dict>
 		<key>Headers/NGSDKInterstitialPresenter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z9kThMEDRGOQRjHRDdA4EHa+7EetJGBS7fBPmKSmOWM=
+			sCxUogIf/y19g99BJk0IONEK50NpJnwH+k9Q34R5Wlo=
 			</data>
 		</dict>
 		<key>Headers/NGSDKInterstitialPresenterFactory.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yv9ydVMOSSeoRpoCDBncRtTGcud0zt1H0Iu+EM7mwX4=
+			a/5cg8/7zNs6gJONXdfFnGBImub+1bFR7hx2OYB54EU=
 			</data>
 		</dict>
 		<key>Headers/NGSDKLeaderboardAdRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YWYer0rZ0Nd9FpK5Eokjf/vpzUjoCtuEVieKm4NmiL0=
+			wj94xJo2Df+CV9T+NUPopapcQKwb/mxXJOSMCMwXhZs=
 			</data>
 		</dict>
 		<key>Headers/NGSDKLocationManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b9juRJn9g+JxJELVyPqtP3X1PvEmW7YM69csBjidHTU=
+			P/ByVCP456ytIdKTVvCY6TVfjVVsWgKBELA+fB0FwGg=
 			</data>
 		</dict>
 		<key>Headers/NGSDKMRAIDServiceDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QM3fIYEvq7rlBEL3uAmf/+pbu6r1Sk5TPzkPiAy/Y3A=
+			evVy6/AC+/TuHbz0lkKMT0Wiu8iSMqCVOCZlRVQPYEY=
 			</data>
 		</dict>
 		<key>Headers/NGSDKMRAIDServiceProvider.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N4KV57i4TO7bn7p4nkl11X1VZCdH83VNBoiBwjHLI+c=
+			cTWXXpEixGsNWwRbzOZ4UnVUvPlGuZTZf/Vxjg0U5qw=
 			</data>
 		</dict>
 		<key>Headers/NGSDKMRAIDView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eyYBtHGdip/WgJ67zMuT/RhOGOaHAwCpXGIbF170Fso=
+			KL6CsdW+YAh7M18RunTN+qlDQwiqCBSU7yY5OGVi3AA=
 			</data>
 		</dict>
 		<key>Headers/NGSDKMRectAdRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YE5bst4Wu1vbCO22oiEOscCMvSBCTf+Rq5GGQi+3xsU=
+			hFIe+16+ECMydkcLPEOfspo6bh5u3fFiUBhJXkzKZ+A=
 			</data>
 		</dict>
 		<key>Headers/NGSDKNativeAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X1Xqy8jbM2fpX0WPteSZ4kUDJeU8MMwGpgQRN+W9ceM=
+			LLTvmI2hN+GtEK1qlww4QfDMkDgb2J9NA2fRrAUyzvw=
 			</data>
 		</dict>
 		<key>Headers/NGSDKNativeAdLoader.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mWCV+3tlx/U3G3J6wNsfVnbuczs/qFp0XuJvYMz6Ijo=
+			627OzVh4XwHLUaBlrPwiUlBpnvGGov4R02nKCkwf32s=
 			</data>
 		</dict>
 		<key>Headers/NGSDKNativeAdRenderer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g7SoANCYKWLkg3Mpw2WHZDWRUctQSXM9vjiXRbXBhc8=
+			sm/dx6MTCcl3OqMKPs+J6NrHjNlmtKC99a17RCa2QMM=
 			</data>
 		</dict>
 		<key>Headers/NGSDKOpenRTBBaseModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0e7xlW9O5zjWSjNmWpCuAzA1CuHJflCUYGx4VACc1vQ=
+			NCnsgKhWEV4dsWmvGUzne08gJ1wlljQ397v4jSsTCBI=
 			</data>
 		</dict>
 		<key>Headers/NGSDKOpenRTBDataModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NZAwhTLdS2jE+yZfx0JTABGbMY+iSvKmrB4Izoi9yVc=
+			d3pZn3cVIReS8yVuTCTte06aYkJG5QU+EfHVTJfzwAg=
 			</data>
 		</dict>
 		<key>Headers/NGSDKRequestParameter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9a/B9N5LIMCOnz+B5h5DzFhmxewEN6pIAaAewe+GIpM=
+			2Z2VIwYCZcsLmtf3TVOPf5rcW/8DYF0VnLgcawxWwrg=
 			</data>
 		</dict>
 		<key>Headers/NGSDKRewardedAdRequest.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9Io7pZigLVdKCcMO0oGBojO3XTn+9evaL57azwWSHJ4=
+			Idv2SQxl+qf/75sSigY9WTAFS839fa17iXEFHNLb4gA=
 			</data>
 		</dict>
 		<key>Headers/NGSDKRewardedPresenter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			klrTOMvc0+eZtHit7GkYfieNu8V6Mnjfq+pFNhLNVvg=
+			LznTV0PeM+Z/9YH5TYJ1m7Llo/41XyThgYpPOXGVpio=
 			</data>
 		</dict>
 		<key>Headers/NGSDKRewardedPresenterFactory.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+y25GCF5F5USl7HUgYjJaVNHRvq4p9rWv+nQTqibM10=
+			Xsmi4ACffqnKbXnNWx/fmxyUm25ZDgBTsQPYe5n66Oc=
 			</data>
 		</dict>
 		<key>Headers/NGSDKSKAdNetworkParameter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h2gifAaH6TWlKHrjLLMU5qd1K6zGnDoBGEInQPV/TjI=
+			q+oKDwWh5HuLYJq09R9dfq5qRwJaGMKuh1susB/DI4M=
 			</data>
 		</dict>
 		<key>Headers/NGSDKSKOverlay.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4jnSJBMsdjkjSVgv3W1RjHGeOtaTlZzc5MKbsvTFf2A=
+			VV15AVl/evOlEAqTAI5UcQm4yMMlrv5/SU59F4anWCI=
 			</data>
 		</dict>
 		<key>Headers/NGSDKSKOverlayDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z5U9ba6hsbh4IrneXDHyGk8W2v3HZryWScVNd20uLm0=
+			DN9e79yQFh5mhUehQkJWWIY9SLSBQ72X+NgnrFg1ioI=
 			</data>
 		</dict>
 		<key>Headers/NGSDKSKOverlayTimerType.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uXo2Lt+TsnvQWixUgoQeNOJ46u/lj4pLsaN6ac0Sf4E=
+			YIdl1Fjy3WQM0hE5Z4AaWfezwUz3iLV14+bjyQFc0Ok=
 			</data>
 		</dict>
 		<key>Headers/NGSDKSignalDataProcessor.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V6/iHfQY3YREpRnIRz3lg+Rj8q4De5bAtdmAjh4uUms=
+			EflnXfc22rS7yc0K204xziIPVtrphm7shcLk3KnmoVM=
 			</data>
 		</dict>
 		<key>Headers/NGSDKSkAdNetworkModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hbY/Nt9bhf+1NyUe8tTJ7NSsIDCGUV9g6I7Ts1GVXLA=
+			9fo1a0/FhDRMLplzYK3Lz3I9rLpyG6Inv+phU8m63rE=
 			</data>
 		</dict>
 		<key>Headers/NGSDKSkAdNetworkRequestModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j7ZicY4b058xU6kF59cUjnvL4LiwVNIopBHwhY08JZk=
+			pFolJBIr5OwURQlujBy0oEyE5u+pc6zFnYM9GxZEv/4=
 			</data>
 		</dict>
 		<key>Headers/NGSDKStarRatingView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OTjyqTH56Nakl23zji4N7AQKql8P/RUaa2OAezgcIHs=
+			EJIT9+dDWf+t5v2WnYa1wY4gfXZ32GNm5zQ+eLk3sec=
 			</data>
 		</dict>
 		<key>Headers/NGSDKTimerState.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mr3A2lLHcP0Y+8VedOGJTz38zapnFq37dSLvLP6lOOs=
+			ZpHLsCxCrsm8MfRi0Zd99GbzKld3DLROCtjYRoywTLY=
 			</data>
 		</dict>
 		<key>Headers/NGSDKUserDataManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VPWOO01tLDCpuRBpxSGrAKk3R6LLD7aEw6tCtyzGwzw=
+			707zFX+0w0Eza790GTuE3J2Ao3bRIkMIDmKl4dGhtj8=
 			</data>
 		</dict>
 		<key>Headers/NGSDKVASTAdTrackingEventType.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7T+u/CgD9Frh8DcX3xFGe0kKXdnjJStXwuu2U/Yxjew=
+			OBTScSGEXrpzYQOqkap2hdTlvHSDsw0V3TwgX3tCB9A=
 			</data>
 		</dict>
 		<key>Headers/NGSDKVASTEventProcessor.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZsGDYCwMWYOaH2th7jA+wmWZWCflMJQYA+M5pI6HGZ8=
+			Zw6t5709rpTZFx542XD0Tfzl9C0kE1f3u/v8FOA5Mk4=
 			</data>
 		</dict>
 		<key>Headers/NGSDKVASTIconClickTracking.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pR/G1mdwduftCup4NyIa+xbZJj5XNlLkGCpQX0QMVdc=
+			Cw7pvOaIcNtIBMqk4dYUhUG0gxkb501dPWWpEGNtT4w=
 			</data>
 		</dict>
 		<key>Headers/NGSDKVASTIconViewTracking.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jy0+J++B6aPomdt9TWtACZfKrqKp+nikJcN1Mr3opv0=
+			lSikAcmLrtvINYNVI6kJlVW+uN/PjLMt/KwYtXSMXrA=
 			</data>
 		</dict>
 		<key>Headers/NGSDKVASTImpression.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gC3azyUMpPzVng1qmtGY2QnM6EP75NjkP5PshM7OltQ=
+			wP9K7jLUXDOSn9l2hDiUL8l4nD2z/xCTigYO3tTrZZs=
 			</data>
 		</dict>
 		<key>Headers/NGSDKVASTTracking.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qr0+8XwtI+7sMK+tWvVsz5yvw2kHBFgBm+OYqBAQQrs=
+			Aeb5g6UT1iyHRFTtjvWPomdnEMyhXCpiXuWWK+cD7Ss=
 			</data>
 		</dict>
 		<key>Headers/NGSDKVASTTrackingEvents.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9W3QN5rWjNFviAVAUXoKA6Fv8hDXMxh8jg7yQTD+5RI=
+			PNEDKqtxrfPblxfdua/jo4dtHL/Kt/M7x7nynUzmid0=
 			</data>
 		</dict>
 		<key>Headers/NGSDKViewabilityManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FsdSz9PhGHqDTR5qDHl+tfhhlElmUfvTQp1SDnTTuOI=
+			G1N31KeEDi4610fkCH0W7sTg3WXt6mJBY1mUcvseF7U=
 			</data>
 		</dict>
 		<key>Headers/NGSDKWebBrowserUserAgentInfo.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hTIZWQMYAj/k/iCa6pITje96Afzv6ZM8+fVTy8Dv7k4=
+			OoD3qE5SWMTRZnxUs0AZVyoA/Ght/xy40okFEomMTE8=
 			</data>
 		</dict>
 		<key>Headers/NGSDKXML.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ksYGmaMd981KunE+MzNchCNz9ELyEbJhYAhMcwejRgY=
+			ewpnbS0Ozoh9e1j2XLxWzwVVnCcmA8lJWn+8HfIIqcc=
 			</data>
 		</dict>
 		<key>Headers/NGSDKXMLElementEx.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hx6DpLpovYdM6yHtxB+Z9VatyqyINGSS2kUXoh3xb60=
+			XVA7T84zmDG7454eJqG9hzvdaENRnetYfy9kx6I39Ps=
 			</data>
 		</dict>
 		<key>Headers/NSUserDefaults+NGSDKCustomMethods.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WELw8MyZ9oRPk4l+q6DqQpc7OJTPVbZLyqU9MnHfJo0=
+			7QYu23GJcyZtfQbbySRkRTVic/jsjhSITWwEexMaAcs=
 			</data>
 		</dict>
 		<key>Headers/OMIDAdSessionWrapper.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BVpAiomzJVtfitVY38ocvyN42XAmhG2bMU28E4sM0bc=
+			mDXcw1MmePlQONfNOzvkqGEOqiAmz6fjgmfXr/G3Ylw=
 			</data>
 		</dict>
 		<key>Headers/UIApplication+NGSDKTopViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Biv96w4Ebp3AROYaQdcZ5qxAxz/1mmUSOqYOzUyd3Ag=
-			</data>
-		</dict>
-		<key>InternalWebBrowser.storyboardc/HyBidInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CWwN8G07jLdPvBxornVJ4lwzQE/6xJth60ohr+WHKu0=
-			</data>
-		</dict>
-		<key>InternalWebBrowser.storyboardc/HyBidInternalWebBrowserViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pNIGRQKhQzxb91uKMAWOsejFzGsNRhzqeGz5Rj0D8Kw=
+			2ydb69aWUODORVbXegDllRoxhHnHVvnDdZ5tTBG12Tw=
 			</data>
 		</dict>
 		<key>InternalWebBrowser.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HdxolMsy0tc5jK3gOI3uM6y5KyuoTNcpB4AKpagA5Lo=
+			vUUrGO9wIOWlOiafHDF3vqQ1hT51oxKRuujkbFAQ7g0=
+			</data>
+		</dict>
+		<key>InternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YXPPiuQuvUOghIylwAsMCnKwzNl1r0dBxCdD/+/l9jE=
+			</data>
+		</dict>
+		<key>InternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ilQ2UipCIocdUWLhbWJJ+3wTgy/lPfAIFNDli3KgQVo=
 			</data>
 		</dict>
 		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0MD+TULfROuA3iQ58hnZdjiw9yObXX8qTsWJBoEqMuo=
+			OYymZ3SMXKMCRNZQuD2xZHeK2HoEJNIQQj73jBvmdmM=
 			</data>
 		</dict>
 		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yhz3ODxiyHJ1vc1Or1Um5KNThmqUVnVjpmywnh69CbU=
+			ha594sRfxjIjHcsEf4ewRZgLssw8lBZQxucGoDbQcZ4=
 			</data>
 		</dict>
 		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
@@ -1330,28 +1348,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N/EUuAEr/dkPpEo9nxaLLNMoj5havzZuAwjuLAo/Se0=
+			2teJ3pagAoFQwWkZRcY0cJrQHLen9GfrUj0nGhtaiYU=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sfAl70oGNUcyM2MgxMPefzlss8GDAmfFYPMJzN7xjm0=
+			wp600hqM8pz5yWdG4xx+CNtP2hLTQQqz4p3Mg6tNLXY=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D/BiIOQh1Hzc9boYP5nhCs0ZtMCVL450hUGi/SY2lEQ=
+			/xjikCfHrjNWu5nangCCKdlOEInzE4Dh5f6KF/cBLJs=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bqq1CpZPnyVi0wQM5KzuAA5lJtRDCuqDzwJV7MihzRw=
+			kD+sj/d6jby66RepQBV4SXWuzkI0/k7LBNUlufs7mks=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1365,28 +1383,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bqq1CpZPnyVi0wQM5KzuAA5lJtRDCuqDzwJV7MihzRw=
+			kD+sj/d6jby66RepQBV4SXWuzkI0/k7LBNUlufs7mks=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8IaQ4UaUC5DMTWqiV/cmeic6V3clz9+XWFS/ZwvWLZo=
+			R7VxPLwKKUwrI+5S2kR9cTV2gKCHtud5qPZk8kVYQrc=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D/BiIOQh1Hzc9boYP5nhCs0ZtMCVL450hUGi/SY2lEQ=
+			/xjikCfHrjNWu5nangCCKdlOEInzE4Dh5f6KF/cBLJs=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IgniV+2F85xU2a6XzCHXU9TMgFvx2W6215iYF8r6M6g=
+			ivnvwhW/kv5wxGe+mHaWDWbRiYfjXHuRE4LmfKkZyWs=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1400,14 +1418,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IgniV+2F85xU2a6XzCHXU9TMgFvx2W6215iYF8r6M6g=
+			ivnvwhW/kv5wxGe+mHaWDWbRiYfjXHuRE4LmfKkZyWs=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BTDQ5pEy27B6CrqsAs9gEN/R67EiIltBb2OYa68u62w=
+			2WGXGPqokDBVVL0ttA8xMSsX0INLdd6wN1TpnfibhoQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1505,7 +1523,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kTfujwvzQA+Jp2Q78FUVDqdZ1d3xh6WCOVC1mjqmRRE=
+			cK2QoImeKQfNkhiaaxKhgy6tplI7YGnlGnoRZEqDKL4=
 			</data>
 		</dict>
 		<key>NGSDKVASTPlayerInterstitialViewController.nib</key>
@@ -1526,7 +1544,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fz6aEL0PzHA/TAnTCLLgLDa4x9KueWil1pPSzUyiCEI=
+			WXydgS3LxVZYfgIQTiCkSzroO56ZNetrY/eZu6SlXe4=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -1663,20 +1681,6 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>hybidmraidscaling.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Vkr5YMqK5rpPPCAPhyoHTHK4Xtp4UHOr+MvPFQxTFSc=
-			</data>
-		</dict>
-		<key>hybidscaling.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oAUtCDVWVqt9u7SuNI9vrhMjudEz5UAZnKFgH+ttiVI=
-			</data>
-		</dict>
 		<key>id.lproj/NGSDKLocalizable.strings</key>
 		<dict>
 			<key>hash2</key>
@@ -1756,18 +1760,25 @@
 			xFGWiCFuYBRUmN2g9IqdSuUmN/MY5SmOANG6WU78rpI=
 			</data>
 		</dict>
+		<key>ngsdkmraidscaling.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zn3C25nJKUX4P9y0EhxscKvz/1hQCy1DFpoWOVmmt4A=
+			</data>
+		</dict>
+		<key>ngsdkscaling.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yAgCzVWF/zlmxG52pElv1dyKeq9rfLSesv9y1hN+7oo=
+			</data>
+		</dict>
 		<key>omsdk.js</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S+wmvZJLmAIoXg3ROfHt+QiEN1FykFILzjidhjY2XSA=
-			</data>
-		</dict>
-		<key>omsdk_Smaato.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			wdHo+ZxIr5eFSs8kgj8Q2jorPZzSti3/PJO59hk3RRw=
+			1EEq+0U+sB7E7Fok0PgXuOd2Wy9pgUqtfCCF1xDrGvE=
 			</data>
 		</dict>
 		<key>pl.lproj/NGSDKLocalizable.strings</key>

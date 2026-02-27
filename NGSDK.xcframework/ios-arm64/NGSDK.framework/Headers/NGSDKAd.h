@@ -1,7 +1,6 @@
 // 
 // NGSDK SDK License
 //
-// https://github.com/pubnative/pubnative-hybid-ios-sdk/blob/main/LICENSE
 //
 
 #import <Foundation/Foundation.h>
@@ -59,7 +58,6 @@ typedef enum : NSUInteger {
 @property (nonatomic, readonly) NSArray<NSString *> *cohorts;
 #endif
 @property (nonatomic, strong) NGSDKEndCard *customEndCard;
-@property (nonatomic, strong) NSData *mediationWatermarkData;
 @property (nonatomic, readonly) NSNumber *assetGroupID;
 @property (nonatomic, readonly) NSNumber *openRTBAssetGroupID;
 @property (nonatomic, readonly) NSNumber *eCPM;
@@ -79,6 +77,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, readonly) NSString *contentInfoDisplay;
 @property (nonatomic, readonly) NSString *contentInfoText;
 @property (nonatomic, readonly) NSString *adFormat;
+@property (nonatomic, readonly) NSDictionary *jsonData;
 
 //@property (nonatomic, readonly) NSString *contentInfoHorizontalPosition;
 //@property (nonatomic, readonly) NSString *contentInfoVeritcalPosition;
