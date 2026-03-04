@@ -1399,7 +1399,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKViewbil
 @class UITouch;
 @class UIEvent;
 @interface SKStoreProductViewController (SWIFT_EXTENSION(NGSDK))
-- (void)viewDidAppear:(BOOL)animated;
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
@@ -2838,7 +2837,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKViewbil
 @class UITouch;
 @class UIEvent;
 @interface SKStoreProductViewController (SWIFT_EXTENSION(NGSDK))
-- (void)viewDidAppear:(BOOL)animated;
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;

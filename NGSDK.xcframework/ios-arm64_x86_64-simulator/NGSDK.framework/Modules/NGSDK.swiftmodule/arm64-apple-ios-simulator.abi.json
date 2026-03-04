@@ -18700,6 +18700,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NGSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "NGSDKAdContext",
         "printedName": "NGSDKAdContext",
@@ -18947,8 +18957,7 @@
         "moduleName": "NGSDK",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -35279,41 +35288,6 @@
         "children": [
           {
             "kind": "Function",
-            "name": "viewDidAppear",
-            "printedName": "viewDidAppear(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@NGSDK@@objc(cs)SKStoreProductViewController(im)viewDidAppear:",
-            "mangledName": "$sSo28SKStoreProductViewControllerC5NGSDKE13viewDidAppearyySbF",
-            "moduleName": "NGSDK",
-            "overriding": true,
-            "isOpen": true,
-            "objc_name": "viewDidAppear:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "dismiss",
             "printedName": "dismiss(animated:completion:)",
             "children": [
@@ -37595,14 +37569,14 @@
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5304,
+      "offset": 5476,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSKAdNetworkViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12881,
+      "offset": 12854,
       "length": 1,
       "value": "0"
     },
@@ -37862,13 +37836,13 @@
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Internal browser\/NGSDKInternalWebBrowserNavigationController.swift",
       "kind": "StringLiteral",
       "offset": 1242,
-      "length": 20,
-      "value": "\"InternalWebBrowser\""
+      "length": 25,
+      "value": "\"NGSDKInternalWebBrowser\""
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Internal browser\/NGSDKInternalWebBrowserNavigationController.swift",
       "kind": "StringLiteral",
-      "offset": 1310,
+      "offset": 1315,
       "length": 39,
       "value": "\"NGSDKInternalWebBrowserViewController\""
     },
@@ -37905,7 +37879,7 @@
       "kind": "StringLiteral",
       "offset": 205,
       "length": 7,
-      "value": "\"1.6.2\""
+      "value": "\"1.6.3\""
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
@@ -37940,7 +37914,7 @@
       "kind": "StringLiteral",
       "offset": 502,
       "length": 7,
-      "value": "\"1.5.5\""
+      "value": "\"1.6.3\""
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
@@ -38393,28 +38367,28 @@
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Interruption\/NGSDKInterruptionHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 100,
+      "offset": 119,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Interruption\/NGSDKInterruptionHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 117,
+      "offset": 136,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Interruption\/NGSDKInterruptionHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 136,
+      "offset": 155,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Interruption\/NGSDKInterruptionHandler.swift",
       "kind": "Array",
-      "offset": 858,
+      "offset": 877,
       "length": 2,
       "value": "[]"
     },

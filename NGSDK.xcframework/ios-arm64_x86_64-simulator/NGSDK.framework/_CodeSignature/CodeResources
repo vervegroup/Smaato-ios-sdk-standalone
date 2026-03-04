@@ -8,17 +8,17 @@
 		<data>
 		3234u8h1bEaWgnj+/2CHM3BG9nA=
 		</data>
-		<key>Headers/ATOMManager.h</key>
-		<data>
-		HeKmro85nStlwGNDt3lRWkbOAsM=
-		</data>
 		<key>Headers/NGSDK-Swift.h</key>
 		<data>
-		qKk7vcVWHpCcOfokiKfJNgiAjiM=
+		wykjPlpdr2nWb2DO64EV9mMIeiE=
 		</data>
 		<key>Headers/NGSDK.h</key>
 		<data>
-		YBkQW/l8r23m3kFp/r6yjw89NxY=
+		XfIkbwxF1Ijgjcf/lYGyUNknIVw=
+		</data>
+		<key>Headers/NGSDKATOMManager.h</key>
+		<data>
+		s3D6lY/eNeUb8/E/WpXdcfXlqn4=
 		</data>
 		<key>Headers/NGSDKAd.h</key>
 		<data>
@@ -176,6 +176,10 @@
 		<data>
 		6XuTL66f23mKN2iPNSg0etlSKvQ=
 		</data>
+		<key>Headers/NGSDKOMIDAdSessionWrapper.h</key>
+		<data>
+		qZQm9RUKdPH5hBfyzfwUtFZU6HI=
+		</data>
 		<key>Headers/NGSDKOpenRTBBaseModel.h</key>
 		<data>
 		s2TftDVX/+wfccr2wCj/80LDp3I=
@@ -270,7 +274,7 @@
 		</data>
 		<key>Headers/NGSDKViewabilityManager.h</key>
 		<data>
-		FzX6rRwoSxxnNLCUoox58LSqrp4=
+		PvqT5BQBWd7YE2lkZEN3UzfQCws=
 		</data>
 		<key>Headers/NGSDKWebBrowserUserAgentInfo.h</key>
 		<data>
@@ -288,10 +292,6 @@
 		<data>
 		DgLBnJK496DtvLhBsZiQ2YQ84cE=
 		</data>
-		<key>Headers/OMIDAdSessionWrapper.h</key>
-		<data>
-		uGCNhLFqTFnJbvAs1xkM/05zmm8=
-		</data>
 		<key>Headers/UIApplication+NGSDKTopViewController.h</key>
 		<data>
 		HDOEgYRwaQFHnN1tYWMeBjOhcso=
@@ -300,49 +300,21 @@
 		<data>
 		6D5/lEoPCTDU7vHMkfxU5JQYQEw=
 		</data>
-		<key>InternalWebBrowser.storyboardc/Info.plist</key>
-		<data>
-		yvW/igoPb33LHZvlyffPlck97vw=
-		</data>
-		<key>InternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
-		<data>
-		bBNZX6sSGzqtjviD0Qh6v2gIQgQ=
-		</data>
-		<key>InternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/runtime.nib</key>
-		<data>
-		RjbLlLMWAG8kAep/XNYLjEPM1nQ=
-		</data>
-		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/objects-14.0+.nib</key>
-		<data>
-		evRq7roicuZ8p3GHD4MGpM3jasU=
-		</data>
-		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/runtime.nib</key>
-		<data>
-		dQCU4KJyHaAbY3eIxOP/g0Moams=
-		</data>
-		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
-		<data>
-		SwT+6IJeXe0YKId2PPF+pNUrBAg=
-		</data>
-		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
-		<data>
-		SwT+6IJeXe0YKId2PPF+pNUrBAg=
-		</data>
 		<key>Modules/NGSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		dA6gz1LC1pGGXwl/cT/TOJyXy7A=
+		qcmkvU6UpHznWrbsKy3NuaRx9gg=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		GBXqGekMR19excHnXIMQQ9C4MH8=
+		VHA5MXYZM+dZP9mb+RvXDUYiKcA=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZuhmHIsmCmSnOl7P3zYgKgvcE/Y=
+		AdUWGpTZB1jCfFLAHLDPDDJkNbA=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		SuO4+Fcx5o2z0wQnoIN8H6djoc8=
+		STrGJDGNxTMHaZbkOLhhcyqfI3I=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -350,19 +322,19 @@
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SuO4+Fcx5o2z0wQnoIN8H6djoc8=
+		STrGJDGNxTMHaZbkOLhhcyqfI3I=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HfY4a+DsnWWjs7vGud5i3o7rDAs=
+		Cacayv+ngMmoP6grEZEis34OEno=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZuhmHIsmCmSnOl7P3zYgKgvcE/Y=
+		AdUWGpTZB1jCfFLAHLDPDDJkNbA=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TE2WQRtj2sfcJQTB9On6hDocCDc=
+		BZfUxr8iEZDa5Ku1d/L4FuGHGqw=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -370,11 +342,11 @@
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TE2WQRtj2sfcJQTB9On6hDocCDc=
+		BZfUxr8iEZDa5Ku1d/L4FuGHGqw=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JWhCI0eXDCF/z9jlAVn+7dqIffE=
+		X0vGP5kYSIXjqK2mX0WOrDmi2cM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -411,6 +383,34 @@
 		<key>NGSDKFullScreen@2x.png</key>
 		<data>
 		RIvdv+uyMWb4it0X3u97W/axqgg=
+		</data>
+		<key>NGSDKInternalWebBrowser.storyboardc/Info.plist</key>
+		<data>
+		yvW/igoPb33LHZvlyffPlck97vw=
+		</data>
+		<key>NGSDKInternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
+		<data>
+		bBNZX6sSGzqtjviD0Qh6v2gIQgQ=
+		</data>
+		<key>NGSDKInternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/runtime.nib</key>
+		<data>
+		RjbLlLMWAG8kAep/XNYLjEPM1nQ=
+		</data>
+		<key>NGSDKInternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/objects-14.0+.nib</key>
+		<data>
+		evRq7roicuZ8p3GHD4MGpM3jasU=
+		</data>
+		<key>NGSDKInternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/runtime.nib</key>
+		<data>
+		dQCU4KJyHaAbY3eIxOP/g0Moams=
+		</data>
+		<key>NGSDKInternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
+		<data>
+		SwT+6IJeXe0YKId2PPF+pNUrBAg=
+		</data>
+		<key>NGSDKInternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<data>
+		SwT+6IJeXe0YKId2PPF+pNUrBAg=
 		</data>
 		<key>NGSDKMRAIDCloseCardView.nib</key>
 		<data>
@@ -791,25 +791,25 @@
 			cvJUVmGC6VqwJKGYZo335kxVR1WJTQwPQDyst3FGdzw=
 			</data>
 		</dict>
-		<key>Headers/ATOMManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gF+HQ7CX+fNpn9iNNeuAT/Gdo1EGen9v9DDZ0o+Nhws=
-			</data>
-		</dict>
 		<key>Headers/NGSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pCjtq5TGU0Tuj+US3P6mQffVgrHj+4TjIRW9un8SQqE=
+			GWmVPOwBr2DKvgVaET0BGaboMeawU7u36ChWbxbZj3k=
 			</data>
 		</dict>
 		<key>Headers/NGSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wnyg9S+Gd+7LN4KQurMVqMddyiJHD5IrquxbAlbDzm4=
+			vQAxU4E9wz1Xj4VitFrwdFHcsBWy8WSPEFvw0OsCET0=
+			</data>
+		</dict>
+		<key>Headers/NGSDKATOMManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WzWaeUTlqNAuVY4x71SRuHfgcixVV3+nYZJmwVz06as=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAd.h</key>
@@ -1085,6 +1085,13 @@
 			sm/dx6MTCcl3OqMKPs+J6NrHjNlmtKC99a17RCa2QMM=
 			</data>
 		</dict>
+		<key>Headers/NGSDKOMIDAdSessionWrapper.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5MdFjyQi9jfGIrn1lpkdPzCWK2dH7XjFXxzKLxgI2r4=
+			</data>
+		</dict>
 		<key>Headers/NGSDKOpenRTBBaseModel.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1250,7 +1257,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G1N31KeEDi4610fkCH0W7sTg3WXt6mJBY1mUcvseF7U=
+			Jj+uPP4x4PnJS95D4SzXwbEbqM/Df14tq6k/HCwydzc=
 			</data>
 		</dict>
 		<key>Headers/NGSDKWebBrowserUserAgentInfo.h</key>
@@ -1281,13 +1288,6 @@
 			7QYu23GJcyZtfQbbySRkRTVic/jsjhSITWwEexMaAcs=
 			</data>
 		</dict>
-		<key>Headers/OMIDAdSessionWrapper.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mDXcw1MmePlQONfNOzvkqGEOqiAmz6fjgmfXr/G3Ylw=
-			</data>
-		</dict>
 		<key>Headers/UIApplication+NGSDKTopViewController.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1295,81 +1295,32 @@
 			2ydb69aWUODORVbXegDllRoxhHnHVvnDdZ5tTBG12Tw=
 			</data>
 		</dict>
-		<key>InternalWebBrowser.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vUUrGO9wIOWlOiafHDF3vqQ1hT51oxKRuujkbFAQ7g0=
-			</data>
-		</dict>
-		<key>InternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YXPPiuQuvUOghIylwAsMCnKwzNl1r0dBxCdD/+/l9jE=
-			</data>
-		</dict>
-		<key>InternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ilQ2UipCIocdUWLhbWJJ+3wTgy/lPfAIFNDli3KgQVo=
-			</data>
-		</dict>
-		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OYymZ3SMXKMCRNZQuD2xZHeK2HoEJNIQQj73jBvmdmM=
-			</data>
-		</dict>
-		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ha594sRfxjIjHcsEf4ewRZgLssw8lBZQxucGoDbQcZ4=
-			</data>
-		</dict>
-		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B+KZiSRX+u1hfI4YEf+1fOVvbxWTnHX4g7Dbhekz+Bs=
-			</data>
-		</dict>
-		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B+KZiSRX+u1hfI4YEf+1fOVvbxWTnHX4g7Dbhekz+Bs=
-			</data>
-		</dict>
 		<key>Modules/NGSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2teJ3pagAoFQwWkZRcY0cJrQHLen9GfrUj0nGhtaiYU=
+			X4KajoRhRvDoWFrlfvi65kvpi73saNNY5RArTBYl2AA=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wp600hqM8pz5yWdG4xx+CNtP2hLTQQqz4p3Mg6tNLXY=
+			9L+cy4MdWe64wScMfxRyV7SwbzqCoQ4eKFdu/vWx4w8=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/xjikCfHrjNWu5nangCCKdlOEInzE4Dh5f6KF/cBLJs=
+			CGQtYPsruEsH7Soszj4i3t9kJFBY1cWrFLvjPIqhM94=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kD+sj/d6jby66RepQBV4SXWuzkI0/k7LBNUlufs7mks=
+			R9PrbE6dAoOTZByUAeTuJb/Qtjvh7GvQ8RtBvcLfVPk=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1383,28 +1334,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kD+sj/d6jby66RepQBV4SXWuzkI0/k7LBNUlufs7mks=
+			R9PrbE6dAoOTZByUAeTuJb/Qtjvh7GvQ8RtBvcLfVPk=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R7VxPLwKKUwrI+5S2kR9cTV2gKCHtud5qPZk8kVYQrc=
+			5nZARwpShOmV/VLe5M8sy7CnBTB7p2Peh9VgWkH0Y0w=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/xjikCfHrjNWu5nangCCKdlOEInzE4Dh5f6KF/cBLJs=
+			CGQtYPsruEsH7Soszj4i3t9kJFBY1cWrFLvjPIqhM94=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ivnvwhW/kv5wxGe+mHaWDWbRiYfjXHuRE4LmfKkZyWs=
+			K+ON1bjyxnm4WqBdNDOYmF7rwcs+2i93Yr9AtO72c2o=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1418,14 +1369,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ivnvwhW/kv5wxGe+mHaWDWbRiYfjXHuRE4LmfKkZyWs=
+			K+ON1bjyxnm4WqBdNDOYmF7rwcs+2i93Yr9AtO72c2o=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2WGXGPqokDBVVL0ttA8xMSsX0INLdd6wN1TpnfibhoQ=
+			tphSrCE4N6m3iYSb/rewv8BRarQxtdLxneYerPkq5pI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1489,6 +1440,55 @@
 			<key>hash2</key>
 			<data>
 			Md2ErZ0WTYyoQkq3YH70N7LIQZafilVeTYr8KUJFumA=
+			</data>
+		</dict>
+		<key>NGSDKInternalWebBrowser.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vUUrGO9wIOWlOiafHDF3vqQ1hT51oxKRuujkbFAQ7g0=
+			</data>
+		</dict>
+		<key>NGSDKInternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YXPPiuQuvUOghIylwAsMCnKwzNl1r0dBxCdD/+/l9jE=
+			</data>
+		</dict>
+		<key>NGSDKInternalWebBrowser.storyboardc/NGSDKInternalWebBrowserViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ilQ2UipCIocdUWLhbWJJ+3wTgy/lPfAIFNDli3KgQVo=
+			</data>
+		</dict>
+		<key>NGSDKInternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OYymZ3SMXKMCRNZQuD2xZHeK2HoEJNIQQj73jBvmdmM=
+			</data>
+		</dict>
+		<key>NGSDKInternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ha594sRfxjIjHcsEf4ewRZgLssw8lBZQxucGoDbQcZ4=
+			</data>
+		</dict>
+		<key>NGSDKInternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B+KZiSRX+u1hfI4YEf+1fOVvbxWTnHX4g7Dbhekz+Bs=
+			</data>
+		</dict>
+		<key>NGSDKInternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B+KZiSRX+u1hfI4YEf+1fOVvbxWTnHX4g7Dbhekz+Bs=
 			</data>
 		</dict>
 		<key>NGSDKMRAIDCloseCardView.nib</key>
