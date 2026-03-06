@@ -1,7 +1,6 @@
 // 
 // NGSDK SDK License
 //
-// https://github.com/pubnative/pubnative-hybid-ios-sdk/blob/main/LICENSE
 //
 
 #import <Foundation/Foundation.h>
@@ -50,41 +49,41 @@ typedef enum {
 
 + (NSError *)errorWithCode:(NGSDKErrorCode)code localizedDescription:(NSString *)description;
 
-+ (instancetype)hyBidNoFill;
-+ (instancetype)hyBidParseError;
-+ (instancetype)hyBidServerError;
-+ (instancetype)hyBidServerErrorWithMessage:(NSString *) message;
-+ (instancetype)hyBidInvalidAsset;
-+ (instancetype)hyBidUnsupportedAsset;
-+ (instancetype)hyBidNullAd;
-+ (instancetype)hyBidInvalidAd;
-+ (instancetype)hyBidInvalidZoneId;
-+ (instancetype)hyBidInvalidSignalData;
-+ (instancetype)hyBidNotInitialised;
-+ (instancetype)hyBidAuctionNoAd;
-+ (instancetype)hyBidRenderingBanner;
-+ (instancetype)hyBidRenderingInterstitial;
-+ (instancetype)hyBidRenderingRewarded;
-+ (instancetype)hyBidMraidPlayer;
-+ (instancetype)hyBidVastPlayer;
-+ (instancetype)hyBidTrackingUrl;
-+ (instancetype)hyBidTrackingJS;
-+ (instancetype)hyBidInvalidUrl;
-+ (instancetype)hyBidInternalError;
-+ (instancetype)hyBidUnknownError;
-+ (instancetype)hyBidDisabledFormatError;
-+ (instancetype)hyBidDisabledRenderingEngineError;
-+ (instancetype)hyBidExpiredAd;
-+ (instancetype)hyBidVASTParserSchemaValidationError;
-+ (instancetype)hyBidVASTParserTooManyWrappersError;
-+ (instancetype)hyBidVASTParserNoCompatibleMediaFileError;
-+ (instancetype)hyBidVASTParserNoInternetConnectionError;
-+ (instancetype)hyBidVASTParserMovieTooShortError;
-+ (instancetype)hyBidAdFeedbackFormNotLoaded;
-+ (instancetype)hyBidInvalidHTML;
-+ (instancetype)hyBidVASTNoAdResponse;
-+ (instancetype)hyBidVASTBothAdAndErrorPresentInRootResponse;
-+ (instancetype)hyBidInvalidCustomCTAIconUrl;
-+ (instancetype)hyBidInvalidRemoteConfigData;
++ (instancetype)ngsdkNoFill;
++ (instancetype)ngsdkParseError;
++ (instancetype)ngsdkServerError;
++ (instancetype)ngsdkServerErrorWithMessage:(NSString *) message;
++ (instancetype)ngsdkInvalidAsset;
++ (instancetype)ngsdkUnsupportedAsset;
++ (instancetype)ngsdkNullAd;
++ (instancetype)ngsdkInvalidAd;
++ (instancetype)ngsdkInvalidZoneId;
++ (instancetype)ngsdkInvalidSignalData;
++ (instancetype)ngsdkNotInitialised;
++ (instancetype)ngsdkAuctionNoAd;
++ (instancetype)ngsdkRenderingBanner;
++ (instancetype)ngsdkRenderingInterstitial;
++ (instancetype)ngsdkRenderingRewarded;
++ (instancetype)ngsdkMraidPlayer;
++ (instancetype)ngsdkVastPlayer;
++ (instancetype)ngsdkTrackingUrl;
++ (instancetype)ngsdkTrackingJS;
++ (instancetype)ngsdkInvalidUrl;
++ (instancetype)ngsdkInternalError;
++ (instancetype)ngsdkUnknownError;
++ (instancetype)ngsdkDisabledFormatError;
++ (instancetype)ngsdkDisabledRenderingEngineError;
++ (instancetype)ngsdkExpiredAd;
++ (instancetype)ngsdkVASTParserSchemaValidationError;
++ (instancetype)ngsdkVASTParserTooManyWrappersError;
++ (instancetype)ngsdkVASTParserNoCompatibleMediaFileError;
++ (instancetype)ngsdkVASTParserNoInternetConnectionError;
++ (instancetype)ngsdkVASTParserMovieTooShortError;
++ (instancetype)ngsdkAdFeedbackFormNotLoaded;
++ (instancetype)ngsdkInvalidHTML;
++ (instancetype)ngsdkVASTNoAdResponse;
++ (instancetype)ngsdkVASTBothAdAndErrorPresentInRootResponse;
++ (instancetype)ngsdkInvalidCustomCTAIconUrl;
++ (instancetype)ngsdkInvalidRemoteConfigData;
 
 @end

@@ -1,11 +1,10 @@
 // 
 // NGSDK SDK License
 //
-// https://github.com/pubnative/pubnative-hybid-ios-sdk/blob/main/LICENSE
 //
 
 #import <Foundation/Foundation.h>
-#import "OMIDAdSessionWrapper.h"
+#import "NGSDKOMIDAdSessionWrapper.h"
 
 @interface NGSDKViewabilityManager : NSObject
 
@@ -13,15 +12,15 @@
 @property (nonatomic, assign, readonly) BOOL isViewabilityMeasurementActivated;
 
 @property (nonatomic, strong) id partner;
-@property (nonatomic, strong) OMIDAdSessionWrapper *omidAdSession;
-@property (nonatomic, strong) OMIDAdSessionWrapper *omidMediaAdSession;
+@property (nonatomic, strong) NGSDKOMIDAdSessionWrapper *omidAdSession;
+@property (nonatomic, strong) NGSDKOMIDAdSessionWrapper *omidMediaAdSession;
 @property (nonatomic, strong) id adEvents;
 @property (nonatomic, strong) id omidMediaEvents;
 
 + (instancetype)sharedInstance;
 - (NSString *)getOMIDJS;
-- (id)getAdEvents:(OMIDAdSessionWrapper *)omidAdSessionWrapper;
-- (id)getMediaEvents:(OMIDAdSessionWrapper *)omidAdSessionWrapper;
+- (id)getAdEvents:(NGSDKOMIDAdSessionWrapper *)omidAdSessionWrapper;
+- (id)getMediaEvents:(NGSDKOMIDAdSessionWrapper *)omidAdSessionWrapper;
 - (void)reportEvent:(NSString *)eventType;
 
 @end

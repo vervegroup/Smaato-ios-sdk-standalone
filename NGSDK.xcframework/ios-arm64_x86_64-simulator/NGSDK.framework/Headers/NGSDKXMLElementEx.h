@@ -1,7 +1,6 @@
 // 
 // NGSDK SDK License
 //
-// https://github.com/pubnative/pubnative-hybid-ios-sdk/blob/main/LICENSE
 //
 
 #import <Foundation/Foundation.h>
@@ -11,12 +10,14 @@
 	NGSDKXMLElement *element;
 	BOOL firstPass;
 	NSMutableDictionary *attributes;
+	NGSDKXML *_parser;
 }
 
 // A dictionary with all attributes of a given element
 @property (nonatomic, readonly) NSDictionary *attributes;
 
 -(id) initWithElement:(NGSDKXMLElement *) value;
+-(id) initWithElement:(NGSDKXMLElement *) value parser:(NGSDKXML *) parser;
 
 // Looks for a child element. Returns an autoreleased object
 // if the element exists, of nil otherwise

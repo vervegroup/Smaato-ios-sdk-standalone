@@ -638,6 +638,29 @@ SWIFT_CLASS("_TtC5NGSDK25NGSDKAppImpressionWrapper")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+SWIFT_CLASS_NAMED("NGSDKBeaconItem")
+@interface NGSDKBeaconItem : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, copy) NSString * _Nullable url;
+@property (nonatomic, readonly, copy) NSString * _Nullable js;
+@property (nonatomic, readonly, copy) NSString * _Nonnull content;
+- (nonnull instancetype)initWithType:(NSString * _Nonnull)type url:(NSString * _Nullable)url js:(NSString * _Nullable)js OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS_NAMED("NGSDKBeaconsInspector")
+@interface NGSDKBeaconsInspector : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKBeaconsInspector * _Nonnull shared;)
++ (NGSDKBeaconsInspector * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setResponseForBeaconsInspector:(NSString * _Nullable)response;
+- (NSArray<NGSDKBeaconItem *> * _Nonnull)firedBeacons SWIFT_WARN_UNUSED_RESULT;
+- (void)adBeaconsFromLastResponseWithCompletion:(void (^ _Nonnull)(NSArray<NGSDKBeaconItem *> * _Nonnull))completion;
+- (void)adBeaconsFromResponse:(NSString * _Nullable)response completion:(void (^ _Nonnull)(NSArray<NGSDKBeaconItem *> * _Nonnull))completion;
+@end
+
 enum NGSDKCTASize : int32_t;
 enum NGSDKCTALocation : int32_t;
 @class UIImage;
@@ -691,16 +714,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKConsent
 @class NSDictionary;
 SWIFT_CLASS("_TtC5NGSDK14NGSDKConstants")
 @interface NGSDKConstants : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_SDK_NAME;)
-+ (NSString * _Nonnull)HYBID_SDK_NAME SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_OMSDK_VERSION;)
-+ (NSString * _Nonnull)HYBID_OMSDK_VERSION SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_SDK_VERSION;)
-+ (NSString * _Nonnull)HYBID_SDK_VERSION SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_SDK_NAME;)
++ (NSString * _Nonnull)NGSDK_SDK_NAME SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_OMSDK_VERSION;)
++ (NSString * _Nonnull)NGSDK_OMSDK_VERSION SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_SDK_VERSION;)
++ (NSString * _Nonnull)NGSDK_SDK_VERSION SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SMAATO_SDK_VERSION;)
 + (NSString * _Nonnull)SMAATO_SDK_VERSION SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_OMSDK_IDENTIFIER;)
-+ (NSString * _Nonnull)HYBID_OMSDK_IDENTIFIER SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_OMSDK_IDENTIFIER;)
++ (NSString * _Nonnull)NGSDK_OMSDK_IDENTIFIER SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SMAATO_OMSDK_IDENTIFIER;)
 + (NSString * _Nonnull)SMAATO_OMSDK_IDENTIFIER SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SMAATO_OMSDK_VERSION;)
@@ -711,12 +734,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)AD_SESSION_DATA SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PERCENT_VISIBLE;)
 + (NSString * _Nonnull)PERCENT_VISIBLE SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_DEEPLINK_SCHEME;)
-+ (NSString * _Nonnull)HYBID_DEEPLINK_SCHEME SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_DEEPLINK_PARAM;)
-+ (NSString * _Nonnull)HYBID_DEEPLINK_PARAM SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_FALLBACK_PARAM;)
-+ (NSString * _Nonnull)HYBID_FALLBACK_PARAM SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_DEEPLINK_SCHEME;)
++ (NSString * _Nonnull)NGSDK_DEEPLINK_SCHEME SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_DEEPLINK_PARAM;)
++ (NSString * _Nonnull)NGSDK_DEEPLINK_PARAM SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_FALLBACK_PARAM;)
++ (NSString * _Nonnull)NGSDK_FALLBACK_PARAM SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL mraidExpand;)
 + (BOOL)mraidExpand SWIFT_WARN_UNUSED_RESULT;
 + (void)setMraidExpand:(BOOL)value;
@@ -783,12 +806,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull itun
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull customCTAInputValue;)
 + (NSString * _Nonnull)customCTAInputValue SWIFT_WARN_UNUSED_RESULT;
 + (void)setCustomCTAInputValue:(NSString * _Nonnull)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL customCtaEnabledInputValue;)
-+ (BOOL)customCtaEnabledInputValue SWIFT_WARN_UNUSED_RESULT;
-+ (void)setCustomCtaEnabledInputValue:(BOOL)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger customCtaDelayInputValue;)
-+ (NSInteger)customCtaDelayInputValue SWIFT_WARN_UNUSED_RESULT;
-+ (void)setCustomCtaDelayInputValue:(NSInteger)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull customBundleId;)
 + (NSString * _Nonnull)customBundleId SWIFT_WARN_UNUSED_RESULT;
 + (void)setCustomBundleId:(NSString * _Nonnull)value;
@@ -807,9 +824,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull ctaS
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull ctaLocationTypeInputValue;)
 + (NSString * _Nonnull)ctaLocationTypeInputValue SWIFT_WARN_UNUSED_RESULT;
 + (void)setCtaLocationTypeInputValue:(NSString * _Nonnull)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger sdkAutoStoreKitDelayInputValue;)
-+ (NSInteger)sdkAutoStoreKitDelayInputValue SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSdkAutoStoreKitDelayInputValue:(NSInteger)value;
 + (NGSDKSkipOffset * _Nonnull)endCardCloseOffsetWithAdExperience:(NSString * _Nullable)adExperience SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -957,14 +971,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKInterru
 - (void)adFeedbackViewDidDismiss;
 @end
 
-@class NSData;
 @protocol NGSDKInterstitialAdDelegate;
 SWIFT_CLASS("_TtC5NGSDK19NGSDKInterstitialAd")
 @interface NGSDKInterstitialAd : NSObject
 @property (nonatomic, strong) NGSDKAd * _Nullable ad;
 @property (nonatomic) BOOL isReady;
 @property (nonatomic) BOOL isMediation;
-@property (nonatomic, copy) NSData * _Nullable mediationWatermarkData;
 @property (nonatomic) BOOL isAutoCacheOnLoad;
 - (nonnull instancetype)initWithDelegate:(id <NGSDKInterstitialAdDelegate> _Nonnull)delegate;
 - (nonnull instancetype)initWithZoneID:(NSString * _Nullable)zoneID andWithDelegate:(id <NGSDKInterstitialAdDelegate> _Nonnull)delegate;
@@ -982,7 +994,6 @@ SWIFT_CLASS("_TtC5NGSDK19NGSDKInterstitialAd")
 - (void)show;
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController;
 - (void)renderAdWithAd:(NGSDKAd * _Nonnull)ad;
-- (void)setMediationWatermark:(NSData * _Nullable)pngData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1135,7 +1146,6 @@ SWIFT_CLASS("_TtC5NGSDK15NGSDKRewardedAd")
 @property (nonatomic, strong) NGSDKAd * _Nullable ad;
 @property (nonatomic) BOOL isReady;
 @property (nonatomic) BOOL isMediation;
-@property (nonatomic, copy) NSData * _Nullable mediationWatermarkData;
 @property (nonatomic) BOOL isAutoCacheOnLoad;
 - (nonnull instancetype)initWithDelegate:(id <NGSDKRewardedAdDelegate> _Nonnull)delegate;
 - (nonnull instancetype)initWithZoneID:(NSString * _Nullable)zoneID andWithDelegate:(id <NGSDKRewardedAdDelegate> _Nonnull)delegate;
@@ -1152,7 +1162,6 @@ SWIFT_CLASS("_TtC5NGSDK15NGSDKRewardedAd")
 - (void)show;
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController;
 - (void)renderAdWithAd:(NGSDKAd * _Nonnull)ad;
-- (void)setMediationWatermark:(NSData * _Nullable)pngData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1390,7 +1399,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKViewbil
 @class UITouch;
 @class UIEvent;
 @interface SKStoreProductViewController (SWIFT_EXTENSION(NGSDK))
-- (void)viewDidAppear:(BOOL)animated;
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
@@ -2068,6 +2076,29 @@ SWIFT_CLASS("_TtC5NGSDK25NGSDKAppImpressionWrapper")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+SWIFT_CLASS_NAMED("NGSDKBeaconItem")
+@interface NGSDKBeaconItem : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, copy) NSString * _Nullable url;
+@property (nonatomic, readonly, copy) NSString * _Nullable js;
+@property (nonatomic, readonly, copy) NSString * _Nonnull content;
+- (nonnull instancetype)initWithType:(NSString * _Nonnull)type url:(NSString * _Nullable)url js:(NSString * _Nullable)js OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS_NAMED("NGSDKBeaconsInspector")
+@interface NGSDKBeaconsInspector : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKBeaconsInspector * _Nonnull shared;)
++ (NGSDKBeaconsInspector * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setResponseForBeaconsInspector:(NSString * _Nullable)response;
+- (NSArray<NGSDKBeaconItem *> * _Nonnull)firedBeacons SWIFT_WARN_UNUSED_RESULT;
+- (void)adBeaconsFromLastResponseWithCompletion:(void (^ _Nonnull)(NSArray<NGSDKBeaconItem *> * _Nonnull))completion;
+- (void)adBeaconsFromResponse:(NSString * _Nullable)response completion:(void (^ _Nonnull)(NSArray<NGSDKBeaconItem *> * _Nonnull))completion;
+@end
+
 enum NGSDKCTASize : int32_t;
 enum NGSDKCTALocation : int32_t;
 @class UIImage;
@@ -2121,16 +2152,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKConsent
 @class NSDictionary;
 SWIFT_CLASS("_TtC5NGSDK14NGSDKConstants")
 @interface NGSDKConstants : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_SDK_NAME;)
-+ (NSString * _Nonnull)HYBID_SDK_NAME SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_OMSDK_VERSION;)
-+ (NSString * _Nonnull)HYBID_OMSDK_VERSION SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_SDK_VERSION;)
-+ (NSString * _Nonnull)HYBID_SDK_VERSION SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_SDK_NAME;)
++ (NSString * _Nonnull)NGSDK_SDK_NAME SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_OMSDK_VERSION;)
++ (NSString * _Nonnull)NGSDK_OMSDK_VERSION SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_SDK_VERSION;)
++ (NSString * _Nonnull)NGSDK_SDK_VERSION SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SMAATO_SDK_VERSION;)
 + (NSString * _Nonnull)SMAATO_SDK_VERSION SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_OMSDK_IDENTIFIER;)
-+ (NSString * _Nonnull)HYBID_OMSDK_IDENTIFIER SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_OMSDK_IDENTIFIER;)
++ (NSString * _Nonnull)NGSDK_OMSDK_IDENTIFIER SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SMAATO_OMSDK_IDENTIFIER;)
 + (NSString * _Nonnull)SMAATO_OMSDK_IDENTIFIER SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SMAATO_OMSDK_VERSION;)
@@ -2141,12 +2172,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)AD_SESSION_DATA SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PERCENT_VISIBLE;)
 + (NSString * _Nonnull)PERCENT_VISIBLE SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_DEEPLINK_SCHEME;)
-+ (NSString * _Nonnull)HYBID_DEEPLINK_SCHEME SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_DEEPLINK_PARAM;)
-+ (NSString * _Nonnull)HYBID_DEEPLINK_PARAM SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_FALLBACK_PARAM;)
-+ (NSString * _Nonnull)HYBID_FALLBACK_PARAM SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_DEEPLINK_SCHEME;)
++ (NSString * _Nonnull)NGSDK_DEEPLINK_SCHEME SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_DEEPLINK_PARAM;)
++ (NSString * _Nonnull)NGSDK_DEEPLINK_PARAM SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NGSDK_FALLBACK_PARAM;)
++ (NSString * _Nonnull)NGSDK_FALLBACK_PARAM SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL mraidExpand;)
 + (BOOL)mraidExpand SWIFT_WARN_UNUSED_RESULT;
 + (void)setMraidExpand:(BOOL)value;
@@ -2213,12 +2244,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull itun
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull customCTAInputValue;)
 + (NSString * _Nonnull)customCTAInputValue SWIFT_WARN_UNUSED_RESULT;
 + (void)setCustomCTAInputValue:(NSString * _Nonnull)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL customCtaEnabledInputValue;)
-+ (BOOL)customCtaEnabledInputValue SWIFT_WARN_UNUSED_RESULT;
-+ (void)setCustomCtaEnabledInputValue:(BOOL)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger customCtaDelayInputValue;)
-+ (NSInteger)customCtaDelayInputValue SWIFT_WARN_UNUSED_RESULT;
-+ (void)setCustomCtaDelayInputValue:(NSInteger)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull customBundleId;)
 + (NSString * _Nonnull)customBundleId SWIFT_WARN_UNUSED_RESULT;
 + (void)setCustomBundleId:(NSString * _Nonnull)value;
@@ -2237,9 +2262,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull ctaS
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull ctaLocationTypeInputValue;)
 + (NSString * _Nonnull)ctaLocationTypeInputValue SWIFT_WARN_UNUSED_RESULT;
 + (void)setCtaLocationTypeInputValue:(NSString * _Nonnull)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger sdkAutoStoreKitDelayInputValue;)
-+ (NSInteger)sdkAutoStoreKitDelayInputValue SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSdkAutoStoreKitDelayInputValue:(NSInteger)value;
 + (NGSDKSkipOffset * _Nonnull)endCardCloseOffsetWithAdExperience:(NSString * _Nullable)adExperience SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -2387,14 +2409,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKInterru
 - (void)adFeedbackViewDidDismiss;
 @end
 
-@class NSData;
 @protocol NGSDKInterstitialAdDelegate;
 SWIFT_CLASS("_TtC5NGSDK19NGSDKInterstitialAd")
 @interface NGSDKInterstitialAd : NSObject
 @property (nonatomic, strong) NGSDKAd * _Nullable ad;
 @property (nonatomic) BOOL isReady;
 @property (nonatomic) BOOL isMediation;
-@property (nonatomic, copy) NSData * _Nullable mediationWatermarkData;
 @property (nonatomic) BOOL isAutoCacheOnLoad;
 - (nonnull instancetype)initWithDelegate:(id <NGSDKInterstitialAdDelegate> _Nonnull)delegate;
 - (nonnull instancetype)initWithZoneID:(NSString * _Nullable)zoneID andWithDelegate:(id <NGSDKInterstitialAdDelegate> _Nonnull)delegate;
@@ -2412,7 +2432,6 @@ SWIFT_CLASS("_TtC5NGSDK19NGSDKInterstitialAd")
 - (void)show;
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController;
 - (void)renderAdWithAd:(NGSDKAd * _Nonnull)ad;
-- (void)setMediationWatermark:(NSData * _Nullable)pngData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2565,7 +2584,6 @@ SWIFT_CLASS("_TtC5NGSDK15NGSDKRewardedAd")
 @property (nonatomic, strong) NGSDKAd * _Nullable ad;
 @property (nonatomic) BOOL isReady;
 @property (nonatomic) BOOL isMediation;
-@property (nonatomic, copy) NSData * _Nullable mediationWatermarkData;
 @property (nonatomic) BOOL isAutoCacheOnLoad;
 - (nonnull instancetype)initWithDelegate:(id <NGSDKRewardedAdDelegate> _Nonnull)delegate;
 - (nonnull instancetype)initWithZoneID:(NSString * _Nullable)zoneID andWithDelegate:(id <NGSDKRewardedAdDelegate> _Nonnull)delegate;
@@ -2582,7 +2600,6 @@ SWIFT_CLASS("_TtC5NGSDK15NGSDKRewardedAd")
 - (void)show;
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController;
 - (void)renderAdWithAd:(NGSDKAd * _Nonnull)ad;
-- (void)setMediationWatermark:(NSData * _Nullable)pngData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2820,7 +2837,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) NGSDKViewbil
 @class UITouch;
 @class UIEvent;
 @interface SKStoreProductViewController (SWIFT_EXTENSION(NGSDK))
-- (void)viewDidAppear:(BOOL)animated;
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;

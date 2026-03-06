@@ -1,7 +1,6 @@
 // 
 // NGSDK SDK License
 //
-// https://github.com/pubnative/pubnative-hybid-ios-sdk/blob/main/LICENSE
 //
 
 #import <UIKit/UIKit.h>
@@ -117,7 +116,7 @@ FOUNDATION_EXPORT const unsigned char NGSDKVersionString[];
 #import "NGSDKConfigManager.h"
 #import "NSUserDefaults+NGSDKCustomMethods.h"
 #import "NGSDKSKOverlayDelegate.h"
-#import "ATOMManager.h"
+#import "NGSDKATOMManager.h"
 
 // For swift compatibility, we are making this file public instead of private
 // Avoid using custom module map
@@ -127,6 +126,7 @@ FOUNDATION_EXPORT const unsigned char NGSDKVersionString[];
 #import "NGSDKVASTImpression.h"
 #import "UIApplication+NGSDKTopViewController.h"
 #import "NGSDKAdFeedbackViewDelegate.h"
+#import "NGSDKBeaconsInspectorHelper.h"
 
 @class NGSDKTargetingModel;
 @class NGSDKReportingManager;

@@ -1,7 +1,6 @@
 // 
 // NGSDK SDK License
 //
-// https://github.com/pubnative/pubnative-hybid-ios-sdk/blob/main/LICENSE
 //
 
 #import <Foundation/Foundation.h>
@@ -27,7 +26,7 @@
 @property (class, nonatomic, readonly) NGSDKAdSize *SIZE_INTERSTITIAL;
 @property (class, nonatomic, readonly) NGSDKAdSize *SIZE_NATIVE;
 
-- (BOOL)isEqualTo:(NGSDKAdSize *)hyBidAdSize;
+- (BOOL)isEqualTo:(NGSDKAdSize *)ngsdkAdSize;
 
 @end
 
