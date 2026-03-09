@@ -167,23 +167,51 @@ static MAAdapterInitializationStatus ALSmaatoInitializationStatus = NSIntegerMin
 {
     [self log: @"Loading %@ ad view ad...", adFormat.label];
     
-    NSString* placementIdentifier = [parameters thirdPartyAdPlacementIdentifier];
-    [self updateLocationCollectionEnabled: parameters];
-    
-    self.bannerAdView = [[SMABannerView alloc] init];
-    self.bannerAdView.autoreloadInterval = kSMABannerAutoreloadIntervalDisabled;
-    
-    self.bannerAdViewAdapterDelegate = [[SmaatoApplovinMediationBannerAdDelegate alloc] initWithSmaatoWaterfallAdapter:self andNotify:delegate];
-    self.bannerAdView.delegate = self.bannerAdViewAdapterDelegate;
+    NSString *placementIdentifier = [parameters thirdPartyAdPlacementIdentifier];
+    NSString *pubID = [parameters.serverParameters al_stringForKey: @"pub_id" defaultValue: @""];
     
     if ( !placementIdentifier || ![placementIdentifier al_isValidString] )
     {
         [self log: @"%@ ad load failed: ad request nil with valid bid response", adFormat.label];
         [delegate didFailToLoadAdViewAdWithError: MAAdapterError.invalidConfiguration];
+        return;
+    }
+    if ( !pubID || ![pubID al_isValidString] )
+    {
+        [self log: @"%@ ad load failed: pub_id missing or invalid", adFormat.label];
+        [delegate didFailToLoadAdViewAdWithError: MAAdapterError.invalidConfiguration];
+        return;
+    }
+    
+    [self updateLocationCollectionEnabled: parameters];
+    
+    self.bannerAdView = [[SMABannerView alloc] init];
+    self.bannerAdView.autoreloadInterval = kSMABannerAutoreloadIntervalDisabled;
+    self.bannerAdViewAdapterDelegate = [[SmaatoApplovinMediationBannerAdDelegate alloc] initWithSmaatoWaterfallAdapter: self andNotify: delegate];
+    self.bannerAdView.delegate = self.bannerAdViewAdapterDelegate;
+    
+    if ( [SmaatoSDK isInitialized] && [SmaatoSDK.publisherId isEqualToString: pubID] )
+    {
+        [self log: @"Smaato SDK already initialized, requesting banner"];
+        [self.bannerAdView loadWithAdSpaceId: placementIdentifier adSize: [self adSizeForAdFormat: adFormat]];
     }
     else
     {
-        [self.bannerAdView loadWithAdSpaceId: placementIdentifier adSize: [self adSizeForAdFormat: adFormat]];
+        [self log: @"Smaato SDK not initialized, initializing then requesting banner"];
+        SMAConfiguration *config = [[SMAConfiguration alloc] initWithPublisherId: pubID];
+        config.logLevel = [parameters isTesting] ? kSMALogLevelVerbose : kSMALogLevelError;
+        config.httpsOnly = [parameters.serverParameters al_numberForKey: @"https_only"].boolValue;
+        [SmaatoSDK initSDKWithConfig: config completion:^(BOOL success) {
+            if ( success )
+            {
+                [self.bannerAdView loadWithAdSpaceId: placementIdentifier adSize: [self adSizeForAdFormat: adFormat]];
+            }
+            else
+            {
+                [self log: @"Smaato SDK initialization failed"];
+                [delegate didFailToLoadAdViewAdWithError: MAAdapterError.notInitialized];
+            }
+        }];
     }
 }
 #pragma mark - MAInterstitialAdapter Methods

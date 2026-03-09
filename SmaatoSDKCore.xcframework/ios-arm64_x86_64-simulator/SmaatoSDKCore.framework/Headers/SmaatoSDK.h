@@ -35,6 +35,9 @@
 -(void)onInitialisationFailure: (NSString* _Nullable)errorMessage;
 
 @end
+
+/// Completion block for init-with-completion. \c success is YES if SDK initialized successfully.
+typedef void(^SmaatoSDKInitCompletionBlock)(BOOL success);
 /**
  The root class which provides the SDK configuration options.
 
@@ -47,6 +50,9 @@
 
 /// Publisher Id assigned by Smaato.
 @property (class, nonatomic, readonly, nonnull) NSString *publisherId;
+
+/// Returns YES if the SDK has been successfully initialized, otherwise NO.
++ (BOOL)isInitialized;
 
 @property (nonatomic, weak) id<SmaatoSdkInitialisationDelegate> _Nullable delegate;
 
@@ -70,6 +76,14 @@
  */
 
 + (void)initSDKWithConfig:(SMAConfiguration *_Nonnull)config andDelegate:(id<SmaatoSdkInitialisationDelegate>_Nullable)delegate;
+
+/**
+ Initializes the SDK with the given configuration and calls \c completion when done.
+ Use this when you need to run code after init (e.g. request an ad) without using the delegate.
+ @param config The SDK configuration. Must not be \c nil.
+ @param completion Called with YES on success, NO on failure. May be \c nil. Called on the same thread as the init callback.
+ */
++ (void)initSDKWithConfig:(SMAConfiguration *_Nonnull)config completion:(nullable SmaatoSDKInitCompletionBlock)completion;
 
 /**
  Unavailable. Please use class properties/methods instead.
