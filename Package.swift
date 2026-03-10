@@ -23,6 +23,7 @@ let package = Package(
         .binaryTarget(name: "SmaatoSDKNativeBinary", path: "SmaatoSDKNative.xcframework"),
         .binaryTarget(name: "SmaatoSDKUnifiedBiddingBinary", path: "SmaatoSDKUnifiedBidding.xcframework"),
         .binaryTarget(name: "SmaatoSDKInAppBiddingBinary", path: "SmaatoSDKInAppBidding.xcframework"),
+        .binaryTarget(name: "OMSDK_Smaato", path: "OMSDK-Smaato-1.6.3/OMSDK_Smaato.xcframework"),
         
         .target(
             name: "SmaatoSDKDependencies",
@@ -46,6 +47,7 @@ let package = Package(
                 "SmaatoSDKInterstitialBinary",
                 "SmaatoSDKNativeBinary",
                 "SmaatoSDKRewardedAdsBinary",
+                "OMSDK_Smaato",
                 .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
             ],
             path: "SmaatoSDKAdapters/AdMob",
