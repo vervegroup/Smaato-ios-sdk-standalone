@@ -36,8 +36,7 @@ let package = Package(
                 "SmaatoSDKUnifiedBiddingBinary",
                 "SmaatoSDKInAppBiddingBinary",
                 "NGSDK",
-            ],
-            path: "Sources"
+            ]
         ),
         .target(
             name: "SmaatoSDKAdaptersAdMob",
