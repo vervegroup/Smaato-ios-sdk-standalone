@@ -302,11 +302,11 @@
 		</data>
 		<key>Modules/NGSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		gGyHYRTcWbJZKhnTRLclI1qk64s=
+		23MsHzhrzZFDVyx//r+9GuxQhHM=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		F6sLM1puaZo8x0Va9YZgnS535/Q=
+		XFQUMUgzzyYJjPaZnSslHMnvoW8=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -1299,14 +1299,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cKfx7E+buHka7YIJCYit816+kHN/ZnTIDKeoiYvidLw=
+			CvfMcWyJ+IhD1I109eKYGtEepianMZoT7P5O4obzEFY=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			USLLMKeu508lFW0Cpq/sRgN1qRf1r1edgk7IjpLK1M0=
+			VeOihBpAYKGqua2deNt13wdI77OzAf7jQmaZZDKaTk4=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
