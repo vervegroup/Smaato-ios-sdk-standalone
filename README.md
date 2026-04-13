@@ -1,24 +1,36 @@
 # Smaato-ios-sdk-standalone
 ## Installation
-#### Install via Swift Package Manager
+### Swift Package Manager
 
-You can use Swift Package Manager to integrate Smaato iOS SDK along with the `SmaatoSDKAdaptersAppLovinWaterfall` and `SmaatoSDKAdaptersAdMob` adapters  directly into your Xcode project.
+You can use Swift Package Manager to integrate the `Smaato iOS SDK` — including the optional `SmaatoSDKAdaptersAdMob` and `SmaatoSDKAdaptersAppLovinWaterfall` adapters directly into your Xcode project.
 
-Add the Smaato SDK (SPM)
-In Xcode, open your project and go to:
+**Step 1: Add the Package**
 
-File → Add Packages…
+In Xcode, go to:
 
-Enter the Smaato SPM repository URL:
+**File → Add Package Dependencies…**
+
+Enter the repository URL:
 
 `https://github.com/vervegroup/Smaato-ios-sdk-standalone`
 
-Set the Dependency Rule to:
-branch `main`
+Set the Dependency Rule to **Up to Next Major Version** and enter `23.0.1`
 
-When “Choose Package Products for Smaato” appears, select what packages you need and click Add Package.
-The Smaato SDK will now appear under Package Dependencies in your project.
+**Step 2: Select Products**
 
-Requirements
-Xcode 15+ (Swift Package Manager with Swift 5.9+)
-iOS 12+
+When prompted, select the products you need:
+- `SmaatoSDK` — core SDK (required)
+- `SmaatoSDKAdaptersAdMob` — AdMob adapter (optional)
+- `SmaatoSDKAdaptersAppLovinWaterfall` — AppLovin adapter (optional)
+
+Click **Add Package**.
+
+**Step 3: Add `-ObjC` Linker Flag**
+
+In your target's **Build Settings**, find **Other Linker Flags** and add:
+
+`-ObjC`
+
+### Requirements
+- Xcode 15+
+- iOS 12+
