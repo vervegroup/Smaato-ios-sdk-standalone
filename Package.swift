@@ -63,9 +63,6 @@ let package = Package(
                 .headerSearchPath("Interstitial"),
                 .headerSearchPath("Native"),
                 .headerSearchPath("RewardedVideo")
-            ],
-            linkerSettings: [
-                .unsafeFlags(["-ObjC"])
             ]
         ),
         .target(
@@ -84,9 +81,6 @@ let package = Package(
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
-            ],
-            linkerSettings: [
-                .unsafeFlags(["-ObjC"])
             ]
         )
     ]
