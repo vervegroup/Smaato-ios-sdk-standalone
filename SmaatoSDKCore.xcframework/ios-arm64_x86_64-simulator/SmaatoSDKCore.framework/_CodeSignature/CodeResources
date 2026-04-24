@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/SmaatoSDKCore.h</key>
 		<data>
-		rZJ1URq8HLDphZ8Pn9wRd7yEyPE=
+		IEcB8FywYGMrUC7j3JfnZzHxsr8=
 		</data>
 		<key>Headers/SmaatoUBCache.h</key>
 		<data>
@@ -34,11 +34,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eX9aB7BQXn0aNSK0aBCeKBptl40=
+		4Cs/MAEf9NTQglBo73sejXsEuJ8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		07L9w41HgBgD6aZ6r+UmtCTbIVQ=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		jcHhofU8zfLvJEmtr485pWw7Ksk=
 		</data>
 		<key>PrivateHeaders/SmaatoSDK+Private.h</key>
 		<data>
@@ -90,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/hSEWa7kZX+p1eQPD9otSbpiZSPsobFTYpiIN+ik5CM=
+			L2InEl7Oi3LzDIgaaWTimZXG+dNQR8A8cMN5cjlxsBI=
 			</data>
 		</dict>
 		<key>Headers/SmaatoUBCache.h</key>
@@ -105,6 +109,13 @@
 			<key>hash2</key>
 			<data>
 			YAn1SkFe74N+c/kW0XOWKBseR9Sv1r9U3inpX0cVV/8=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AVyLkEjuuwG6nisp0mghb7xb5nMF84d1mlEPRq4CaD8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SmaatoSDK+Private.h</key>

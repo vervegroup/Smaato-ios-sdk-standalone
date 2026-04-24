@@ -35938,9 +35938,9 @@
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Config\/NGSDKSDKConfig.swift",
       "kind": "StringLiteral",
-      "offset": 941,
-      "length": 23,
-      "value": "\"https:\/\/dsp.ngsdk.net\""
+      "offset": 965,
+      "length": 31,
+      "value": "\"https:\/\/dsp.nextgen.verve.net\""
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKImpressionConstants.swift",
@@ -37886,14 +37886,14 @@
       "kind": "StringLiteral",
       "offset": 261,
       "length": 7,
-      "value": "\"3.7.1\""
+      "value": "\"3.8.0\""
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 318,
       "length": 8,
-      "value": "\"23.0.1\""
+      "value": "\"23.1.0\""
     },
     {
       "filePath": "\/Users\/distiller\/ngsdk\/ngsdk-ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",

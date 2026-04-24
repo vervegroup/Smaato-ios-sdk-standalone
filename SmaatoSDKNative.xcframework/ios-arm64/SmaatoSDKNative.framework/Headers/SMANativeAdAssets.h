@@ -60,6 +60,16 @@ URL of image creative that should be rendered as small icon control on view with
 @property (nonatomic, readonly, nullable) SMANativeImage *icon;
 
 /**
+URL of the icon image creative. Convenience accessor equivalent to \c icon.url.
+*/
+@property (nonatomic, readonly, nullable) NSURL *iconURL;
+
+/**
+List of image creative URLs (up to 3). Convenience accessor equivalent to mapping \c images to their \c url property.
+*/
+@property (nonatomic, readonly, nullable) NSArray<NSURL *> *imageURLs;
+
+/**
 Digital value (integer value in interval 1..5) that should be rendered as stars rating (or other way) control on view with native ad
 */
 @property (nonatomic, readonly) CGFloat rating;

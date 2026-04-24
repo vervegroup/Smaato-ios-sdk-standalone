@@ -42,7 +42,7 @@ Sent when the native ad loads a creative successfully.
 @param nativeAd The native ad sending the message.
 @param renderer Native ad renderer that acts as mediator between native raw data assets and visual representation
 */
-- (void)nativeAd:(SMANativeAd *_Nonnull)nativeAd didLoadWithAdRenderer:(SMANativeAdRenderer *_Nonnull)renderer;
+- (void)nativeAd:(SMANativeAd *_Nonnull)nativeAd didLoadWithAdRenderer:(SMANativeAdRenderer *_Nonnull)renderer NS_SWIFT_NAME(nativeAd(_:didLoadWith:));
 
 /**
 Sent when the native ad fails to load an ad successfully.
@@ -58,7 +58,7 @@ A view controller that will be used to present modal view controllers.
 @param nativeAd  The native ad sending the message.
 @return          A presenting view controller.
 */
-- (nonnull UIViewController *)presentingViewControllerForNativeAd:(SMANativeAd *_Nonnull)nativeAd;
+- (nonnull UIViewController *)presentingViewControllerForNativeAd:(SMANativeAd *_Nonnull)nativeAd NS_SWIFT_NAME(presentingViewController(for:));
 
 /**
 Sent when TTL has expired, based on the timestamp from the ad header.
@@ -133,7 +133,7 @@ Load new native ad. You must call this method programmatically to initiate loadi
 @param adRequest       Native ad request that contains ad space identifier assigned by Smaato.
 
 */
-- (void)loadWithAdRequest:(SMANativeAdRequest *_Nonnull)adRequest;
+- (void)loadWithAdRequest:(SMANativeAdRequest *_Nonnull)adRequest NS_SWIFT_NAME(load(with:));
 
 /**
  Advanced version of `loadWithAdSpaceId:` method for ad experts

@@ -11,6 +11,7 @@
 #import <SmaatoSDKNative/SMANativeAdRenderer.h>
 #import <SmaatoSDKNative/SMANativeAdRequest.h>
 #import <SmaatoSDKNative/SMANativeImage.h>
+#import <SmaatoSDKNative/SMANativeImageLoader.h>
 #import <SmaatoSDKNative/SMANativeView.h>
 #import <SmaatoSDKNative/SMANativeAdSupportedAssets.h>
 

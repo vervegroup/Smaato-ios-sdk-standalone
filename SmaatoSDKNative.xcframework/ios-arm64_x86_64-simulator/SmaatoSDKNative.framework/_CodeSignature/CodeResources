@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/SMANativeAd.h</key>
 		<data>
-		djPOBa/kLnVnr0T2lTCe16oWEE4=
+		RcD5pZHiAIgo66elGsZWUsJ5Pmk=
 		</data>
 		<key>Headers/SMANativeAdAssets.h</key>
 		<data>
-		eJPfsuf/feqzjtU5VTb1Lc6xtPU=
+		5NVyg8vBDYd3JnSz8jpaInTH2BM=
 		</data>
 		<key>Headers/SMANativeAdRenderer.h</key>
 		<data>
-		jj00aj1Qg3uwKNh66oybcjAt/as=
+		PGMD7Vmruj5gXWI5dQvaiRJrx6E=
 		</data>
 		<key>Headers/SMANativeAdRequest.h</key>
 		<data>
@@ -28,17 +28,21 @@
 		<data>
 		PbMt8NYmX6PCnNy9UEmwqoe9tyY=
 		</data>
+		<key>Headers/SMANativeImageLoader.h</key>
+		<data>
+		JVaRu+sPgZ5xj9JYgPKAGoLSMNw=
+		</data>
 		<key>Headers/SMANativeView.h</key>
 		<data>
 		tGvgsk0uVhgT1tF/m25dgjbhBUQ=
 		</data>
 		<key>Headers/SmaatoSDKNative.h</key>
 		<data>
-		PcOQJtyDbejny4xGo+yYddNltKE=
+		s40U4N+9+Cj7vAUrqzy14x1ycXY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ic6ToEowzFzF5SrtX8cd0KYaBTU=
+		NsIou+aW2bRjs+4NxOpfvcjXmOs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,21 +55,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CbaAkxQAzFwiotwrJua4vxMCZrsy0YR8eVPurVyMxUI=
+			PYomTFmYH2/F7CtTliFXffUD7en4T4vUfKeOMuPaPy8=
 			</data>
 		</dict>
 		<key>Headers/SMANativeAdAssets.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2fcCAxN4dBS4KwE5CGt9YPI8JDT1cgr+mbl94D8g7EE=
+			Es/a2+ZKG5ADO8NUlyanZ/HfdO3NyyrhOUbowihdRoI=
 			</data>
 		</dict>
 		<key>Headers/SMANativeAdRenderer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cWHyhmBNDVhReCrbwRXAfg7T2kLnSXYwuVOYGcnOlJg=
+			6qDRJUyuezblWPsgxFxYNDmwQHjJC1ljB6gwDs33/G8=
 			</data>
 		</dict>
 		<key>Headers/SMANativeAdRequest.h</key>
@@ -89,6 +93,13 @@
 			m9spfQLbHzlg0UZy0vqfM9hmwAbC+gYuT3o8zlOokyE=
 			</data>
 		</dict>
+		<key>Headers/SMANativeImageLoader.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3/0vhnuktA4w9wiIDRf1W+5+59Vb9FJLIfz7WgxmoCw=
+			</data>
+		</dict>
 		<key>Headers/SMANativeView.h</key>
 		<dict>
 			<key>hash2</key>
@@ -100,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hp73MsYZrDbs3AAopuJ+xvWumln8+bHIGVga0Iml/n8=
+			J6R6MBYjz7d5TD2heuKE5aE1v2Gi7yKB7ZMMdpMhfWw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

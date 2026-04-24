@@ -54,6 +54,11 @@ ad rendering publisher should register a view container with ad content for impr
 - (void)adMarkupViewWithCompletion:(void (^_Nullable)(UIView *_Nullable rmView))completion;
 
 /**
+ Convenience alias for \c adMarkupViewWithCompletion:. Provided for API consistency with documentation.
+ */
+- (void)adMarkupView:(void (^_Nullable)(UIView *_Nullable rmView))completion NS_SWIFT_NAME(adMarkupView(completion:));
+
+/**
  Init method
 */
 - (instancetype _Nonnull)init;
@@ -73,7 +78,7 @@ Call to render native ad inside custom view.
  a contract between the app and NextGen SDK. Must not be \c nil.
 */
 - (void)renderAdInView:(UIView<SMANativeView> *_Nonnull)nativeView
-            completion:(void (^_Nullable)(BOOL isRendered, NSError *_Nullable error))completion;
+            completion:(void (^_Nullable)(BOOL isRendered, NSError *_Nullable error))completion NS_SWIFT_NAME(renderAd(in:completion:));
 
 @end
 

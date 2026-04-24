@@ -47,6 +47,7 @@
 - (void)renderAd:(NGSDKNativeAdRenderer *)renderer;
 - (void)fetchNativeAdAssetsWithDelegate:(NSObject<NGSDKNativeAdFetchDelegate> *)delegate;
 - (void)startTrackingView:(UIView *)view withDelegate:(NSObject<NGSDKNativeAdDelegate> *)delegate;
+- (void)startTrackingView:(UIView *)view withClickableViews:(NSArray<UIView *> *)clickableViews withDelegate:(NSObject<NGSDKNativeAdDelegate> *)delegate;
 - (void)stopTracking;
 
 @end
