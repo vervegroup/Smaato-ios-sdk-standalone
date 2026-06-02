@@ -21,6 +21,6 @@ FOUNDATION_EXPORT double SmaatoSDKVersionNumber;
 //! Project version string for SmaatoSDK.
 FOUNDATION_EXPORT const unsigned char SmaatoSDKVersionString[];
 
-#define SMAATO_SDK_VERSION @"23.1.0"
+#define SMAATO_SDK_VERSION @"23.2.0"
 
 
