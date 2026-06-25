@@ -116,7 +116,6 @@ FOUNDATION_EXPORT const unsigned char NGSDKVersionString[];
 #import "NGSDKConfigManager.h"
 #import "NSUserDefaults+NGSDKCustomMethods.h"
 #import "NGSDKSKOverlayDelegate.h"
-#import "NGSDKATOMManager.h"
 
 // For swift compatibility, we are making this file public instead of private
 // Avoid using custom module map
@@ -148,7 +147,7 @@ typedef enum {
     NGSDKLogLevelError,
     NGSDKLogLevelWarning,
     NGSDKLogLevelInfo,
-    NGSDKLogLevelDebug,
+    NGSDKLogLevelDebug
 } NGSDKLogLevel;
 
 typedef enum {
@@ -214,8 +213,10 @@ typedef void (^NGSDKCompletionBlock)(BOOL);
 + (NGSDKReportingManager *)reportingManager;
 + (NSString*)getSDKVersionInfo;
 + (NSString*)getCustomRequestSignalData;
++ (NSString*)getMinimizedCustomRequestSignalData;
 + (NSString*)getCustomRequestSignalData:(NSString*) mediationVendorName;
 + (NSString*)getEncodedCustomRequestSignalData;
++ (NSString*)getEncodedMinimizedCustomRequestSignalData;
 + (NSString*)getEncodedCustomRequestSignalData:(NSString*) mediationVendorName;
 + (void)setReporting:(BOOL)enabled;
 + (void)rightToBeForgotten;

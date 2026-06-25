@@ -7,5 +7,4 @@ framework module NGSDK {
 
 module NGSDK.Swift {
   header "NGSDK-Swift.h"
-  requires objc
 }

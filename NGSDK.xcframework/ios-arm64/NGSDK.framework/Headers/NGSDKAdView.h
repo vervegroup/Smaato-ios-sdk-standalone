@@ -16,6 +16,8 @@ typedef enum {
     BANNER_POSITION_BOTTOM
 } NGSDKBannerPosition;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol NGSDKAdViewDelegate<NSObject>
 
 - (void)adViewDidLoad:(NGSDKAdView *)adView;
@@ -39,6 +41,7 @@ typedef enum {
 @property (nonatomic) NGSDKBannerPosition bannerPosition;
 @property (nonatomic, assign) BOOL isAutoCacheOnLoad;
 @property (nonatomic) NSInteger autoRefreshTimeInSeconds;
+@property (nonatomic, strong, nullable) NSData *mediationWatermarkData;
 
 - (instancetype)initWithSize:(NGSDKAdSize *)adSize;
 - (instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
@@ -63,5 +66,8 @@ typedef enum {
 - (NGSDKAdPresenter *)createAdPresenter;
 
 - (void)setMediationVendor:(NSString *)mediationVendor;
+- (void)setMediationWatermark:(NSData * _Nullable)pngData;
 
 @end
+
+NS_ASSUME_NONNULL_END
