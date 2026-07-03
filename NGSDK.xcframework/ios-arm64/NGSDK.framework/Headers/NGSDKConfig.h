@@ -8,7 +8,6 @@
 
 @interface NGSDKConfig : NSObject
 
-@property (nonatomic, readonly) BOOL atomEnabled;
 
 - (instancetype)initWithData:(NGSDKConfigModel *)data;
 
