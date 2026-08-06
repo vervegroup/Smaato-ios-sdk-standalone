@@ -10280,12 +10280,9 @@
             "mangledName": "$s5NGSDK19NGSDKSessionManagerC17impressionCounterSDySSSiGvp",
             "moduleName": "NGSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -10317,7 +10314,6 @@
                 "usr": "c:@M@NGSDK@objc(cs)NGSDKSessionManager(im)impressionCounter",
                 "mangledName": "$s5NGSDK19NGSDKSessionManagerC17impressionCounterSDySSSiGvg",
                 "moduleName": "NGSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -10358,7 +10354,6 @@
                 "usr": "c:@M@NGSDK@objc(cs)NGSDKSessionManager(im)setImpressionCounter:",
                 "mangledName": "$s5NGSDK19NGSDKSessionManagerC17impressionCounterSDySSSiGvs",
                 "moduleName": "NGSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -10401,12 +10396,9 @@
             "mangledName": "$s5NGSDK19NGSDKSessionManagerC15sessionDurationSSvp",
             "moduleName": "NGSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -10424,7 +10416,6 @@
                 "usr": "c:@M@NGSDK@objc(cs)NGSDKSessionManager(im)sessionDuration",
                 "mangledName": "$s5NGSDK19NGSDKSessionManagerC15sessionDurationSSvg",
                 "moduleName": "NGSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -10451,7 +10442,6 @@
                 "usr": "c:@M@NGSDK@objc(cs)NGSDKSessionManager(im)setSessionDuration:",
                 "mangledName": "$s5NGSDK19NGSDKSessionManagerC15sessionDurationSSvs",
                 "moduleName": "NGSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -37781,14 +37771,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Analytics\/NGSDKSessionManager.swift",
       "kind": "Dictionary",
-      "offset": 321,
+      "offset": 317,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Analytics\/NGSDKSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 372,
+      "offset": 364,
       "length": 2,
       "value": "\"\""
     },
@@ -37887,223 +37877,223 @@
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 261,
-      "length": 7,
-      "value": "\"3.9.0\""
+      "length": 13,
+      "value": "\"3.9.1-beta2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 318,
+      "offset": 324,
       "length": 8,
       "value": "\"23.2.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 386,
       "length": 7,
       "value": "\"NGSDK\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 442,
+      "offset": 448,
       "length": 8,
       "value": "\"Smaato\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 502,
+      "offset": 508,
       "length": 7,
       "value": "\"1.6.3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 558,
+      "offset": 564,
       "length": 19,
       "value": "\"rendering success\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 630,
       "length": 17,
       "value": "\"ad_session_data\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 694,
       "length": 16,
       "value": "\"percentVisible\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 757,
+      "offset": 763,
       "length": 7,
       "value": "\"vrvdl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 817,
+      "offset": 823,
       "length": 13,
       "value": "\"deeplinkUrl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 883,
+      "offset": 889,
       "length": 13,
       "value": "\"fallbackUrl\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 971,
+      "offset": 977,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1024,
+      "offset": 1030,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1083,
+      "offset": 1089,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1151,
+      "offset": 1157,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1337,
+      "offset": 1343,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1401,
+      "offset": 1407,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1562,
+      "offset": 1568,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1730,
+      "offset": 1736,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1887,
+      "offset": 1893,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2057,
+      "offset": 2063,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2204,
+      "offset": 2210,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2356,
+      "offset": 2362,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2621,
+      "offset": 2627,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2785,
+      "offset": 2791,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2935,
+      "offset": 2941,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3000,
+      "offset": 3006,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3283,
+      "offset": 3289,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3349,
+      "offset": 3355,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3475,
+      "offset": 3481,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3611,
+      "offset": 3617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3825,
+      "offset": 3831,
       "length": 1,
       "value": "0"
     },
