@@ -37895,7 +37895,7 @@
       "kind": "StringLiteral",
       "offset": 318,
       "length": 8,
-      "value": "\"23.2.0\""
+      "value": "\"23.2.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
