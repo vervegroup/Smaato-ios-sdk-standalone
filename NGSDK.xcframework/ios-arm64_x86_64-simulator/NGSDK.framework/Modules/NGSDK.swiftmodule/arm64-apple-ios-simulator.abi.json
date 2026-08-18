@@ -10280,12 +10280,9 @@
             "mangledName": "$s5NGSDK19NGSDKSessionManagerC17impressionCounterSDySSSiGvp",
             "moduleName": "NGSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -10317,7 +10314,6 @@
                 "usr": "c:@M@NGSDK@objc(cs)NGSDKSessionManager(im)impressionCounter",
                 "mangledName": "$s5NGSDK19NGSDKSessionManagerC17impressionCounterSDySSSiGvg",
                 "moduleName": "NGSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -10358,7 +10354,6 @@
                 "usr": "c:@M@NGSDK@objc(cs)NGSDKSessionManager(im)setImpressionCounter:",
                 "mangledName": "$s5NGSDK19NGSDKSessionManagerC17impressionCounterSDySSSiGvs",
                 "moduleName": "NGSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -10401,12 +10396,9 @@
             "mangledName": "$s5NGSDK19NGSDKSessionManagerC15sessionDurationSSvp",
             "moduleName": "NGSDK",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -10424,7 +10416,6 @@
                 "usr": "c:@M@NGSDK@objc(cs)NGSDKSessionManager(im)sessionDuration",
                 "mangledName": "$s5NGSDK19NGSDKSessionManagerC15sessionDurationSSvg",
                 "moduleName": "NGSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -10451,7 +10442,6 @@
                 "usr": "c:@M@NGSDK@objc(cs)NGSDKSessionManager(im)setSessionDuration:",
                 "mangledName": "$s5NGSDK19NGSDKSessionManagerC15sessionDurationSSvs",
                 "moduleName": "NGSDK",
-                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
@@ -37781,14 +37771,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Analytics\/NGSDKSessionManager.swift",
       "kind": "Dictionary",
-      "offset": 321,
+      "offset": 317,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Analytics\/NGSDKSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 372,
+      "offset": 364,
       "length": 2,
       "value": "\"\""
     },
@@ -37888,14 +37878,14 @@
       "kind": "StringLiteral",
       "offset": 261,
       "length": 7,
-      "value": "\"3.9.0\""
+      "value": "\"3.9.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 318,
       "length": 8,
-      "value": "\"23.2.0\""
+      "value": "\"23.2.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
