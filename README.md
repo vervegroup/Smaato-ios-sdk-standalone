@@ -2,7 +2,7 @@
 ## Installation
 ### Swift Package Manager
 
-You can use Swift Package Manager to integrate the `Smaato iOS SDK` — including the optional `SmaatoSDKAdaptersAdMob` and `SmaatoSDKAdaptersAppLovinWaterfall` adapters directly into your Xcode project.
+You can use Swift Package Manager to integrate the `Smaato iOS SDK` directly into your Xcode project.
 
 **Step 1: Add the Package**
 
@@ -18,10 +18,12 @@ Set the Dependency Rule to **Up to Next Major Version** and enter `23.0.1`
 
 **Step 2: Select Products**
 
-When prompted, select the products you need:
-- `SmaatoSDK` — core SDK (required)
-- `SmaatoSDKAdaptersAdMob` — AdMob adapter (optional)
-- `SmaatoSDKAdaptersAppLovinWaterfall` — AppLovin adapter (optional)
+When prompted, select the product:
+- `SmaatoSDK` — core SDK
+
+Mediation adapters are separate packages:
+- AdMob: `https://github.com/vervegroup/ios-sdk-mediation-admob` (product `SmaatoSDKAdaptersAdMob`)
+- AppLovin: `https://github.com/vervegroup/smaato-ios-sdk-mediation-applovin` (product `SmaatoSDKAdaptersAppLovinWaterfall`)
 
 Click **Add Package**.
 
