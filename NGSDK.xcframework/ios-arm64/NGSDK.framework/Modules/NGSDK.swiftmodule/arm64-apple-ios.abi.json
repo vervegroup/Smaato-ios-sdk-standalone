@@ -8917,8 +8917,8 @@
           },
           {
             "kind": "Var",
-            "name": "DEFAULT_END_CARD_CLOSE_MAX_OFFSET",
-            "printedName": "DEFAULT_END_CARD_CLOSE_MAX_OFFSET",
+            "name": "DEFAULT_REWARDED_VIDEO_SKIP_OFFSET",
+            "printedName": "DEFAULT_REWARDED_VIDEO_SKIP_OFFSET",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8928,8 +8928,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cpy)DEFAULT_END_CARD_CLOSE_MAX_OFFSET",
-            "mangledName": "$s5NGSDK15NGSDKSkipOffsetC33DEFAULT_END_CARD_CLOSE_MAX_OFFSETSivpZ",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cpy)DEFAULT_REWARDED_VIDEO_SKIP_OFFSET",
+            "mangledName": "$s5NGSDK15NGSDKSkipOffsetC34DEFAULT_REWARDED_VIDEO_SKIP_OFFSETSivpZ",
             "moduleName": "NGSDK",
             "static": true,
             "declAttributes": [
@@ -8955,220 +8955,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cm)DEFAULT_END_CARD_CLOSE_MAX_OFFSET",
-                "mangledName": "$s5NGSDK15NGSDKSkipOffsetC33DEFAULT_END_CARD_CLOSE_MAX_OFFSETSivgZ",
-                "moduleName": "NGSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSET",
-            "printedName": "DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSET",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cpy)DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSET",
-            "mangledName": "$s5NGSDK15NGSDKSkipOffsetC38DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSETSivpZ",
-            "moduleName": "NGSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cm)DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSET",
-                "mangledName": "$s5NGSDK15NGSDKSkipOffsetC38DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSETSivgZ",
-                "moduleName": "NGSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSET",
-            "printedName": "DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSET",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cpy)DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSET",
-            "mangledName": "$s5NGSDK15NGSDKSkipOffsetC42DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSETSivpZ",
-            "moduleName": "NGSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cm)DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSET",
-                "mangledName": "$s5NGSDK15NGSDKSkipOffsetC42DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSETSivgZ",
-                "moduleName": "NGSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "DEFAULT_REWARDED_HTML_MAX_SKIP_OFFSET",
-            "printedName": "DEFAULT_REWARDED_HTML_MAX_SKIP_OFFSET",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cpy)DEFAULT_REWARDED_HTML_MAX_SKIP_OFFSET",
-            "mangledName": "$s5NGSDK15NGSDKSkipOffsetC37DEFAULT_REWARDED_HTML_MAX_SKIP_OFFSETSivpZ",
-            "moduleName": "NGSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cm)DEFAULT_REWARDED_HTML_MAX_SKIP_OFFSET",
-                "mangledName": "$s5NGSDK15NGSDKSkipOffsetC37DEFAULT_REWARDED_HTML_MAX_SKIP_OFFSETSivgZ",
-                "moduleName": "NGSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "DEFAULT_INTERSTITIAL_HTML_MAX_SKIP_OFFSET",
-            "printedName": "DEFAULT_INTERSTITIAL_HTML_MAX_SKIP_OFFSET",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cpy)DEFAULT_INTERSTITIAL_HTML_MAX_SKIP_OFFSET",
-            "mangledName": "$s5NGSDK15NGSDKSkipOffsetC41DEFAULT_INTERSTITIAL_HTML_MAX_SKIP_OFFSETSivpZ",
-            "moduleName": "NGSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cm)DEFAULT_INTERSTITIAL_HTML_MAX_SKIP_OFFSET",
-                "mangledName": "$s5NGSDK15NGSDKSkipOffsetC41DEFAULT_INTERSTITIAL_HTML_MAX_SKIP_OFFSETSivgZ",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cm)DEFAULT_REWARDED_VIDEO_SKIP_OFFSET",
+                "mangledName": "$s5NGSDK15NGSDKSkipOffsetC34DEFAULT_REWARDED_VIDEO_SKIP_OFFSETSivgZ",
                 "moduleName": "NGSDK",
                 "static": true,
                 "implicit": true,
@@ -9434,59 +9222,6 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cm)DEFAULT_PC_INTERSTITIAL_SKIP_OFFSET",
                 "mangledName": "$s5NGSDK15NGSDKSkipOffsetC35DEFAULT_PC_INTERSTITIAL_SKIP_OFFSETSivgZ",
-                "moduleName": "NGSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET",
-            "printedName": "DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cpy)DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET",
-            "mangledName": "$s5NGSDK15NGSDKSkipOffsetC39DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSETSivpZ",
-            "moduleName": "NGSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset(cm)DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSET",
-                "mangledName": "$s5NGSDK15NGSDKSkipOffsetC39DEFAULT_PC_INTERSTITIAL_MAX_SKIP_OFFSETSivgZ",
                 "moduleName": "NGSDK",
                 "static": true,
                 "implicit": true,
@@ -14778,109 +14513,6 @@
                 "declKind": "Accessor",
                 "usr": "s:5NGSDK14NGSDKConstantsC27interstitialActionBehaviourSo017NGSDKInterstitialdE0avMZ",
                 "mangledName": "$s5NGSDK14NGSDKConstantsC27interstitialActionBehaviourSo017NGSDKInterstitialdE0avMZ",
-                "moduleName": "NGSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "endCardCloseMaxOffset",
-            "printedName": "endCardCloseMaxOffset",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NGSDKSkipOffset",
-                "printedName": "NGSDK.NGSDKSkipOffset",
-                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@NGSDK@objc(cs)NGSDKConstants(cpy)endCardCloseMaxOffset",
-            "mangledName": "$s5NGSDK14NGSDKConstantsC21endCardCloseMaxOffsetAA09NGSDKSkipG0CvpZ",
-            "moduleName": "NGSDK",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NGSDKSkipOffset",
-                    "printedName": "NGSDK.NGSDKSkipOffset",
-                    "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NGSDK@objc(cs)NGSDKConstants(cm)endCardCloseMaxOffset",
-                "mangledName": "$s5NGSDK14NGSDKConstantsC21endCardCloseMaxOffsetAA09NGSDKSkipG0CvgZ",
-                "moduleName": "NGSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NGSDKSkipOffset",
-                    "printedName": "NGSDK.NGSDKSkipOffset",
-                    "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@NGSDK@objc(cs)NGSDKConstants(cm)setEndCardCloseMaxOffset:",
-                "mangledName": "$s5NGSDK14NGSDKConstantsC21endCardCloseMaxOffsetAA09NGSDKSkipG0CvsZ",
-                "moduleName": "NGSDK",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5NGSDK14NGSDKConstantsC21endCardCloseMaxOffsetAA09NGSDKSkipG0CvMZ",
-                "mangledName": "$s5NGSDK14NGSDKConstantsC21endCardCloseMaxOffsetAA09NGSDKSkipG0CvMZ",
                 "moduleName": "NGSDK",
                 "static": true,
                 "implicit": true,
@@ -37568,7 +37200,7 @@
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5476,
+      "offset": 6415,
       "length": 5,
       "value": "false"
     },
@@ -37638,119 +37270,84 @@
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 481,
+      "offset": 482,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 553,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
-      "kind": "IntegerLiteral",
-      "offset": 629,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
-      "kind": "IntegerLiteral",
-      "offset": 700,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
-      "kind": "IntegerLiteral",
-      "offset": 775,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
-      "kind": "IntegerLiteral",
-      "offset": 843,
+      "offset": 550,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 910,
+      "offset": 617,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 985,
+      "offset": 692,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1065,
+      "offset": 772,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1139,
+      "offset": 846,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1211,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1281,
+      "offset": 915,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1345,
+      "offset": 979,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "BooleanLiteral",
-      "offset": 1425,
+      "offset": 1059,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1470,
+      "offset": 1104,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1715,
+      "offset": 1349,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1905,
+      "offset": 1539,
       "length": 1,
       "value": "0"
     },
@@ -37878,14 +37475,14 @@
       "kind": "StringLiteral",
       "offset": 261,
       "length": 7,
-      "value": "\"3.9.1\""
+      "value": "\"3.9.2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 318,
       "length": 8,
-      "value": "\"23.2.1\""
+      "value": "\"23.2.2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
@@ -38002,98 +37599,91 @@
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1730,
+      "offset": 1726,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 1887,
+      "offset": 1883,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2057,
+      "offset": 2053,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2204,
+      "offset": 2200,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2356,
+      "offset": 2352,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2621,
+      "offset": 2620,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2785,
+      "offset": 2770,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 2935,
+      "offset": 2835,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3000,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3283,
+      "offset": 3118,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3349,
+      "offset": 3184,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3475,
+      "offset": 3310,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "BooleanLiteral",
-      "offset": 3611,
+      "offset": 3446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3825,
+      "offset": 3660,
       "length": 1,
       "value": "0"
     },
@@ -38345,35 +37935,35 @@
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/FullScreen\/Swift\/NGSDKInterstitialAd.swift",
       "kind": "Dictionary",
-      "offset": 1564,
+      "offset": 1574,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/FullScreen\/Swift\/NGSDKInterstitialAd.swift",
       "kind": "Dictionary",
-      "offset": 1627,
+      "offset": 1637,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/FullScreen\/Swift\/NGSDKInterstitialAd.swift",
       "kind": "Dictionary",
-      "offset": 1695,
+      "offset": 1705,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/FullScreen\/Swift\/NGSDKInterstitialAd.swift",
       "kind": "Dictionary",
-      "offset": 1759,
+      "offset": 1769,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/FullScreen\/Swift\/NGSDKInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1795,
+      "offset": 1805,
       "length": 5,
       "value": "false"
     },

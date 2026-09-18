@@ -10,19 +10,23 @@
 		</data>
 		<key>Headers/NGSDK-Swift.h</key>
 		<data>
-		YN4n9aFkeH2ybXnHrU8mnRjx2fQ=
+		pKqkFdV4Mk95Cw4fLt+418HBxvw=
 		</data>
 		<key>Headers/NGSDK.h</key>
 		<data>
-		NEvWKz22HJpKY0FQxPdHLzrzVx4=
+		EY52dVG1M7Q3GS/PqjFpKOyU5ew=
 		</data>
 		<key>Headers/NGSDKAd.h</key>
 		<data>
-		alLscOXAzwsxds3zxQjgoFd9CQ0=
+		mDluySkCPlHOJmJ0I4n2NupwL0M=
 		</data>
 		<key>Headers/NGSDKAdCache.h</key>
 		<data>
 		x5gEF3edjTca8TxKUHus9nKrsaI=
+		</data>
+		<key>Headers/NGSDKAdExperienceManager.h</key>
+		<data>
+		Q3s3Ap5FuiVi02ppvNNF2Y866hg=
 		</data>
 		<key>Headers/NGSDKAdFeedbackViewDelegate.h</key>
 		<data>
@@ -234,7 +238,7 @@
 		</data>
 		<key>Headers/NGSDKTimerState.h</key>
 		<data>
-		xN89TDGL1+437ijuOMe/lc7fVGc=
+		8sOh+rSulMO4KT3EObC8BjXyYcA=
 		</data>
 		<key>Headers/NGSDKUserDataManager.h</key>
 		<data>
@@ -294,23 +298,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Js6pfnG+V0JFpVzDt6173WfSIfs=
+		fDayiEIEB6AINs/ZqE8F6H/o/Wo=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		6wOmOrrZ5NP0SkPlIov0CAT6OfQ=
+		6MKkUBEDgPzOFPXTgsEevGc1f4I=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		H+QunhfzpkZoPKDtJq/ECc7yTeI=
+		d4ABpYXiN7/cyl/LfSWBMf4Ht3Y=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		tEKmmxpJOxEGy9aE2wNewXYjG8o=
+		61ZiAZFPGrhfxSlo+8vq2U88gIg=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9d+sJA24VNbacYeWlRWiaVNido4=
+		N7zXslUN92rYQlLlnd/JZW2LHLI=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -318,19 +322,19 @@
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9d+sJA24VNbacYeWlRWiaVNido4=
+		N7zXslUN92rYQlLlnd/JZW2LHLI=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WcOkGrh1oXXRAd+MgDIH9FPerGY=
+		0NmkQnxNwCq4bV6Vo9v8dRqPISw=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		tEKmmxpJOxEGy9aE2wNewXYjG8o=
+		61ZiAZFPGrhfxSlo+8vq2U88gIg=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qZoqS7jhNFOvSJjuYlGr8YXfDa8=
+		Iykhez4DYtKwCUAu86o3n9/UZhQ=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -338,11 +342,11 @@
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qZoqS7jhNFOvSJjuYlGr8YXfDa8=
+		Iykhez4DYtKwCUAu86o3n9/UZhQ=
 		</data>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cSrKt6vkrNuYSndD4psq+HPsYkI=
+		N43P4DFialaJdXqCSAJPfaOTLKY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -791,21 +795,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mawYd048nK+umMr9qdVdUw+CKEfGvIrQ+PmRQu8+d0I=
+			OgxxFcxJOPZVz6ZOQDD3h06nFafwmQg6KR11s1Z1mvk=
 			</data>
 		</dict>
 		<key>Headers/NGSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SjGT1177jUekWaVF/JjdSIDT6juQ2bV62un338QCFL0=
+			eHUBhEGb531K/ZJeVjm/px9eLzTasaprSoURmXFYmGM=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z342JSpt02kQcz9s4IXQH3s3rJzUanOPI4bvc6NxafI=
+			UcWljzfTmhkPRD6+oP/kIoI80w3Zs1QolZHrR8Rzu90=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdCache.h</key>
@@ -813,6 +817,13 @@
 			<key>hash2</key>
 			<data>
 			PYnNuhhPCnLW7s08a4iILK11PetTd4O1MYhfPnNDPCA=
+			</data>
+		</dict>
+		<key>Headers/NGSDKAdExperienceManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5qrn+WDNZw6sZ6/myflfiL62gpM/CHVUxiiylKYZkAw=
 			</data>
 		</dict>
 		<key>Headers/NGSDKAdFeedbackViewDelegate.h</key>
@@ -1183,7 +1194,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZpHLsCxCrsm8MfRi0Zd99GbzKld3DLROCtjYRoywTLY=
+			ZN1ZdLic5uOVDlqzntu003ta97Wvs82JfIyvoxSqyKE=
 			</data>
 		</dict>
 		<key>Headers/NGSDKUserDataManager.h</key>
@@ -1288,28 +1299,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1H/Xj2a89QvRRNg4SUkuOuWnyHda2k73dh39Tcxo8/4=
+			ZPZwSrtbfc31usYwxcUEC+Pdn9HvVvWDFRIShQ7pnR4=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nhaxnaRPqbtfseDeBuJ1N4/KS2EYq1VvnPx0rP+igxs=
+			Vr4CIPD0InsYQ6vsi2K7LhOJUKlWN4DhCfAGC34g7bQ=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wmPy8MCASs/cFl6c+MhKB7iM9dD6EIi0Ldw5mq3wG94=
+			TAVIyva7saEaRIH+2t0QwCXhBBBUYq5AYOQOu6g0nvI=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ghvyM+Qz0+yI3zX2JuHwyBPXDbHyxaBpT9jly6AMBOg=
+			gozHsUUiJuNk6utn5r+MvsSbhGigpjxHr7foLKow36E=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1323,28 +1334,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ghvyM+Qz0+yI3zX2JuHwyBPXDbHyxaBpT9jly6AMBOg=
+			gozHsUUiJuNk6utn5r+MvsSbhGigpjxHr7foLKow36E=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qgdWL+FNBkh2gUWLMMyEajDwnlLkY1htHhfy1vsRfyw=
+			04W1SYexKQVJcuz9SAIdblkXqHJyaNMGpLyGvaLTnHs=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wmPy8MCASs/cFl6c+MhKB7iM9dD6EIi0Ldw5mq3wG94=
+			TAVIyva7saEaRIH+2t0QwCXhBBBUYq5AYOQOu6g0nvI=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			btDEo8OpVSxpglJPLCwm7N4duYLm/OCQQGHjZOhVOOI=
+			d5u5A6FKsrFnEcIUhYQAT9I8iVeXPcutQf9breWq7pM=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1358,14 +1369,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			btDEo8OpVSxpglJPLCwm7N4duYLm/OCQQGHjZOhVOOI=
+			d5u5A6FKsrFnEcIUhYQAT9I8iVeXPcutQf9breWq7pM=
 			</data>
 		</dict>
 		<key>Modules/NGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSSu6lPgxXVHKxpz25imTsYudgg6hp5p3whK5gVWMz8=
+			i3FQKlfnm7xNtLkuWX5K+JeFsbrMF1xdx/8xg9KpGTk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

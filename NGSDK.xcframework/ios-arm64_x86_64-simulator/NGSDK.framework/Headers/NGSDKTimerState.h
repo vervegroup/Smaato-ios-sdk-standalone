@@ -10,7 +10,8 @@ typedef NS_ENUM(NSInteger){
 } NGSDKTimerState;
 
 typedef enum {
-    NGSDKCountdownPieChart = 0,
+    NGSDKCountdownSimple = 0,
+    NGSDKCountdownPieChart __attribute__((deprecated("Use NGSDKCountdownSimple instead"))) = NGSDKCountdownSimple,
     NGSDKCountdownSkipOverlayTimer = 1,
     NGSDKCountdownSkipOverlayProgress = 2
 } NGSDKCountdownStyle;

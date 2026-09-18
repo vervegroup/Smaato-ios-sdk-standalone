@@ -20,7 +20,7 @@ typedef struct {
     char *signature;
     char *nonce;
     char *timestamp;
-} SKANObject;
+} SKANObject __attribute__((deprecated("Use NGSDKSkAdNetworkModel productParameters instead.")));
 
 typedef enum {
     NGSDKDemoAppPlacementBanner = 0,
@@ -125,6 +125,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, readonly) NSNumber *customCtaEnabled;
 @property (nonatomic, readonly) NSNumber *sdkAutoStorekitEnabled;
 @property (nonatomic, readonly) NSNumber *pcSDKAutoStorekitEnabled;
+@property (nonatomic, readonly) NSNumber *suppressAutoClick;
 
 // Reporting Properties:
 @property (nonatomic, assign) BOOL shouldReportCustomEndcardImpression;

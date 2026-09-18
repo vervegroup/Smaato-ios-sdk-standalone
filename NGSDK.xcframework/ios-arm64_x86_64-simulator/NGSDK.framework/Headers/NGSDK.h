@@ -94,6 +94,7 @@ FOUNDATION_EXPORT const unsigned char NGSDKVersionString[];
 #import "NGSDKAdModel.h"
 #import "NGSDKDataModel.h"
 #import "NGSDKAd.h"
+#import "NGSDKAdExperienceManager.h"
 #import "NGSDKAdView.h"
 #import "NGSDKStarRatingView.h"
 #import "NGSDKViewabilityManager.h"
@@ -131,10 +132,11 @@ FOUNDATION_EXPORT const unsigned char NGSDKVersionString[];
 @class NGSDKReportingManager;
 @class NGSDKAdAttributionCustomClickAdsWrapper;
 
-typedef NS_ENUM(NSInteger, SDKIntegrationType) {
-    SDKIntegrationTypeNGSDK = 0,
-    SDKIntegrationTypeSmaato = 1
-};
+typedef NS_ENUM(NSInteger, NGSDKSDKIntegrationType) {
+    SDKIntegrationTypeNGSDK NS_SWIFT_NAME(NGSDK) = 0,
+    SDKIntegrationTypeSmaato NS_SWIFT_NAME(smaato) = 1
+} NS_SWIFT_NAME(SDKIntegrationType);
+typedef NGSDKSDKIntegrationType SDKIntegrationType;
 
 typedef enum {
     NGSDKAudioStatusMuted,
@@ -199,7 +201,7 @@ typedef void (^NGSDKCompletionBlock)(BOOL);
 
 @interface NGSDK : NSObject
 
-@property (nonatomic, assign) SDKIntegrationType sdkIntegrationType;
+@property (nonatomic, assign) NGSDKSDKIntegrationType sdkIntegrationType;
 
 + (void)setCoppa:(BOOL)enabled;
 + (void)setTargeting:(NGSDKTargetingModel *)targeting;
@@ -220,7 +222,7 @@ typedef void (^NGSDKCompletionBlock)(BOOL);
 + (NSString*)getEncodedCustomRequestSignalData:(NSString*) mediationVendorName;
 + (void)setReporting:(BOOL)enabled;
 + (void)rightToBeForgotten;
-+ (void)setIntegrationType:(SDKIntegrationType)integrationType;
-+ (SDKIntegrationType)getIntegrationType;
++ (void)setIntegrationType:(NGSDKSDKIntegrationType)integrationType;
++ (NGSDKSDKIntegrationType)getIntegrationType;
 
 @end
