@@ -926,6 +926,830 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "NGSDKLocationHelper",
+        "printedName": "NGSDKLocationHelper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "roundedCoordinate",
+            "printedName": "roundedCoordinate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKLocationHelper(cm)roundedCoordinate:",
+            "mangledName": "$s5NGSDK19NGSDKLocationHelperC17roundedCoordinateyS2dFZ",
+            "moduleName": "NGSDK",
+            "static": true,
+            "objc_name": "roundedCoordinate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "formattedCoordinate",
+            "printedName": "formattedCoordinate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKLocationHelper(cm)formattedCoordinate:",
+            "mangledName": "$s5NGSDK19NGSDKLocationHelperC19formattedCoordinateySSSdFZ",
+            "moduleName": "NGSDK",
+            "static": true,
+            "objc_name": "formattedCoordinate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NGSDKLocationHelper",
+                "printedName": "NGSDK.NGSDKLocationHelper",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKLocationHelper"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKLocationHelper(im)init",
+            "mangledName": "$s5NGSDK19NGSDKLocationHelperCACycfc",
+            "moduleName": "NGSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NGSDK@objc(cs)NGSDKLocationHelper",
+        "mangledName": "$s5NGSDK19NGSDKLocationHelperC",
+        "moduleName": "NGSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NGSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NGSDKSkipOffsetResolution",
+        "printedName": "NGSDKSkipOffsetResolution",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "skipOffset",
+            "printedName": "skipOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NGSDK.NGSDKSkipOffset?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NGSDKSkipOffset",
+                    "printedName": "NGSDK.NGSDKSkipOffset",
+                    "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolution(py)skipOffset",
+            "mangledName": "$s5NGSDK25NGSDKSkipOffsetResolutionC04skipC0AA0bC0CSgvp",
+            "moduleName": "NGSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NGSDK.NGSDKSkipOffset?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NGSDKSkipOffset",
+                        "printedName": "NGSDK.NGSDKSkipOffset",
+                        "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffset"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolution(im)skipOffset",
+                "mangledName": "$s5NGSDK25NGSDKSkipOffsetResolutionC04skipC0AA0bC0CSgvg",
+                "moduleName": "NGSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hasInvalidVASTSkipOffset",
+            "printedName": "hasInvalidVASTSkipOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolution(py)hasInvalidVASTSkipOffset",
+            "mangledName": "$s5NGSDK25NGSDKSkipOffsetResolutionC018hasInvalidVASTSkipC0Sbvp",
+            "moduleName": "NGSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolution(im)hasInvalidVASTSkipOffset",
+                "mangledName": "$s5NGSDK25NGSDKSkipOffsetResolutionC018hasInvalidVASTSkipC0Sbvg",
+                "moduleName": "NGSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NGSDKSkipOffsetResolution",
+                "printedName": "NGSDK.NGSDKSkipOffsetResolution",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolution"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolution(im)init",
+            "mangledName": "$s5NGSDK25NGSDKSkipOffsetResolutionCACycfc",
+            "moduleName": "NGSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolution",
+        "mangledName": "$s5NGSDK25NGSDKSkipOffsetResolutionC",
+        "moduleName": "NGSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NGSDKSkipOffsetResolver",
+        "printedName": "NGSDKSkipOffsetResolver",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "resolve",
+            "printedName": "resolve(skipOffsetChain:durationString:remoteConfigOffset:remoteConfigPercentage:sdkDefaultOffset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NGSDKSkipOffsetResolution",
+                "printedName": "NGSDK.NGSDKSkipOffsetResolution",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolution"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolver(cm)resolveWithSkipOffsetChain:durationString:remoteConfigOffset:remoteConfigPercentage:sdkDefaultOffset:",
+            "mangledName": "$s5NGSDK23NGSDKSkipOffsetResolverC7resolve04skipC5Chain14durationString012remoteConfigC00jK10Percentage010sdkDefaultC0AA0bC10ResolutionCSaySSG_SSSgSo8NSNumberCSgAmPtFZ",
+            "moduleName": "NGSDK",
+            "static": true,
+            "objc_name": "resolveWithSkipOffsetChain:durationString:remoteConfigOffset:remoteConfigPercentage:sdkDefaultOffset:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NGSDKSkipOffsetResolver",
+                "printedName": "NGSDK.NGSDKSkipOffsetResolver",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolver"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolver(im)init",
+            "mangledName": "$s5NGSDK23NGSDKSkipOffsetResolverCACycfc",
+            "moduleName": "NGSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NGSDK@objc(cs)NGSDKSkipOffsetResolver",
+        "mangledName": "$s5NGSDK23NGSDKSkipOffsetResolverC",
+        "moduleName": "NGSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NGSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NGSDKTimeResolver",
+        "printedName": "NGSDKTimeResolver",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "absoluteSeconds",
+            "printedName": "absoluteSeconds(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NGSDK17NGSDKTimeResolverC15absoluteSeconds4fromSdSgSS_tFZ",
+            "mangledName": "$s5NGSDK17NGSDKTimeResolverC15absoluteSeconds4fromSdSgSS_tFZ",
+            "moduleName": "NGSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "absoluteSecondsFromString",
+            "printedName": "absoluteSecondsFromString(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKTimeResolver(cm)absoluteSecondsFromString:",
+            "mangledName": "$s5NGSDK17NGSDKTimeResolverC25absoluteSecondsFromStringySo8NSNumberCSgSSFZ",
+            "moduleName": "NGSDK",
+            "static": true,
+            "objc_name": "absoluteSecondsFromString:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NGSDKTimeResolver",
+                "printedName": "NGSDK.NGSDKTimeResolver",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKTimeResolver"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKTimeResolver(im)init",
+            "mangledName": "$s5NGSDK17NGSDKTimeResolverCACycfc",
+            "moduleName": "NGSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NGSDK@objc(cs)NGSDKTimeResolver",
+        "mangledName": "$s5NGSDK17NGSDKTimeResolverC",
+        "moduleName": "NGSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NGSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "AppTrackingTransparency",
         "printedName": "AppTrackingTransparency",
@@ -7743,6 +8567,27 @@
             "declKind": "Func",
             "usr": "c:@M@NGSDK@objc(cs)NGSDKSKAdNetworkViewController(im)isSKProductViewControllerPresented",
             "mangledName": "$s5NGSDK30NGSDKSKAdNetworkViewControllerC011isSKProductdE9PresentedSbyF",
+            "moduleName": "NGSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetStoreKitPresentationState",
+            "printedName": "resetStoreKitPresentationState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKSKAdNetworkViewController(im)resetStoreKitPresentationState",
+            "mangledName": "$s5NGSDK30NGSDKSKAdNetworkViewControllerC30resetStoreKitPresentationStateyyF",
             "moduleName": "NGSDK",
             "declAttributes": [
               "AccessControl",
@@ -16161,6 +17006,212 @@
                 "declKind": "Accessor",
                 "usr": "s:5NGSDK14NGSDKConstantsC30sdkAutoStoreKitDelayInputValueSivMZ",
                 "mangledName": "$s5NGSDK14NGSDKConstantsC30sdkAutoStoreKitDelayInputValueSivMZ",
+                "moduleName": "NGSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButtonTouchSize",
+            "printedName": "closeButtonTouchSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKConstants(cpy)closeButtonTouchSize",
+            "mangledName": "$s5NGSDK14NGSDKConstantsC20closeButtonTouchSizeSivpZ",
+            "moduleName": "NGSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKConstants(cm)closeButtonTouchSize",
+                "mangledName": "$s5NGSDK14NGSDKConstantsC20closeButtonTouchSizeSivgZ",
+                "moduleName": "NGSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKConstants(cm)setCloseButtonTouchSize:",
+                "mangledName": "$s5NGSDK14NGSDKConstantsC20closeButtonTouchSizeSivsZ",
+                "moduleName": "NGSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5NGSDK14NGSDKConstantsC20closeButtonTouchSizeSivMZ",
+                "mangledName": "$s5NGSDK14NGSDKConstantsC20closeButtonTouchSizeSivMZ",
+                "moduleName": "NGSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButtonInitialTouchSize",
+            "printedName": "closeButtonInitialTouchSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NGSDK@objc(cs)NGSDKConstants(cpy)closeButtonInitialTouchSize",
+            "mangledName": "$s5NGSDK14NGSDKConstantsC27closeButtonInitialTouchSizeSivpZ",
+            "moduleName": "NGSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKConstants(cm)closeButtonInitialTouchSize",
+                "mangledName": "$s5NGSDK14NGSDKConstantsC27closeButtonInitialTouchSizeSivgZ",
+                "moduleName": "NGSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NGSDK@objc(cs)NGSDKConstants(cm)setCloseButtonInitialTouchSize:",
+                "mangledName": "$s5NGSDK14NGSDKConstantsC27closeButtonInitialTouchSizeSivsZ",
+                "moduleName": "NGSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5NGSDK14NGSDKConstantsC27closeButtonInitialTouchSizeSivMZ",
+                "mangledName": "$s5NGSDK14NGSDKConstantsC27closeButtonInitialTouchSizeSivMZ",
                 "moduleName": "NGSDK",
                 "static": true,
                 "implicit": true,
@@ -35602,6 +36653,20 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKLocationHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 150,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSkipOffsetResolver.swift",
+      "kind": "StringLiteral",
+      "offset": 493,
+      "length": 4,
+      "value": "\"-1\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/Config\/NGSDKSDKConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 263,
@@ -37193,14 +38258,14 @@
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1008,
+      "offset": 1000,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKSKAdNetworkViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6415,
+      "offset": 6792,
       "length": 5,
       "value": "false"
     },
@@ -37475,14 +38540,14 @@
       "kind": "StringLiteral",
       "offset": 261,
       "length": 7,
-      "value": "\"3.9.2\""
+      "value": "\"3.9.3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "StringLiteral",
       "offset": 318,
       "length": 8,
-      "value": "\"23.2.2\""
+      "value": "\"23.2.3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
@@ -37684,6 +38749,20 @@
       "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 3660,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3718,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ngsdk-ios-sdk\/ngsdk-ios-sdk\/NGSDK\/NGSDK\/Core\/Swift\/NGSDKConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3783,
       "length": 1,
       "value": "0"
     },

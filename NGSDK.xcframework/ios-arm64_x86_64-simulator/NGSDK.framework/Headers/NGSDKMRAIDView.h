@@ -10,6 +10,8 @@
 @class NGSDKMRAIDView;
 @protocol NGSDKMRAIDServiceDelegate;
 
+NS_ASSUME_NONNULL_BEGIN
+
 // A delegate for MRAIDView to listen for notification on ad ready or expand related events.
 @protocol NGSDKMRAIDViewDelegate <NSObject>
 
@@ -18,7 +20,7 @@
 // These callbacks are for basic banner ad functionality.
 - (void)mraidViewAdReady:(NGSDKMRAIDView *)mraidView;
 - (void)mraidViewAdFailed:(NGSDKMRAIDView *)mraidView;
-- (void)mraidViewAdFailed:(NGSDKMRAIDView *)mraidView withError:(NSError *)error;
+- (void)mraidViewAdFailed:(NGSDKMRAIDView *)mraidView withError:(nullable NSError *)error;
 - (void)mraidViewWillExpand:(NGSDKMRAIDView *)mraidView;
 - (void)mraidViewDidClose:(NGSDKMRAIDView *)mraidView;
 - (void)mraidViewNavigate:(NGSDKMRAIDView *)mraidView withURL:(NSURL *)url;
@@ -36,25 +38,25 @@
 
 @interface NGSDKMRAIDView : UIView <NGSDKSKOverlayDelegate>
 
-@property (nonatomic, strong) id<NGSDKMRAIDViewDelegate> delegate;
-@property (nonatomic, strong) id<NGSDKMRAIDServiceDelegate> serviceDelegate;
-@property (nonatomic, weak, setter = setRootViewController:) UIViewController *rootViewController;
+@property (nonatomic, strong, nullable) id<NGSDKMRAIDViewDelegate> delegate;
+@property (nonatomic, strong, nullable) id<NGSDKMRAIDServiceDelegate> serviceDelegate;
+@property (nonatomic, weak, nullable, setter = setRootViewController:) UIViewController *rootViewController;
 // DEPRECATED: isViewable is deprecated as from MRAID 3.0
 @property (nonatomic, assign, getter = isViewable, setter = setIsViewable:) BOOL isViewable;
-@property (nonatomic, strong) NSString *urlStringForEndCardTracking;
+@property (nonatomic, strong, nullable) NSString *urlStringForEndCardTracking;
 
 // IMPORTANT: This is the only valid initializer for an MRAIDView; -init and -initWithFrame: will throw exceptions
 - (id)initWithFrame:(CGRect)frame
-       withHtmlData:(NSString *)htmlData
-        withBaseURL:(NSURL *)bsURL
-             withAd:(NGSDKAd *)ad
+       withHtmlData:(nullable NSString *)htmlData
+        withBaseURL:(nullable NSURL *)bsURL
+             withAd:(nullable NGSDKAd *)ad
   supportedFeatures:(NSArray *)features
       isInterstital:(BOOL)isInterstitial
        isScrollable:(BOOL)isScrollable
-           delegate:(id<NGSDKMRAIDViewDelegate>)delegate
-    serviceDelegate:(id<NGSDKMRAIDServiceDelegate>)serviceDelegate
- rootViewController:(UIViewController *)rootViewController
-        contentInfo:(NGSDKContentInfoView *)contentInfo
+           delegate:(nullable id<NGSDKMRAIDViewDelegate>)delegate
+    serviceDelegate:(nullable id<NGSDKMRAIDServiceDelegate>)serviceDelegate
+ rootViewController:(nullable UIViewController *)rootViewController
+        contentInfo:(nullable NGSDKContentInfoView *)contentInfo
          skipOffset:(NSInteger)skipOffset
           isEndcard:(BOOL)isEndcard
 shouldHandleInterruptions:(BOOL)shouldHandleInterruptions;
@@ -77,3 +79,5 @@ shouldHandleInterruptions:(BOOL)shouldHandleInterruptions;
 - (void)injectJavaScript:(NSString *)js;
 - (nullable UIView *)modalView;
 @end
+
+NS_ASSUME_NONNULL_END
